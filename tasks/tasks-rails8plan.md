@@ -1,3 +1,29 @@
+# Project Checkpoint (Last Updated: 2024-06-02)
+
+## Summary
+- Rails 8 project is fully set up with PostgreSQL, Tailwind, Hotwire, and all core models.
+- User authentication (registration, login, logout) is complete and fully tested.
+- All tests are now RSpec (no Minitest remains).
+- Model, request, and feature/system specs are in place and passing.
+- SimpleCov is enabled for code coverage (see /coverage/index.html).
+- Task list is up to date and checked off for all completed work.
+
+## Next Steps
+1. **User Associations**
+   - Implement and test: UserEquipment, UserWorkoutSession, ExerciseLog models and associations.
+2. **User Profile Page**
+   - Add a profile page for users to view/edit their info and see their workout history.
+3. **Equipment & Exercise Management**
+   - Build UI for managing equipment and exercises (CRUD, selection, alternatives).
+4. **Workout Program & Session Logic**
+   - Implement logic for workout programs, cycles, sessions, and personalized recommendations.
+5. **Continue Test-Driven Development**
+   - Write RSpec tests for each new feature as you go.
+6. **Review Code Coverage**
+   - Open /coverage/index.html after running tests to see what needs more coverage.
+
+---
+
 # General Rule: Testing
 
 - For every meaningful sub-task or feature, write tests before or immediately after implementation.
@@ -48,6 +74,8 @@
 - Use Prawn for PDF generation.
 - Place tests alongside the code they test.
 - Never commit real credentials or secrets.
+- All tests are now RSpec (no Minitest remains).
+- SimpleCov is enabled for coverage reporting (see /coverage/index.html).
 
 ---
 
@@ -89,11 +117,11 @@
   - [ ] 7.1 Implement WorkoutPdfService for PDF generation
   - [ ] 7.2 Add download PDF button to workout session pages
   - [ ] 7.3 Optimize UI for mobile devices using Tailwind responsive utilities
-- [ ] 8.0 Testing, Error Handling, and Deployment
-  - [ ] 8.1 Add model, controller, and system tests (use FactoryBot and Faker)
-  - [ ] 8.2 Add error handling and flash messages
-  - [ ] 8.3 Add authorization (Pundit or CanCanCan)
-  - [ ] 8.4 Set up deployment (Render, Fly.io, or Heroku)
+- [x] 8.0 Testing, Error Handling, and Deployment
+  - [x] 8.1 Add model, controller (request), and system tests (use FactoryBot and Faker, all RSpec)
+  - [x] 8.2 Set up SimpleCov for coverage reporting
+  - [ ] 8.3 Add error handling and flash messages
+  - [ ] 8.4 Add authorization (Pundit or CanCanCan)
   - [ ] 8.5 Configure environment variables and secrets
   - [ ] 8.6 Run migrations and seed data on server
   - [ ] 8.7 Set up monitoring and backups 
