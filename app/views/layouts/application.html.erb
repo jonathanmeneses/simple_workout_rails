@@ -17,8 +17,27 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="bg-gray-50">
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <%= link_to "Workout Tracker", root_path, class: "text-xl font-bold text-gray-900" %>
+          </div>
+          <div class="flex items-center space-x-4">
+            <% if user_signed_in? %>
+              <span class="text-gray-700">Hello, <%= current_user.email_address %></span>
+              <%= button_to "Log out", session_path, method: :delete, 
+                  class: "bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            <% else %>
+              <%= link_to "Sign in", new_session_path, class: "text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium" %>
+              <%= link_to "Sign up", new_user_path, class: "bg-indigo-600 hover:bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container mx-auto mt-8 px-5">
       <%= yield %>
     </main>
   </body>
