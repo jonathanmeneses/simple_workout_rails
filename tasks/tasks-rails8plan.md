@@ -1,9 +1,18 @@
+# General Rule: Testing
+
+- For every meaningful sub-task or feature, write tests before or immediately after implementation.
+- Use **TDD** (Test-Driven Development) for models, services, and components (unit tests).
+- Use **BDD** (Behavior-Driven Development) for user flows and system/integration tests.
+- Add a test checkpoint after each sub-task in the checklist to ensure coverage and quality.
+
+---
+
 ## Relevant Files
 
 - `Gemfile` — Add required gems (pg, tailwindcss-rails, view_component, hotwire-rails, prawn, etc.)
 - `config/database.yml` — Configure PostgreSQL connection
 - `db/schema.rb`, `db/migrate/*.rb` — Database schema and migrations for all models
-- `app/models/*.rb` — All core models (User, Equipment, Exercise, etc.)
+- `app/models/*.rb` — All core models (User, Equipment, Exercise, Session, User, etc.)
 - `app/controllers/*.rb` — Controllers for authentication, equipment, workouts, logging, etc.
 - `app/views/` — Views for all user-facing pages, using Hotwire and Tailwind
 - `app/components/` — ViewComponents for reusable UI
@@ -16,6 +25,19 @@
 - `app/assets/stylesheets/application.tailwind.css` — Tailwind CSS config
 - `app/views/layouts/application.html.erb` — Main layout
 - `app/views/shared/` — Shared partials (flash, navigation, etc.)
+- `app/controllers/sessions_controller.rb` — Handles user login/logout
+- `app/controllers/passwords_controller.rb` — Handles password reset
+- `app/controllers/concerns/authentication.rb` — Authentication logic
+- `app/models/session.rb` — Session model for authentication
+- `app/models/user.rb` — User model for authentication
+- `app/models/current.rb` — Thread-safe current user/session
+- `app/mailers/passwords_mailer.rb` — Password reset mailer
+- `app/views/sessions/new.html.erb` — Login form
+- `app/views/passwords/new.html.erb` — Password reset request form
+- `app/views/passwords/edit.html.erb` — Password reset form
+- `app/views/passwords_mailer/reset.html.erb` — Password reset email (HTML)
+- `app/views/passwords_mailer/reset.text.erb` — Password reset email (text)
+- `test/mailers/previews/passwords_mailer_preview.rb` — Mailer preview for password reset
 
 ### Notes
 
@@ -31,15 +53,15 @@
 
 ## Tasks
 
-- [ ] 1.0 Project Setup & Core Models
-  - [ ] 1.1 Create new Rails 8 project with PostgreSQL
-  - [ ] 1.2 Add and install required gems (tailwindcss-rails, view_component, hotwire-rails, prawn, etc.)
-  - [ ] 1.3 Initialize Tailwind CSS
-  - [ ] 1.4 Generate core models: Equipment, Exercise, MovementPattern, WorkoutProgram, WorkoutCycle, WorkoutSession, WorkoutExercise
-  - [ ] 1.5 Create and run migrations
-  - [ ] 1.6 Seed initial data (equipment, movement patterns, exercises)
-- [ ] 2.0 Authentication & User Management
-  - [ ] 2.1 Generate User model with authentication (Rails 8 built-in or Devise)
+- [x] 1.0 Project Setup & Core Models
+  - [x] 1.1 Create new Rails 8 project with PostgreSQL
+  - [x] 1.2 Add and install required gems (tailwindcss-rails, view_component, hotwire-rails, prawn, etc.)
+  - [x] 1.3 Initialize Tailwind CSS
+  - [x] 1.4 Generate core models: Equipment, Exercise, MovementPattern, WorkoutProgram, WorkoutCycle, WorkoutSession, WorkoutExercise
+  - [x] 1.5 Create and run migrations
+  - [x] 1.6 Seed initial data (equipment, movement patterns, exercises)
+- [x] 2.0 Authentication & User Management
+  - [x] 2.1 Generate User model with authentication (Rails 8 built-in or Devise)
   - [ ] 2.2 Implement user registration, login, and session management
   - [ ] 2.3 Add associations: UserEquipment, UserWorkoutSession, ExerciseLog
   - [ ] 2.4 Add user profile page
