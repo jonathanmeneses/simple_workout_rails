@@ -62,7 +62,7 @@
   - [x] 1.6 Seed initial data (equipment, movement patterns, exercises)
 - [x] 2.0 Authentication & User Management
   - [x] 2.1 Generate User model with authentication (Rails 8 built-in or Devise)
-  - [ ] 2.2 Implement user registration, login, and session management
+  - [x] 2.2 Implement user registration, login, and session management
   - [ ] 2.3 Add associations: UserEquipment, UserWorkoutSession, ExerciseLog
   - [ ] 2.4 Add user profile page
 - [ ] 3.0 Equipment & Exercise Management
