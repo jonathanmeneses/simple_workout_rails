@@ -1,5 +1,27 @@
 # Rails 8 Workout Tracker Implementation Plan (Comprehensive)
 
+## Phase 0: UI Foundation — Recreate Workout Program Generator Selection View (No Auth, Hotwire)
+
+### Goal
+- Recreate the main selection view from the Next.js Workout Program Generator (https://v0-generate-ui-from-prd-ten-pi.vercel.app/) as the first milestone.
+- No authentication required.
+- Use Rails 8 with Hotwire for a dynamic, SPA-like user experience.
+- Focus on:
+  - Program selection tabs (3-Day Full Body, 4-Day Upper/Lower)
+  - Program description and session breakdown
+  - "Select Program" button
+  - Clean, modern UI with Tailwind CSS
+
+### Steps
+1. Scaffold a new controller and view for the program generator (e.g., `ProgramsController#index`).
+2. Implement the tabbed selection UI for program types.
+3. Display program details dynamically based on selection (Hotwire/Turbo Frames).
+4. Style the page to match the reference app (Tailwind CSS).
+5. No authentication or user accounts needed for this phase.
+6. Deploy and verify the UI/UX matches the reference.
+
+---
+
 ## Overview
 This plan combines a step-by-step beginner approach with advanced best practices and code samples. Each phase starts with a simple checklist, followed by advanced/optional details. You can follow just the checklists, or dive deeper into the advanced sections as you gain confidence.
 

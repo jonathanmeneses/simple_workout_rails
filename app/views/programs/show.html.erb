@@ -1,0 +1,67 @@
+<div class="min-h-screen bg-white flex flex-col items-center py-12">
+  <div class="w-full max-w-2xl bg-white rounded-xl shadow p-8">
+    <h1 class="font-bold text-2xl mb-2 flex items-center gap-2 text-primary">
+      <span>🏋️‍♂️</span> <%= @program[:name] %>
+    </h1>
+    <p class="text-gray-500 mb-2"><%= @program[:description] %></p>
+    <div class="mb-4">
+      <h2 class="font-semibold text-lg mb-1">Program Structure</h2>
+      <ul class="list-disc list-inside text-gray-700 text-sm">
+        <% @program[:structure].each do |line| %>
+          <li><%= line %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="mb-4">
+      <h2 class="font-semibold text-lg mb-1">Progression Model</h2>
+      <ul class="list-disc list-inside text-gray-700 text-sm">
+        <% @program[:progression_model].each do |line| %>
+          <li><%= line %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% @program[:cycles].each do |cycle| %>
+      <div class="mb-8">
+        <h2 class="font-bold text-xl mb-1"><%= cycle[:name] %></h2>
+        <p class="text-gray-500 mb-2"><%= cycle[:description] %></p>
+        <div class="mb-4 flex gap-2">
+          <% cycle[:days].each_with_index do |day, i| %>
+            <button class="px-4 py-2 rounded-lg font-medium <%= i == 0 ? 'bg-gray-100' : 'bg-white' %> text-gray-800"><%= day[:title] %></button>
+          <% end %>
+        </div>
+        <% cycle[:days].each do |day| %>
+          <div class="border rounded-lg p-4 mb-4">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class="font-semibold text-lg"><%= day[:title] %></h3>
+              <span class="text-xs text-gray-500"><%= day[:week] %></span>
+            </div>
+            <table class="w-full text-sm">
+              <thead>
+                <tr class="text-gray-500 border-b">
+                  <th class="py-1 text-left">Exercise</th>
+                  <th class="py-1 text-left">Sets</th>
+                  <th class="py-1 text-left">Reps</th>
+                  <th class="py-1 text-left">Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% day[:exercises].each do |ex| %>
+                  <tr class="border-b last:border-0">
+                    <td class="py-1"><%= ex[:name] %></td>
+                    <td class="py-1"><%= ex[:sets] %></td>
+                    <td class="py-1"><%= ex[:reps] %></td>
+                    <td class="py-1"><%= ex[:notes] %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+    <footer class="text-center text-gray-400 text-sm mt-8">
+      Workout Program Generator © 2025 &bull; <a href="#" class="underline">About</a> &bull; <a href="#" class="underline">Movement Reference</a>
+    </footer>
+  </div>
+</div>
+ 

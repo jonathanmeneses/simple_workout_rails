@@ -67,20 +67,26 @@
 
 ### Notes
 
-- Use FactoryBot and Faker for test data.
 - Use i18n for all user-facing text.
 - Use Tailwind CSS for all styling.
 - Use Hotwire (Turbo/Stimulus) for SPA-like interactivity.
 - Use Prawn for PDF generation.
 - Place tests alongside the code they test.
 - Never commit real credentials or secrets.
-- All tests are now RSpec (no Minitest remains).
+- All tests are now Minitest (no RSpec remains).
 - SimpleCov is enabled for coverage reporting (see /coverage/index.html).
 
 ---
 
 ## Tasks
 
+- [ ] 0.0 UI Foundation: Recreate Workout Program Generator Selection View (No Auth, Hotwire)
+  - [ ] 0.1 Scaffold ProgramsController and index view
+  - [ ] 0.2 Implement tabbed selection for program types (3-Day Full Body, 4-Day Upper/Lower)
+  - [ ] 0.3 Display program details dynamically with Hotwire/Turbo Frames
+  - [ ] 0.4 Style the UI to match the reference app (Tailwind CSS)
+  - [ ] 0.5 Add "Select Program" button and ensure dynamic updates
+  - [ ] 0.6 Deploy and verify UI/UX
 - [x] 1.0 Project Setup & Core Models
   - [x] 1.1 Create new Rails 8 project with PostgreSQL
   - [x] 1.2 Add and install required gems (tailwindcss-rails, view_component, hotwire-rails, prawn, etc.)
@@ -118,7 +124,7 @@
   - [ ] 7.2 Add download PDF button to workout session pages
   - [ ] 7.3 Optimize UI for mobile devices using Tailwind responsive utilities
 - [x] 8.0 Testing, Error Handling, and Deployment
-  - [x] 8.1 Add model, controller (request), and system tests (use FactoryBot and Faker, all RSpec)
+  - [x] 8.1 Add model, controller (request), and system tests (now all Minitest)
   - [x] 8.2 Set up SimpleCov for coverage reporting
   - [ ] 8.3 Add error handling and flash messages
   - [ ] 8.4 Add authorization (Pundit or CanCanCan)
