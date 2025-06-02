@@ -4,7 +4,7 @@ export default class extends Controller {
     static targets = ["tab", "details", "viewModeTab", "content", "cycleSelector"]
 
     connect() {
-        // Optionally, set the default tab if needed
+        // Programs controller connected
     }
 
     selectTab(event) {
@@ -36,15 +36,7 @@ export default class extends Controller {
             url += `&cycle=${encodeURIComponent(cycle)}`
         }
         
-        fetch(url, {
-            headers: {
-                'Accept': 'text/vnd.turbo-stream.html'
-            }
-        })
-        .then(response => response.text())
-        .then(html => {
-            Turbo.renderStreamMessage(html)
-        })
+        window.location.href = url
     }
 
     selectCycle(event) {
@@ -54,14 +46,6 @@ export default class extends Controller {
         
         const url = `/programs/${programId}?view_mode=${viewMode}&cycle=${encodeURIComponent(cycle)}`
         
-        fetch(url, {
-            headers: {
-                'Accept': 'text/vnd.turbo-stream.html'
-            }
-        })
-        .then(response => response.text())
-        .then(html => {
-            Turbo.renderStreamMessage(html)
-        })
+        window.location.href = url
     }
 } 

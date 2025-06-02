@@ -1,0 +1,53 @@
+fb_a_back_squat:
+  workout_session: fb_a_squat_focus
+  exercise: back_squat
+  sets: 2
+  reps: 5
+  notes: "2×5 + AMRAP - Main strength movement"
+  order_position: 1
+  exercise_type: main
+
+fb_a_overhead_press:
+  workout_session: fb_a_squat_focus
+  exercise: overhead_press
+  sets: 2
+  reps: 5
+  notes: "2×5 + AMRAP - Upper body strength"
+  order_position: 2
+  exercise_type: main
+
+fb_a_chin_ups:
+  workout_session: fb_a_squat_focus
+  exercise: chin_ups
+  sets: 3
+  reps: 0
+  notes: "3 AMRAP - Vertical pull"
+  order_position: 3
+  exercise_type: accessory
+
+fb_b_deadlift:
+  workout_session: fb_b_power_deadlift
+  exercise: deadlift
+  sets: 1
+  reps: 5
+  notes: "1×5 - Heavy single set"
+  order_position: 1
+  exercise_type: main
+
+fb_b_bench_press:
+  workout_session: fb_b_power_deadlift
+  exercise: bench_press
+  sets: 2
+  reps: 5
+  notes: "2×5 + AMRAP - Horizontal push"
+  order_position: 2
+  exercise_type: main
+
+fb_b_chest_row:
+  workout_session: fb_b_power_deadlift
+  exercise: chest_supported_row
+  sets: 3
+  reps: 10
+  notes: "3×10 - Horizontal pull"
+  order_position: 3
+  exercise_type: accessory

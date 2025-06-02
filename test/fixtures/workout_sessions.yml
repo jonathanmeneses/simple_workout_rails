@@ -1,0 +1,11 @@
+fb_a_squat_focus:
+  name: "FB-A: Squat Focus"
+  workout_cycle: base_strength
+
+fb_b_power_deadlift:
+  name: "FB-B: Power & Deadlift"
+  workout_cycle: base_strength
+
+fb_c_squat_press_variation:
+  name: "FB-C: Squat & Press Variation"
+  workout_cycle: base_strength

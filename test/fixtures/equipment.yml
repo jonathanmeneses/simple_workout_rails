@@ -1,0 +1,17 @@
+barbell:
+  name: "Barbell"
+
+dumbbells:
+  name: "Dumbbells"
+
+bench:
+  name: "Bench"
+
+pull_up_bar:
+  name: "Pull-up Bar"
+
+rings:
+  name: "Rings"
+
+cable_machine:
+  name: "Cable Machine"

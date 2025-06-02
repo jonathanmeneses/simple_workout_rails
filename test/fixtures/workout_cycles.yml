@@ -1,0 +1,17 @@
+base_strength:
+  name: "Base Strength"
+  cycle_type: 0
+  workout_program: three_day_full_body
+  description: "Focus on building foundational strength with compound movements"
+
+unilateral_core:
+  name: "Unilateral & Core"
+  cycle_type: 1
+  workout_program: three_day_full_body
+  description: "Emphasis on single-limb movements and core stability"
+
+power_plyometrics:
+  name: "Power & Plyometrics"
+  cycle_type: 2
+  workout_program: three_day_full_body
+  description: "Explosive power development and plyometric training"

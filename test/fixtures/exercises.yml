@@ -1,0 +1,41 @@
+back_squat:
+  name: "Back Squat"
+  movement_pattern: squat
+  exercise_type: main
+  description: "Primary squat movement"
+  notes: "Focus on depth and control"
+
+deadlift:
+  name: "Deadlift"
+  movement_pattern: deadlift
+  exercise_type: main
+  description: "Primary deadlift movement"
+  notes: "Full range of motion"
+
+bench_press:
+  name: "Bench Press"
+  movement_pattern: horizontal_push
+  exercise_type: main
+  description: "Primary horizontal push"
+  notes: "Touch chest, full lockout"
+
+overhead_press:
+  name: "Overhead Press (OHP)"
+  movement_pattern: vertical_push
+  exercise_type: main
+  description: "Primary vertical push"
+  notes: "Strict press, no leg drive"
+
+chin_ups:
+  name: "Chin-ups"
+  movement_pattern: vertical_pull
+  exercise_type: accessory
+  description: "Bodyweight vertical pull"
+  notes: "Full range of motion"
+
+chest_supported_row:
+  name: "Chest-Supported Row"
+  movement_pattern: horizontal_pull
+  exercise_type: accessory
+  description: "Horizontal pulling movement"
+  notes: "Squeeze shoulder blades"

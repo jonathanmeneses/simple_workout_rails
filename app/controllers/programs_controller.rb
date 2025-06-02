@@ -18,12 +18,8 @@ class ProgramsController < ApplicationController
 
   def show
     @program = WorkoutProgram.find(params[:id])
-    @view_mode = params[:view_mode] || "description"
+    valid_modes = %w[description program schedule]
+    @view_mode = valid_modes.include?(params[:view_mode]) ? params[:view_mode] : "description"
     @selected_cycle = params[:cycle] || @program.workout_cycles.first&.name
-    
-    respond_to do |format|
-      format.html
-      format.turbo_stream
-    end
   end
 end

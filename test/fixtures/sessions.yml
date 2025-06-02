@@ -1,0 +1,9 @@
+user_one_session:
+  user: one
+  ip_address: "127.0.0.1"
+  user_agent: "Test Browser"
+
+user_two_session:
+  user: two
+  ip_address: "192.168.1.1"
+  user_agent: "Chrome Test"

@@ -1,0 +1,23 @@
+squat:
+  name: "Squat"
+
+deadlift:
+  name: "Deadlift"
+
+horizontal_push:
+  name: "Horizontal Push"
+
+vertical_push:
+  name: "Vertical Push"
+
+horizontal_pull:
+  name: "Horizontal Pull"
+
+vertical_pull:
+  name: "Vertical Pull"
+
+unilateral_lower:
+  name: "Unilateral Lower"
+
+core:
+  name: "Core"

@@ -1,0 +1,9 @@
+three_day_full_body:
+  name: "3-Day Full Body Program"
+  program_type: full_body_3_day
+  description: "3-Day Full Body program with functional bodybuilding principles"
+
+four_day_upper_lower:
+  name: "4-Day Upper/Lower Program"
+  program_type: upper_lower_4_day
+  description: "4-Day Upper/Lower split with strength focus"
