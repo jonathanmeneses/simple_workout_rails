@@ -2,14 +2,22 @@
   <div class="w-full max-w-4xl bg-white rounded-xl shadow p-8">
     
     <!-- Header -->
-    <div class="mb-6">
-      <h1 class="font-bold text-2xl mb-2 text-primary"><%= @program.name %></h1>
+    <div class="mb-6 flex items-center justify-between">
+      <div>
+      <h1 class="font-bold text-2xl mb-2 text-primary">12-Week Program</h1>
       <p class="text-gray-500 mb-4"><%= @program.description %></p>
-      <%= link_to "← Back to Programs", programs_path, class: "text-blue-600 hover:text-blue-800 text-sm" %>
+      </div>
+      <div class="flex gap-2">
+      <%= link_to "Back to Programs", programs_path, class: "bg-blue-500 text-white px-4 py-2 rounded-md" %>
+      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Print</button>
+      </div>
     </div>
 
     
     <%= turbo_frame_tag "program_content" do %>
+
+
+
     <!-- View Mode Controls -->
     <div class="mb-6">
       <div class="flex gap-2 border-b border-gray-200">
