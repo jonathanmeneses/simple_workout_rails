@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #333446;
+    /* navy */
+    --color-accent: #7F8CAA;
+    /* steel */
+    --color-surface: #B8CFCE;
+    /* mint */
+    --color-neutral: #EAEFEF;
+    /* foam */
+    --color-feedback-success: #22c55e;
+    --color-feedback-error: #ef4444;
+}
