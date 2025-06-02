@@ -8,49 +8,39 @@
       <h2 class="font-semibold text-lg mb-1">Select Your Program</h2>
       <p class="text-gray-500 text-sm mb-4">Choose a workout program that fits your schedule</p>
       <div id="program-tabs" class="flex rounded-lg overflow-hidden border border-gray-200 mb-4">
-        <button 
-          id="tab-full-body"
-          data-action="click->programs#selectTab"
-          data-programs-target="tab"
-          data-tab="full-body"
-          class="flex-1 py-2 text-center font-medium transition-colors focus:outline-none bg-gray-100 text-gray-800 border-r border-gray-200"
-          >3-Day Full Body</button>
-        <button 
-          id="tab-upper-lower"
-          data-action="click->programs#selectTab"
-          data-programs-target="tab"
-          data-tab="upper-lower"
-          class="flex-1 py-2 text-center font-medium transition-colors focus:outline-none text-gray-800"
-          >4-Day Upper/Lower</button>
+        <% @program_types.each_with_index do |program_type, index| %>
+          <button 
+            id="tab-<%= program_type[:type] %>"
+            data-action="click->programs#selectTab"
+            data-programs-target="tab"
+            data-tab="<%= program_type[:type] %>"
+            class="flex-1 py-2 text-center font-medium transition-colors focus:outline-none <%= index == 0 ? 'bg-gray-100' : '' %> text-gray-800 <%= index < @program_types.length - 1 ? 'border-r border-gray-200' : '' %>"
+          ><%= program_type[:name] %></button>
+        <% end %>
       </div>
+      
       <div id="program-details">
-        <!-- 3-Day Full Body Program (default) -->
-        <div id="details-full-body" data-programs-target="details" data-details="full-body" class="">
-          <div class="border rounded-lg p-4 mb-2">
-            <h3 class="font-semibold text-lg mb-1">3-Day Full Body Program</h3>
-            <p class="text-gray-500 text-sm mb-3">A complete full-body workout program designed for those who can train 3 days per week. Each session targets all major muscle groups with a focus on compound movements.</p>
-            <ul class="text-gray-700 text-sm mb-4">
-              <li class="flex items-center gap-2 mb-1"><span class="text-lg">›</span> Monday: Full Body (Squat Focus)</li>
-              <li class="flex items-center gap-2 mb-1"><span class="text-lg">›</span> Wednesday: Full Body (Bench Focus)</li>
-              <li class="flex items-center gap-2"><span class="text-lg">›</span> Friday: Full Body (Deadlift Focus)</li>
-            </ul>
-            <button class="w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition" onclick="window.location='<%= program_path(1) %>'">Select 3-Day Program</button>
+        <% @program_types.each_with_index do |program_type, index| %>
+          <div id="details-<%= program_type[:type] %>" data-programs-target="details" data-details="<%= program_type[:type] %>" class="<%= index == 0 ? '' : 'hidden' %>">
+            <% program_type[:programs].each do |program| %>
+              <div class="border rounded-lg p-4 mb-2">
+                <h3 class="font-semibold text-lg mb-1"><%= program.name %></h3>
+                <p class="text-gray-500 text-sm mb-3"><%= program.description %></p>
+                <ul class="text-gray-700 text-sm mb-4">
+                  <% program.workout_cycles.first&.workout_sessions&.limit(4)&.each do |session| %>
+                    <li class="flex items-center gap-2 mb-1">
+                      <span class="text-lg">›</span> <%= session.name %>
+                    </li>
+                  <% end %>
+                </ul>
+                <%= button_to "Select #{program_type[:name]}", 
+                      program_path(program.id), 
+                      method: :get, 
+                      class: "w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition" %>
+              </div>
+            <% end %>
           </div>
-        </div>
-        <!-- 4-Day Upper/Lower Split (hidden by default) -->
-        <div id="details-upper-lower" data-programs-target="details" data-details="upper-lower" class="hidden">
-          <div class="border rounded-lg p-4 mb-2">
-            <h3 class="font-semibold text-lg mb-1">4-Day Upper/Lower Split</h3>
-            <p class="text-gray-500 text-sm mb-3">A balanced upper/lower body split designed for those who can train 4 days per week. This program allows for more focused training sessions with higher volume per muscle group.</p>
-            <ul class="text-gray-700 text-sm mb-4">
-              <li class="flex items-center gap-2 mb-1"><span class="text-lg">›</span> Monday: Upper Body (Horizontal Push/Pull)</li>
-              <li class="flex items-center gap-2 mb-1"><span class="text-lg">›</span> Tuesday: Lower Body (Quad Focus)</li>
-              <li class="flex items-center gap-2 mb-1"><span class="text-lg">›</span> Thursday: Upper Body (Vertical Push/Pull)</li>
-              <li class="flex items-center gap-2"><span class="text-lg">›</span> Friday: Lower Body (Posterior Chain Focus)</li>
-            </ul>
-            <button class="w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition" onclick="window.location='<%= program_path(2) %>'">Select 4-Day Program</button>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
     <footer class="text-center text-gray-400 text-sm mt-8">

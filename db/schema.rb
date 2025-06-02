@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_01_050556) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -60,6 +60,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_01_050556) do
     t.bigint "workout_program_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "description"
     t.index ["workout_program_id"], name: "index_workout_cycles_on_workout_program_id"
   end
 
@@ -72,6 +73,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_01_050556) do
     t.integer "order_position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "exercise_type"
     t.index ["exercise_id"], name: "index_workout_exercises_on_exercise_id"
     t.index ["workout_session_id"], name: "index_workout_exercises_on_workout_session_id"
   end
@@ -81,6 +83,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_01_050556) do
     t.integer "program_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "description"
   end
 
   create_table "workout_sessions", force: :cascade do |t|

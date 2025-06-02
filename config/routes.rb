@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get "programs/index"
+  resources :programs, only: [:index, :show]
+  
   resource :session
   resources :passwords, param: :token
   get "welcome/index"
@@ -17,6 +18,4 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "programs#index"
-
-  get "/programs/:id", to: "programs#show", as: :program
 end

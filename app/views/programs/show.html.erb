@@ -1,15 +1,64 @@
-<div class="min-h-screen bg-white flex flex-col items-center py-12 gap-y-4">
-    <%= render partial: "programs/components/description", locals: { program: @program } %>
+<div class="min-h-screen bg-white flex flex-col items-center py-12" data-controller="programs">
   <div class="w-full max-w-4xl bg-white rounded-xl shadow p-8">
-    <% @program[:cycles].each do |cycle| %>
-      <%= render partial: "programs/components/program_cycle", locals: { cycle: cycle } %>
-    <% end %>
+    
+    <!-- Header -->
+    <div class="mb-6">
+      <h1 class="font-bold text-2xl mb-2 text-primary"><%= @program.name %></h1>
+      <p class="text-gray-500 mb-4"><%= @program.description %></p>
+      
+      <!-- Back button -->
+      <%= link_to "← Back to Programs", programs_path, class: "text-blue-600 hover:text-blue-800 text-sm" %>
+    </div>
+
+    <!-- View Mode Controls -->
+    <div class="mb-6">
+      <div id="view-mode-tabs" class="flex gap-2 border-b border-gray-200">
+        <button 
+          data-action="click->programs#selectViewMode"
+          data-programs-target="viewModeTab"
+          data-view-mode="description"
+          class="px-4 py-2 text-sm font-medium border-b-2 <%= @view_mode == 'description' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700' %>"
+        >Description</button>
+        <button 
+          data-action="click->programs#selectViewMode"
+          data-programs-target="viewModeTab"
+          data-view-mode="program"
+          class="px-4 py-2 text-sm font-medium border-b-2 <%= @view_mode == 'program' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700' %>"
+        >Program</button>
+        <button 
+          data-action="click->programs#selectViewMode"
+          data-programs-target="viewModeTab"
+          data-view-mode="schedule"
+          class="px-4 py-2 text-sm font-medium border-b-2 <%= @view_mode == 'schedule' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700' %>"
+        >Schedule</button>
+      </div>
+    </div>
+
+    <!-- Cycle Selector -->
+    <div id="cycle-selector">
+      <% if @view_mode == 'program' %>
+        <div class="mb-6">
+          <label class="block text-sm font-medium text-gray-700 mb-2">Select Cycle:</label>
+          <select 
+            data-action="change->programs#selectCycle"
+            data-programs-target="cycleSelector"
+            class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            <% @program.workout_cycles.each do |cycle| %>
+              <option value="<%= cycle.name %>" <%= 'selected' if cycle.name == @selected_cycle %>><%= cycle.name %></option>
+            <% end %>
+          </select>
+        </div>
+      <% end %>
+    </div>
+
+    <!-- Content Area -->
+    <div id="program_content" data-programs-target="content">
+      <%= render partial: "program_content" %>
+    </div>
+
     <footer class="text-center text-gray-400 text-sm mt-8">
       Workout Program Generator © 2025 &bull; <a href="#" class="underline">About</a> &bull; <a href="#" class="underline">Movement Reference</a>
     </footer>
   </div>
 </div>
- 
-
-
- 
