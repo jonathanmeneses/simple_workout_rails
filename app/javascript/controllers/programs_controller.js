@@ -30,22 +30,12 @@ export default class extends Controller {
         const viewMode = event.currentTarget.dataset.viewMode
         const programId = window.location.pathname.split('/').pop()
         const cycle = this.hasCycleSelectorTarget ? this.cycleSelectorTarget.value : null
-        
+
         let url = `/programs/${programId}?view_mode=${viewMode}`
         if (cycle) {
             url += `&cycle=${encodeURIComponent(cycle)}`
         }
-        
-        window.location.href = url
-    }
 
-    selectCycle(event) {
-        const cycle = event.currentTarget.value
-        const programId = window.location.pathname.split('/').pop()
-        const viewMode = 'program'
-        
-        const url = `/programs/${programId}?view_mode=${viewMode}&cycle=${encodeURIComponent(cycle)}`
-        
         window.location.href = url
     }
 } 

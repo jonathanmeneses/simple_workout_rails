@@ -1,0 +1,24 @@
+<h1>Turbo Test Page</h1>
+<%= link_to "Regular Link (full page)", 
+    program_path(@program, view_mode: 'description'), 
+    style: "display: block; margin: 10px; padding: 10px; background: red; color: white;" %>
+<%= link_to "Turbo Link (should update frame only)", 
+    program_path(@program, view_mode: 'program', timestamp: Time.current.to_i), 
+    data: { turbo_frame: "my_frame" },
+    style: "display: block; margin: 10px; padding: 10px; background: blue; color: white;" %>
+<hr>
+<%= turbo_frame_tag "my_frame" do %>
+  <div style="border: 2px solid green; padding: 20px; margin: 10px;">
+    <h3>This is inside the Turbo Frame</h3>
+    <p>Current time: <%= Time.current %></p>
+    <p>View mode: <%= @view_mode %></p>
+    <p>Timestamp param: <%= params[:timestamp] %></p>
+    <p>Random number: <%= rand(1000) %></p>
+  </div>
+<% end %>
+<hr>
+<div style="border: 2px solid orange; padding: 20px; margin: 10px;">
+  <h3>This is OUTSIDE the frame</h3>
+  <p>This should NOT change when you click the blue link</p>
+  <p>Static timestamp: <%= Time.current %></p>
+</div>
