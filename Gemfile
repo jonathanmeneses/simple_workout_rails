@@ -56,9 +56,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 
-  gem "factory_bot_rails"
-  gem "faker"
-  gem "rspec-rails"
+  # RSpec and test data gems removed
 end
 
 group :development do
@@ -73,3 +71,5 @@ group :test do
 end
 
 gem "pundit"
+
+gem "tailwindcss-ruby", "~> 4.1"
