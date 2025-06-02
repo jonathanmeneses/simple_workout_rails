@@ -1,0 +1,22 @@
+<div class="w-full max-w-4xl bg-white flex flex-col gap-y-2 rounded-xl shadow px-8 py-4" >
+  <h1 class="font-bold text-2xl flex items-center text-primary">
+    <%= program[:name] %>
+  </h1>
+  <p class="text-gray-500"><%= program[:description] %></p>
+  <div >
+    <h2 class="font-semibold text-lg mb-1">Program Structure</h2>
+    <ul class="list-disc list-inside text-gray-700 text-sm">
+      <% program[:structure].each do |line| %>
+        <li><%= line %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div >
+    <h2 class="font-semibold text-lg mb-1">Progression Model</h2>
+    <ul class="list-disc list-inside text-gray-700 text-sm">
+      <% program[:progression_model].each do |line| %>
+        <li><%= line %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

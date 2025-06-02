@@ -1,0 +1,28 @@
+<%# <div class="w-full max-w-4xl bg-white flex flex-col gap-y-2 rounded-xl shadow px-8 py-4" > %>
+<div class="border rounded-lg p-4 mb-4">
+  <div class="flex justify-between items-center mb-2">
+    <h3 class="font-semibold text-lg"><%= day[:title] %></h3>
+    <span class="text-xs text-gray-500"><%= day[:week] %></span>
+  </div>
+  <table class="w-full text-sm">
+    <thead>
+      <tr class="text-gray-500 border-b">
+        <th class="py-1 text-left">Exercise</th>
+        <th class="py-1 text-left">Sets</th>
+        <th class="py-1 text-left">Reps</th>
+        <th class="py-1 text-left">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% day[:exercises].each do |ex| %>
+        <tr class="border-b last:border-0">
+          <td class="py-1"><%= ex[:name] %></td>
+          <td class="py-1"><%= ex[:sets] %></td>
+          <td class="py-1"><%= ex[:reps] %></td>
+          <td class="py-1"><%= ex[:notes] %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<%# </div> %>

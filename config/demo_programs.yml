@@ -1,645 +1,643 @@
 default: &default
   programs:
-  "1":
-    id: 1
-    name: "3-Day Full Body Program"
-    description: "3-Day Full Body program with functional bodybuilding principles"
-    structure:
-      - "FB-A: Squat Focus + Upper Body"
-      - "FB-B: Deadlift + Power Development"
-      - "FB-C: Squat + Press Variation"
-    progression_model:
-      - "Cycle 1: Base Strength (Weeks 1-4)"
-      - "Cycle 2: Unilateral & Core (Weeks 5-8)"
-      - "Cycle 3: Power & Plyometrics (Weeks 9-12)"
-      - "Week 13: Deload (-20% loads)"
-    cycles:
-      - name: "Base Strength"
-        description: "Focus on building foundational strength with compound movements. Emphasize proper form and progressive overload."
-        days:
-          - title: "FB-A: Squat Focus"
-            week: "Cycle 1 - Week 1"
-            exercises:
-              - type: "main"
-                name: "Back Squat"
-                sets: "2×5"
-                reps: "+ AMRAP"
-                notes: "Main strength movement"
-              - type: "main"
-                name: "Overhead Press (OHP)"
-                sets: "2×5"
-                reps: "+ AMRAP"
-                notes: "Upper body strength"
-              - type: "accessory"
-                name: "Chin-ups"
-                sets: 3
-                reps: "AMRAP"
-                notes: "Vertical pull"
-              - type: "accessory"
-                name: "Nordic Curl"
-                sets: 3
-                reps: "6-8"
-                notes: "Hamstring eccentric"
-              - type: "accessory"
-                name: "Pallof Press"
-                sets: 3
-                reps: "10/side"
-                notes: "Anti-rotation core"
-          - title: "FB-B: Power & Deadlift"
-            week: "Cycle 1 - Week 1"
-            exercises:
-              - type: "main"
-                name: "Power Clean"
-                sets: 3
-                reps: "3 @ 60-70%"
-                notes: "Explosive power"
-              - type: "main"
-                name: "Deadlift"
-                sets: 1
-                reps: "5"
-                notes: "Heavy single set"
-              - type: "main"
-                name: "Bench Press"
-                sets: "2×5"
-                reps: "+ AMRAP"
-                notes: "Horizontal push"
-              - type: "accessory"
-                name: "Chest-Supported Row"
-                sets: 3
-                reps: "10"
-                notes: "Horizontal pull"
-              - type: "accessory"
-                name: "Hip Thrust"
-                sets: 3
-                reps: "10"
-                notes: "Glute activation"
-              - type: "accessory"
-                name: "GHD Sit-up"
-                sets: 3
-                reps: "12"
-                notes: "Posterior chain core"
-          - title: "FB-C: Squat & Press Variation"
-            week: "Cycle 1 - Week 1"
-            exercises:
-              - type: "main"
-                name: "Back Squat"
-                sets: 2
-                reps: "5"
-                notes: "Match Monday's weight"
-              - type: "main"
-                name: "Bench or OHP (alternate weekly)"
-                sets: "2×5"
-                reps: "+ AMRAP"
-                notes: "Press variation"
-              - type: "accessory"
-                name: "Ring Row"
-                sets: 3
-                reps: "AMRAP"
-                notes: "Bodyweight pull"
-              - type: "accessory"
-                name: "Bulgarian Split-Squat"
-                sets: 3
-                reps: "8/leg"
-                notes: "Unilateral leg"
-              - type: "accessory"
-                name: "Farmer Carry"
-                sets: 3
-                reps: "30m"
-                notes: "Loaded carry"
-      - name: "Unilateral & Core"
-        description: "Emphasis shifts to unilateral movements and core stability. This phase challenges balance, coordination, and addresses strength imbalances. Single-limb exercises improve functional strength and injury prevention."
-        days:
-          - title: "FB-A: Unilateral & Core Focus"
-            week: "Cycle 2 - Week 5"
-            exercises:
-              - type: "main"
-                name: "Cyclist Squat (heels elevated)"
-                sets: "2×5"
-                reps: "+ AMRAP"
-                notes: "Knee/quad bias variation"
-              - type: "accessory"
-                name: "Tall-Kneel Landmine Press"
-                sets: 3
-                reps: "8/arm"
-              - type: "accessory"
-                name: "Neutral-Grip Pull-up"
-                sets: 3
-                reps: "8"
-                notes: "Core-stabilized pull"
-              - type: "accessory"
-                name: "Single-Leg RDL"
-                sets: 3
-                reps: "8/leg"
-                notes: "Unilateral hinge"
-              - type: "accessory"
-                name: "Suitcase Carry"
-                sets: 3
-                reps: "40m"
-                notes: "Anti-lateral flexion"
-          - title: "FB-B: Unilateral Power & Core"
-            week: "Cycle 2 - Week 5"
-            exercises:
-              - type: "main"
-                name: "Hang Power Clean"
-                sets: 4
-                reps: "2 @ 70%"
-                notes: "Explosive from hang"
-              - type: "main"
-                name: "Trap-Bar Deadlift"
-                sets: 1
-                reps: "5"
-                notes: "Neutral grip variation"
-              - type: "accessory"
-                name: "Incline DB Press"
-                sets: 3
-                reps: "8"
-                notes: "Unilateral option"
-              - type: "accessory"
-                name: "Single-Arm DB Row"
-                sets: 3
-                reps: "10/arm"
-                notes: "Unilateral pull"
-              - type: "accessory"
-                name: "Zercher Good Morning"
-                sets: 3
-                reps: "8"
-                notes: "Front-loaded hinge"
-              - type: "accessory"
-                name: "Weighted Dead-Bug"
-                sets: 3
-                reps: "10"
-                notes: "Core coordination"
-          - title: "FB-C: Unilateral Strength"
-            week: "Cycle 2 - Week 5"
-            exercises:
-              - type: "main"
-                name: "Zercher Squat"
-                sets: 3
-                reps: "6"
-                notes: "Front-loaded squat"
-              - type: "main"
-                name: "Seated Z-Press"
-                sets: 3
-                reps: "6"
-                notes: "No back support"
-              - type: "accessory"
-                name: "Ring Pull-up (Tempo 3-1-X)"
-                sets: 3
-                reps: "5"
-                notes: "Controlled tempo"
-              - type: "accessory"
-                name: "Front-Rack Reverse Lunge"
-                sets: 3
-                reps: "8/leg"
-                notes: "Front-loaded unilateral"
-              - type: "accessory"
-                name: "Front-Rack Carry"
-                sets: 3
-                reps: "30m"
-                notes: "Front-loaded carry"
-      - name: "Power & Plyometrics"
-        description: "Peak phase focusing on power and plyometric development. Exercises emphasize speed, explosiveness, and athletic performance. This phase prepares you for maximum strength expression and athletic transfer."
-        days:
-          - title: "FB-A: Power & Plyometrics"
-            week: "Cycle 3 - Week 9"
-            exercises:
-              - type: "main"
-                name: "Jump Squat"
-                sets: 5
-                reps: "3"
-                notes: "Bodyweight or light KB"
-              - type: "main"
-                name: "Pause Back Squat"
-                sets: 2
-                reps: "5"
-                notes: "3-sec pause"
-              - type: "main"
-                name: "Push-Press"
-                sets: 5
-                reps: "3 @ 70%"
-                notes: "Explosive press"
-              - type: "accessory"
-                name: "Chest-to-Bar Pull-up"
-                sets: 5
-                reps: "3"
-                notes: "Explosive pull"
-              - type: "accessory"
-                name: "Kettlebell Swing"
-                sets: 4
-                reps: "15"
-                notes: "Hip snap power"
-              - type: "accessory"
-                name: "Med-ball Slam"
-                sets: 3
-                reps: "8"
-                notes: "Explosive torso"
-          - title: "FB-B: Speed & Power"
-            week: "Cycle 3 - Week 9"
-            exercises:
-              - type: "main"
-                name: "Hang-Clean Pulls"
-                sets: 5
-                reps: "2"
-                notes: "Speed focus"
-              - type: "main"
-                name: "Deficit Deadlift (lighter)"
-                sets: 1
-                reps: "5"
-                notes: "Increased ROM"
-              - type: "accessory"
-                name: "Plyo Push-ups"
-                sets: 4
-                reps: "5"
-                notes: "Explosive push"
-              - type: "accessory"
-                name: "Pendlay Row"
-                sets: 4
-                reps: "6"
-                notes: "Dead stop rows"
-              - type: "accessory"
-                name: "Hip Thrust (band-resist)"
-                sets: 4
-                reps: "15"
-                notes: "Band tension"
-              - type: "accessory"
-                name: "Strict Toes-to-Bar"
-                sets: 3
-                reps: "8"
-                notes: "Hanging core"
-          - title: "FB-C: Speed & Plyometrics"
-            week: "Cycle 3 - Week 9"
-            exercises:
-              - type: "main"
-                name: "Speed Front Squat"
-                sets: 6
-                reps: "3 @ 55-60%"
-                notes: "Speed emphasis"
-              - type: "accessory"
-                name: "Bradford Press (light)"
-                sets: 4
-                reps: "8"
-                notes: "No lockout"
-              - type: "accessory"
-                name: "Ring Muscle-up Row"
-                sets: 4
-                reps: "6"
-                notes: "Transition prep"
-              - type: "accessory"
-                name: "Jump Switch Lunges"
-                sets: 3
-                reps: "10/leg"
-                notes: "Plyo-focused lunge"
-              - type: "accessory"
-                name: "Overhead Plate Carry"
-                sets: 3
-                reps: "30m"
-                notes: "Overhead stability"
+    1:
+      name: "3-Day Full Body Program"
+      description: "3-Day Full Body program with functional bodybuilding principles"
+      structure:
+        - "FB-A: Squat Focus + Upper Body"
+        - "FB-B: Deadlift + Power Development"
+        - "FB-C: Squat + Press Variation"
+      progression_model:
+        - "Cycle 1: Base Strength (Weeks 1-4)"
+        - "Cycle 2: Unilateral & Core (Weeks 5-8)"
+        - "Cycle 3: Power & Plyometrics (Weeks 9-12)"
+        - "Week 13: Deload (-20% loads)"
+      cycles:
+        - name: "Base Strength"
+          description: "Focus on building foundational strength with compound movements. Emphasize proper form and progressive overload."
+          days:
+            - title: "FB-A: Squat Focus"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Back Squat"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Main strength movement"
+                - type: "main"
+                  name: "Overhead Press (OHP)"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Upper body strength"
+                - type: "accessory"
+                  name: "Chin-ups"
+                  sets: 3
+                  reps: "AMRAP"
+                  notes: "Vertical pull"
+                - type: "accessory"
+                  name: "Nordic Curl"
+                  sets: 3
+                  reps: "6-8"
+                  notes: "Hamstring eccentric"
+                - type: "accessory"
+                  name: "Pallof Press"
+                  sets: 3
+                  reps: "10/side"
+                  notes: "Anti-rotation core"
+            - title: "FB-B: Power & Deadlift"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Power Clean"
+                  sets: 3
+                  reps: "3 @ 60-70%"
+                  notes: "Explosive power"
+                - type: "main"
+                  name: "Deadlift"
+                  sets: 1
+                  reps: "5"
+                  notes: "Heavy single set"
+                - type: "main"
+                  name: "Bench Press"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Horizontal push"
+                - type: "accessory"
+                  name: "Chest-Supported Row"
+                  sets: 3
+                  reps: "10"
+                  notes: "Horizontal pull"
+                - type: "accessory"
+                  name: "Hip Thrust"
+                  sets: 3
+                  reps: "10"
+                  notes: "Glute activation"
+                - type: "accessory"
+                  name: "GHD Sit-up"
+                  sets: 3
+                  reps: "12"
+                  notes: "Posterior chain core"
+            - title: "FB-C: Squat & Press Variation"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Back Squat"
+                  sets: 2
+                  reps: "5"
+                  notes: "Match Monday's weight"
+                - type: "main"
+                  name: "Bench or OHP (alternate weekly)"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Press variation"
+                - type: "accessory"
+                  name: "Ring Row"
+                  sets: 3
+                  reps: "AMRAP"
+                  notes: "Bodyweight pull"
+                - type: "accessory"
+                  name: "Bulgarian Split-Squat"
+                  sets: 3
+                  reps: "8/leg"
+                  notes: "Unilateral leg"
+                - type: "accessory"
+                  name: "Farmer Carry"
+                  sets: 3
+                  reps: "30m"
+                  notes: "Loaded carry"
+        - name: "Unilateral & Core"
+          description: "Emphasis shifts to unilateral movements and core stability. This phase challenges balance, coordination, and addresses strength imbalances. Single-limb exercises improve functional strength and injury prevention."
+          days:
+            - title: "FB-A: Unilateral & Core Focus"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Cyclist Squat (heels elevated)"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Knee/quad bias variation"
+                - type: "accessory"
+                  name: "Tall-Kneel Landmine Press"
+                  sets: 3
+                  reps: "8/arm"
+                - type: "accessory"
+                  name: "Neutral-Grip Pull-up"
+                  sets: 3
+                  reps: "8"
+                  notes: "Core-stabilized pull"
+                - type: "accessory"
+                  name: "Single-Leg RDL"
+                  sets: 3
+                  reps: "8/leg"
+                  notes: "Unilateral hinge"
+                - type: "accessory"
+                  name: "Suitcase Carry"
+                  sets: 3
+                  reps: "40m"
+                  notes: "Anti-lateral flexion"
+            - title: "FB-B: Unilateral Power & Core"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Hang Power Clean"
+                  sets: 4
+                  reps: "2 @ 70%"
+                  notes: "Explosive from hang"
+                - type: "main"
+                  name: "Trap-Bar Deadlift"
+                  sets: 1
+                  reps: "5"
+                  notes: "Neutral grip variation"
+                - type: "accessory"
+                  name: "Incline DB Press"
+                  sets: 3
+                  reps: "8"
+                  notes: "Unilateral option"
+                - type: "accessory"
+                  name: "Single-Arm DB Row"
+                  sets: 3
+                  reps: "10/arm"
+                  notes: "Unilateral pull"
+                - type: "accessory"
+                  name: "Zercher Good Morning"
+                  sets: 3
+                  reps: "8"
+                  notes: "Front-loaded hinge"
+                - type: "accessory"
+                  name: "Weighted Dead-Bug"
+                  sets: 3
+                  reps: "10"
+                  notes: "Core coordination"
+            - title: "FB-C: Unilateral Strength"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Zercher Squat"
+                  sets: 3
+                  reps: "6"
+                  notes: "Front-loaded squat"
+                - type: "main"
+                  name: "Seated Z-Press"
+                  sets: 3
+                  reps: "6"
+                  notes: "No back support"
+                - type: "accessory"
+                  name: "Ring Pull-up (Tempo 3-1-X)"
+                  sets: 3
+                  reps: "5"
+                  notes: "Controlled tempo"
+                - type: "accessory"
+                  name: "Front-Rack Reverse Lunge"
+                  sets: 3
+                  reps: "8/leg"
+                  notes: "Front-loaded unilateral"
+                - type: "accessory"
+                  name: "Front-Rack Carry"
+                  sets: 3
+                  reps: "30m"
+                  notes: "Front-loaded carry"
+        - name: "Power & Plyometrics"
+          description: "Peak phase focusing on power and plyometric development. Exercises emphasize speed, explosiveness, and athletic performance. This phase prepares you for maximum strength expression and athletic transfer."
+          days:
+            - title: "FB-A: Power & Plyometrics"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Jump Squat"
+                  sets: 5
+                  reps: "3"
+                  notes: "Bodyweight or light KB"
+                - type: "main"
+                  name: "Pause Back Squat"
+                  sets: 2
+                  reps: "5"
+                  notes: "3-sec pause"
+                - type: "main"
+                  name: "Push-Press"
+                  sets: 5
+                  reps: "3 @ 70%"
+                  notes: "Explosive press"
+                - type: "accessory"
+                  name: "Chest-to-Bar Pull-up"
+                  sets: 5
+                  reps: "3"
+                  notes: "Explosive pull"
+                - type: "accessory"
+                  name: "Kettlebell Swing"
+                  sets: 4
+                  reps: "15"
+                  notes: "Hip snap power"
+                - type: "accessory"
+                  name: "Med-ball Slam"
+                  sets: 3
+                  reps: "8"
+                  notes: "Explosive torso"
+            - title: "FB-B: Speed & Power"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Hang-Clean Pulls"
+                  sets: 5
+                  reps: "2"
+                  notes: "Speed focus"
+                - type: "main"
+                  name: "Deficit Deadlift (lighter)"
+                  sets: 1
+                  reps: "5"
+                  notes: "Increased ROM"
+                - type: "accessory"
+                  name: "Plyo Push-ups"
+                  sets: 4
+                  reps: "5"
+                  notes: "Explosive push"
+                - type: "accessory"
+                  name: "Pendlay Row"
+                  sets: 4
+                  reps: "6"
+                  notes: "Dead stop rows"
+                - type: "accessory"
+                  name: "Hip Thrust (band-resist)"
+                  sets: 4
+                  reps: "15"
+                  notes: "Band tension"
+                - type: "accessory"
+                  name: "Strict Toes-to-Bar"
+                  sets: 3
+                  reps: "8"
+                  notes: "Hanging core"
+            - title: "FB-C: Speed & Plyometrics"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Speed Front Squat"
+                  sets: 6
+                  reps: "3 @ 55-60%"
+                  notes: "Speed emphasis"
+                - type: "accessory"
+                  name: "Bradford Press (light)"
+                  sets: 4
+                  reps: "8"
+                  notes: "No lockout"
+                - type: "accessory"
+                  name: "Ring Muscle-up Row"
+                  sets: 4
+                  reps: "6"
+                  notes: "Transition prep"
+                - type: "accessory"
+                  name: "Jump Switch Lunges"
+                  sets: 3
+                  reps: "10/leg"
+                  notes: "Plyo-focused lunge"
+                - type: "accessory"
+                  name: "Overhead Plate Carry"
+                  sets: 3
+                  reps: "30m"
+                  notes: "Overhead stability"
 
-  "2":
-  id: 2
-  name: "4-Day Upper/Lower Split"
-  description: "4-Day Upper/Lower Split for targeted muscle development"
-  structure:
-    - "Upper 1: Horizontal Push/Pull"
-    - "Lower 1: Squat + Posterior Chain"
-    - "Upper 2: Vertical Push/Pull"
-    - "Lower 2: Power + Deadlift"
-  progression_model:
-    - "Cycle 1: Base Strength (Weeks 1-4)"
-    - "Cycle 2: Unilateral & Core (Weeks 5-8)"
-    - "Cycle 3: Power & Plyometrics (Weeks 9-12)"
-    - "Week 13: Deload (-20% loads)"
-  cycles:
-    - name: "Base Strength"
-      description: "Focus on building foundational strength with compound movements. Emphasize proper form and progressive overload."
-      days:
-        - title: "Upper 1: Horizontal Push/Pull"
-          week: "Cycle 1 - Week 1"
-          exercises:
-            - type: "main"
-              name: "Bench Press"
-              sets: "2×5"
-              reps: "+ AMRAP"
-              notes: "Main horizontal push"
-            - type: "accessory"
-              name: "Bent-over Row"
-              sets: 3
-              reps: "8"
-              notes: "Horizontal pull"
-            - type: "accessory"
-              name: "Incline DB Press"
-              sets: 3
-              reps: "8"
-              notes: "Upper chest"
-            - type: "accessory"
-              name: "Face Pull"
-              sets: 3
-              reps: "15"
-              notes: "Rear delt/upper back"
-            - type: "accessory"
-              name: "Dips"
-              sets: 3
-              reps: "10"
-              notes: "Tricep/chest"
-        - title: "Lower 1: Squat Focus"
-          week: "Cycle 1 - Week 1"
-          exercises:
-            - type: "main"
-              name: "Back Squat"
-              sets: "2×5"
-              reps: "+ AMRAP"
-              notes: "Main leg movement"
-            - type: "accessory"
-              name: "RDL"
-              sets: 3
-              reps: "8"
-              notes: "Posterior chain"
-            - type: "accessory"
-              name: "Bulgarian Split-Squat"
-              sets: 3
-              reps: "8/leg"
-              notes: "Unilateral strength"
-            - type: "accessory"
-              name: "Nordic Curl"
-              sets: 3
-              reps: "6"
-              notes: "Hamstring eccentric"
-        - title: "Upper 2: Vertical Push/Pull"
-          week: "Cycle 1 - Week 1"
-          exercises:
-            - type: "main"
-              name: "Overhead Press"
-              sets: "2×5"
-              reps: "+ AMRAP"
-              notes: "Vertical push"
-            - type: "accessory"
-              name: "Weighted Pull-up"
-              sets: 3
-              reps: "5-8"
-              notes: "Vertical pull"
-            - type: "accessory"
-              name: "Landmine One-Arm Press"
-              sets: 3
-              reps: "10/arm"
-              notes: "Unilateral press"
-            - type: "accessory"
-              name: "Lateral Raise"
-              sets: 3
-              reps: "12"
-              notes: "Deltoid isolation"
-            - type: "accessory"
-              name: "Curls"
-              sets: 3
-              reps: "12"
-              notes: "Bicep isolation"
-        - title: "Lower 2: Power & Deadlift"
-          week: "Cycle 1 - Week 1"
-          exercises:
-            - type: "main"
-              name: "Power Clean"
-              sets: 4
-              reps: "2 @ 65-70%"
-              notes: "Explosive power"
-            - type: "main"
-              name: "Deadlift"
-              sets: 1
-              reps: "5"
-              notes: "Heavy single set"
-            - type: "accessory"
-              name: "Hip Thrust"
-              sets: 3
-              reps: "10"
-              notes: "Glute focus"
-            - type: "accessory"
-              name: "Good Morning"
-              sets: 3
-              reps: "10"
-              notes: "Posterior chain"
-            - type: "accessory"
-              name: "Plank"
-              sets: 3
-              reps: "60s"
-              notes: "Core stability"
-    - name: "Unilateral & Core"
-      description: "Emphasis shifts to unilateral movements and core stability. This phase challenges balance, coordination, and addresses strength imbalances."
-      days:
-        - title: "Upper 1: Unilateral Push Focus"
-          week: "Cycle 2 - Week 5"
-          exercises:
-            - type: "main"
-              name: "Close-Grip Bench"
-              sets: "2×5"
-              reps: "+ AMRAP"
-              notes: "Tricep emphasis"
-            - type: "accessory"
-              name: "Chest-Supported Row"
-              sets: 4
-              reps: "8"
-              notes: "Stable pulling"
-            - type: "accessory"
-              name: "Tall-Kneel Landmine Press"
-              sets: 4
-              reps: "8/arm"
-              notes: "Unilateral core press"
-            - type: "accessory"
-              name: "Band Pull-Apart"
-              sets: 3
-              reps: "20"
-              notes: "Rear delt activation"
-            - type: "accessory"
-              name: "Ring Push-up"
-              sets: 3
-              reps: "AMRAP"
-              notes: "Instability challenge"
-        - title: "Lower 1: Unilateral Leg Focus"
-          week: "Cycle 2 - Week 5"
-          exercises:
-            - type: "main"
-              name: "Front Squat"
-              sets: 3
-              reps: "5"
-              notes: "Front-loaded squat"
-            - type: "accessory"
-              name: "Single-leg RDL"
-              sets: 3
-              reps: "8/leg"
-              notes: "Unilateral hinge"
-            - type: "accessory"
-              name: "Cyclist Squat"
-              sets: 3
-              reps: "10"
-              notes: "Heels elevated"
-            - type: "accessory"
-              name: "Jefferson Curl (light)"
-              sets: 3
-              reps: "10"
-              notes: "Spinal mobility"
-        - title: "Upper 2: Power Press Focus"
-          week: "Cycle 2 - Week 5"
-          exercises:
-            - type: "main"
-              name: "Push-Press"
-              sets: 5
-              reps: "3 @ 70-75%"
-              notes: "Power development"
-            - type: "accessory"
-              name: "Neutral-Grip Pull-up"
-              sets: 4
-              reps: "AMRAP"
-              notes: "Grip variation"
-            - type: "accessory"
-              name: "Seated Z-Press"
-              sets: 3
-              reps: "6"
-              notes: "Core isolation"
-            - type: "accessory"
-              name: "Bradford Press"
-              sets: 3
-              reps: "10"
-              notes: "Shoulder mobility"
-            - type: "accessory"
-              name: "EZ-Bar Curl"
-              sets: 3
-              reps: "10"
-              notes: "Bicep focus"
-        - title: "Lower 2: Unilateral Power"
-          week: "Cycle 2 - Week 5"
-          exercises:
-            - type: "main"
-              name: "Hang-Clean High-Pull"
-              sets: 5
-              reps: "2"
-              notes: "Explosive pull"
-            - type: "main"
-              name: "Trap-Bar Deadlift"
-              sets: 1
-              reps: "5"
-              notes: "Neutral grip"
-            - type: "accessory"
-              name: "Zercher Good Morning"
-              sets: 3
-              reps: "8"
-              notes: "Front-loaded hinge"
-            - type: "accessory"
-              name: "Front-Foot-Elevated Split-Squat"
-              sets: 3
-              reps: "10/leg"
-              notes: "Unilateral challenge"
-            - type: "accessory"
-              name: "Suitcase Carry"
-              sets: 3
-              reps: "40m"
-              notes: "Anti-lateral flexion"
-    - name: "Power & Plyometrics"
-      description: "Peak phase focusing on power and plyometric development. Exercises emphasize speed, explosiveness, and athletic performance."
-      days:
-        - title: "Upper 1: Dynamic Power"
-          week: "Cycle 3 - Week 9"
-          exercises:
-            - type: "main"
-              name: "Dynamic Bench"
-              sets: 8
-              reps: "3 @ 55% + bands"
-              notes: "Speed with bands"
-            - type: "accessory"
-              name: "Meadows Row"
-              sets: 4
-              reps: "8/arm"
-              notes: "T-bar row variation"
-            - type: "accessory"
-              name: "Half-Kneel Filly Press"
-              sets: 4
-              reps: "10/arm"
-              notes: "Core integration"
-            - type: "accessory"
-              name: "Scapular Push-up"
-              sets: 3
-              reps: "15"
-              notes: "Scapular control"
-            - type: "accessory"
-              name: "Plyo Push-up"
-              sets: 3
-              reps: "5"
-              notes: "Explosive push"
-        - title: "Lower 1: Power & Pause"
-          week: "Cycle 3 - Week 9"
-          exercises:
-            - type: "main"
-              name: "Pause Back Squat"
-              sets: 4
-              reps: "4"
-              notes: "3-sec pause"
-            - type: "accessory"
-              name: "Kettlebell Swing"
-              sets: 5
-              reps: "15"
-              notes: "Hip snap power"
-            - type: "accessory"
-              name: "Jump Squat"
-              sets: 4
-              reps: "4"
-              notes: "Explosive legs"
-            - type: "accessory"
-              name: "Cossack Squat"
-              sets: 3
-              reps: "8/side"
-              notes: "Lateral mobility"
-        - title: "Upper 2: Speed & Strength"
-          week: "Cycle 3 - Week 9"
-          exercises:
-            - type: "main"
-              name: "Z-Press"
-              sets: 4
-              reps: "6"
-              notes: "Seated floor press"
-            - type: "accessory"
-              name: "Chest-to-Bar Pull-up"
-              sets: 6
-              reps: "3"
-              notes: "Speed focus"
-            - type: "accessory"
-              name: "Ring Row (Tempo 3-1-X)"
-              sets: 3
-              reps: "AMRAP"
-              notes: "Controlled tempo"
-            - type: "accessory"
-              name: "Overhead Carry"
-              sets: 3
-              reps: "30m"
-              notes: "Overhead stability"
-            - type: "accessory"
-              name: "Hammer Curl"
-              sets: 3
-              reps: "15"
-              notes: "Grip strength"
-        - title: "Lower 2: Power & Volume"
-          week: "Cycle 3 - Week 9"
-          exercises:
-            - type: "main"
-              name: "Deficit Deadlift"
-              sets: 1
-              reps: "5"
-              notes: "Increased ROM"
-            - type: "accessory"
-              name: "Jump Switch Lunge"
-              sets: 3
-              reps: "12/leg"
-              notes: "Power focus"
-            - type: "accessory"
-              name: "KB Swing (heavy)"
-              sets: 10
-              reps: "10 (EMOM)"
-              notes: "Every minute on minute"
-            - type: "accessory"
-              name: "Zercher Squat"
-              sets: 3
-              reps: "6"
-              notes: "Front-loaded"
-            - type: "accessory"
-              name: "Strict Toes-to-Bar"
-              sets: 3
-              reps: "10"
-              notes: "Hanging core"
+    2:
+      name: "4-Day Upper/Lower Split"
+      description: "4-Day Upper/Lower Split for targeted muscle development"
+      structure:
+        - "Upper 1: Horizontal Push/Pull"
+        - "Lower 1: Squat + Posterior Chain"
+        - "Upper 2: Vertical Push/Pull"
+        - "Lower 2: Power + Deadlift"
+      progression_model:
+        - "Cycle 1: Base Strength (Weeks 1-4)"
+        - "Cycle 2: Unilateral & Core (Weeks 5-8)"
+        - "Cycle 3: Power & Plyometrics (Weeks 9-12)"
+        - "Week 13: Deload (-20% loads)"
+      cycles:
+        - name: "Base Strength"
+          description: "Focus on building foundational strength with compound movements. Emphasize proper form and progressive overload."
+          days:
+            - title: "Upper 1: Horizontal Push/Pull"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Bench Press"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Main horizontal push"
+                - type: "accessory"
+                  name: "Bent-over Row"
+                  sets: 3
+                  reps: "8"
+                  notes: "Horizontal pull"
+                - type: "accessory"
+                  name: "Incline DB Press"
+                  sets: 3
+                  reps: "8"
+                  notes: "Upper chest"
+                - type: "accessory"
+                  name: "Face Pull"
+                  sets: 3
+                  reps: "15"
+                  notes: "Rear delt/upper back"
+                - type: "accessory"
+                  name: "Dips"
+                  sets: 3
+                  reps: "10"
+                  notes: "Tricep/chest"
+            - title: "Lower 1: Squat Focus"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Back Squat"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Main leg movement"
+                - type: "accessory"
+                  name: "RDL"
+                  sets: 3
+                  reps: "8"
+                  notes: "Posterior chain"
+                - type: "accessory"
+                  name: "Bulgarian Split-Squat"
+                  sets: 3
+                  reps: "8/leg"
+                  notes: "Unilateral strength"
+                - type: "accessory"
+                  name: "Nordic Curl"
+                  sets: 3
+                  reps: "6"
+                  notes: "Hamstring eccentric"
+            - title: "Upper 2: Vertical Push/Pull"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Overhead Press"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Vertical push"
+                - type: "accessory"
+                  name: "Weighted Pull-up"
+                  sets: 3
+                  reps: "5-8"
+                  notes: "Vertical pull"
+                - type: "accessory"
+                  name: "Landmine One-Arm Press"
+                  sets: 3
+                  reps: "10/arm"
+                  notes: "Unilateral press"
+                - type: "accessory"
+                  name: "Lateral Raise"
+                  sets: 3
+                  reps: "12"
+                  notes: "Deltoid isolation"
+                - type: "accessory"
+                  name: "Curls"
+                  sets: 3
+                  reps: "12"
+                  notes: "Bicep isolation"
+            - title: "Lower 2: Power & Deadlift"
+              week: "Cycle 1 - Week 1"
+              exercises:
+                - type: "main"
+                  name: "Power Clean"
+                  sets: 4
+                  reps: "2 @ 65-70%"
+                  notes: "Explosive power"
+                - type: "main"
+                  name: "Deadlift"
+                  sets: 1
+                  reps: "5"
+                  notes: "Heavy single set"
+                - type: "accessory"
+                  name: "Hip Thrust"
+                  sets: 3
+                  reps: "10"
+                  notes: "Glute focus"
+                - type: "accessory"
+                  name: "Good Morning"
+                  sets: 3
+                  reps: "10"
+                  notes: "Posterior chain"
+                - type: "accessory"
+                  name: "Plank"
+                  sets: 3
+                  reps: "60s"
+                  notes: "Core stability"
+        - name: "Unilateral & Core"
+          description: "Emphasis shifts to unilateral movements and core stability. This phase challenges balance, coordination, and addresses strength imbalances."
+          days:
+            - title: "Upper 1: Unilateral Push Focus"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Close-Grip Bench"
+                  sets: "2×5"
+                  reps: "+ AMRAP"
+                  notes: "Tricep emphasis"
+                - type: "accessory"
+                  name: "Chest-Supported Row"
+                  sets: 4
+                  reps: "8"
+                  notes: "Stable pulling"
+                - type: "accessory"
+                  name: "Tall-Kneel Landmine Press"
+                  sets: 4
+                  reps: "8/arm"
+                  notes: "Unilateral core press"
+                - type: "accessory"
+                  name: "Band Pull-Apart"
+                  sets: 3
+                  reps: "20"
+                  notes: "Rear delt activation"
+                - type: "accessory"
+                  name: "Ring Push-up"
+                  sets: 3
+                  reps: "AMRAP"
+                  notes: "Instability challenge"
+            - title: "Lower 1: Unilateral Leg Focus"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Front Squat"
+                  sets: 3
+                  reps: "5"
+                  notes: "Front-loaded squat"
+                - type: "accessory"
+                  name: "Single-leg RDL"
+                  sets: 3
+                  reps: "8/leg"
+                  notes: "Unilateral hinge"
+                - type: "accessory"
+                  name: "Cyclist Squat"
+                  sets: 3
+                  reps: "10"
+                  notes: "Heels elevated"
+                - type: "accessory"
+                  name: "Jefferson Curl (light)"
+                  sets: 3
+                  reps: "10"
+                  notes: "Spinal mobility"
+            - title: "Upper 2: Power Press Focus"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Push-Press"
+                  sets: 5
+                  reps: "3 @ 70-75%"
+                  notes: "Power development"
+                - type: "accessory"
+                  name: "Neutral-Grip Pull-up"
+                  sets: 4
+                  reps: "AMRAP"
+                  notes: "Grip variation"
+                - type: "accessory"
+                  name: "Seated Z-Press"
+                  sets: 3
+                  reps: "6"
+                  notes: "Core isolation"
+                - type: "accessory"
+                  name: "Bradford Press"
+                  sets: 3
+                  reps: "10"
+                  notes: "Shoulder mobility"
+                - type: "accessory"
+                  name: "EZ-Bar Curl"
+                  sets: 3
+                  reps: "10"
+                  notes: "Bicep focus"
+            - title: "Lower 2: Unilateral Power"
+              week: "Cycle 2 - Week 5"
+              exercises:
+                - type: "main"
+                  name: "Hang-Clean High-Pull"
+                  sets: 5
+                  reps: "2"
+                  notes: "Explosive pull"
+                - type: "main"
+                  name: "Trap-Bar Deadlift"
+                  sets: 1
+                  reps: "5"
+                  notes: "Neutral grip"
+                - type: "accessory"
+                  name: "Zercher Good Morning"
+                  sets: 3
+                  reps: "8"
+                  notes: "Front-loaded hinge"
+                - type: "accessory"
+                  name: "Front-Foot-Elevated Split-Squat"
+                  sets: 3
+                  reps: "10/leg"
+                  notes: "Unilateral challenge"
+                - type: "accessory"
+                  name: "Suitcase Carry"
+                  sets: 3
+                  reps: "40m"
+                  notes: "Anti-lateral flexion"
+        - name: "Power & Plyometrics"
+          description: "Peak phase focusing on power and plyometric development. Exercises emphasize speed, explosiveness, and athletic performance."
+          days:
+            - title: "Upper 1: Dynamic Power"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Dynamic Bench"
+                  sets: 8
+                  reps: "3 @ 55% + bands"
+                  notes: "Speed with bands"
+                - type: "accessory"
+                  name: "Meadows Row"
+                  sets: 4
+                  reps: "8/arm"
+                  notes: "T-bar row variation"
+                - type: "accessory"
+                  name: "Half-Kneel Filly Press"
+                  sets: 4
+                  reps: "10/arm"
+                  notes: "Core integration"
+                - type: "accessory"
+                  name: "Scapular Push-up"
+                  sets: 3
+                  reps: "15"
+                  notes: "Scapular control"
+                - type: "accessory"
+                  name: "Plyo Push-up"
+                  sets: 3
+                  reps: "5"
+                  notes: "Explosive push"
+            - title: "Lower 1: Power & Pause"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Pause Back Squat"
+                  sets: 4
+                  reps: "4"
+                  notes: "3-sec pause"
+                - type: "accessory"
+                  name: "Kettlebell Swing"
+                  sets: 5
+                  reps: "15"
+                  notes: "Hip snap power"
+                - type: "accessory"
+                  name: "Jump Squat"
+                  sets: 4
+                  reps: "4"
+                  notes: "Explosive legs"
+                - type: "accessory"
+                  name: "Cossack Squat"
+                  sets: 3
+                  reps: "8/side"
+                  notes: "Lateral mobility"
+            - title: "Upper 2: Speed & Strength"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Z-Press"
+                  sets: 4
+                  reps: "6"
+                  notes: "Seated floor press"
+                - type: "accessory"
+                  name: "Chest-to-Bar Pull-up"
+                  sets: 6
+                  reps: "3"
+                  notes: "Speed focus"
+                - type: "accessory"
+                  name: "Ring Row (Tempo 3-1-X)"
+                  sets: 3
+                  reps: "AMRAP"
+                  notes: "Controlled tempo"
+                - type: "accessory"
+                  name: "Overhead Carry"
+                  sets: 3
+                  reps: "30m"
+                  notes: "Overhead stability"
+                - type: "accessory"
+                  name: "Hammer Curl"
+                  sets: 3
+                  reps: "15"
+                  notes: "Grip strength"
+            - title: "Lower 2: Power & Volume"
+              week: "Cycle 3 - Week 9"
+              exercises:
+                - type: "main"
+                  name: "Deficit Deadlift"
+                  sets: 1
+                  reps: "5"
+                  notes: "Increased ROM"
+                - type: "accessory"
+                  name: "Jump Switch Lunge"
+                  sets: 3
+                  reps: "12/leg"
+                  notes: "Power focus"
+                - type: "accessory"
+                  name: "KB Swing (heavy)"
+                  sets: 10
+                  reps: "10 (EMOM)"
+                  notes: "Every minute on minute"
+                - type: "accessory"
+                  name: "Zercher Squat"
+                  sets: 3
+                  reps: "6"
+                  notes: "Front-loaded"
+                - type: "accessory"
+                  name: "Strict Toes-to-Bar"
+                  sets: 3
+                  reps: "10"
+                  notes: "Hanging core"
 
 development:
   <<: *default

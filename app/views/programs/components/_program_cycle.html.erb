@@ -1,0 +1,7 @@
+<div class="mb-8">
+  <h2 class="font-bold text-xl mb-1"><%= cycle[:name] %></h2>
+  <p class="text-gray-500 mb-2"><%= cycle[:description] %></p>
+  <% cycle[:days].each do |day| %>
+    <%= render partial: "programs/components/program_day", locals: { day: day } %>
+  <% end %>
+</div>
