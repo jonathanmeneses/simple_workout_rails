@@ -19,9 +19,12 @@
 ✅ **Data Migration**: From YAML to hardcoded Ruby data
 ✅ **Navigation**: Simple, reliable `window.location.href` approach
 ✅ **Responsive Design**: Tailwind CSS styling
+✅ **Programs Index**: Updated with turbo for view transitions 
+
+### Outstanding Implementation
+
 
 ### Technical Decisions Made
-- **Simplified Navigation**: Chose `window.location.href` over complex Turbo Streams
 - **Future Optimization Path**: Turbo Frames identified as ideal next step
 - **Data Source**: Hardcoded Ruby data in `db/hardcoded_program_data.rb`
 - **Testing**: All functionality verified working
@@ -36,6 +39,20 @@ This plan combines a step-by-step beginner approach with advanced best practices
 ---
 
 ## Phase 1: Project Setup & Core Models (Weeks 1-2)
+
+### Phase 1 Goals:
+- [ ] Create initial models necessary to represent workout programs
+- [ ] Create initial controllers that support generation of workout programs
+- [ ] Support creation and attachment of workout sessions to workout programs
+- [ ] Support creation and aattachment of exercsies to workout sessions
+- [ ] Build workout program generation engine fthat includes all 3 levels
+
+### Phase 1 Non-Goals:
+- **Storing Results**: We don't need to store user workout results
+- **Custom Exercise Selection**: We don't need to customize exercises based on what's available to users
+- **Non-standard programs**: We'll focus on lifting initially, so we can keep it well scoped
+- **Ultra-optimized prescription**: We don't need to worry about super-setting, circuits, couplets, etc.
+- **Beautiful front end**: We have a way to display our exercises. We'll work on the front end later
 
 ### ✅ Beginner Checklist
 1. **Create your Rails project**
@@ -99,6 +116,8 @@ This plan combines a step-by-step beginner approach with advanced best practices
   - Consider using [ViewComponent](https://viewcomponent.org/) for reusable UI pieces.
 - **Hotwire**
   - Rails 8 comes with Turbo/Stimulus for SPA-like navigation without much JS.
+
+###
 
 ---
 

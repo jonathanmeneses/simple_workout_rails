@@ -26,7 +26,7 @@ default: &default
                   notes: "Main strength movement"
                 - type: "main"
                   name: "Overhead Press (OHP)"
-                  sets: "2×5"
+                  sets: "2×5"pps 
                   reps: "+ AMRAP"
                   notes: "Upper body strength"
                 - type: "accessory"

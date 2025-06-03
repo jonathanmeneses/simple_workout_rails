@@ -73,3 +73,5 @@ end
 gem "pundit"
 
 gem "tailwindcss-ruby", "~> 4.1"
+
+gem "prettier"

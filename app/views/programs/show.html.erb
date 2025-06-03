@@ -1,78 +1,65 @@
-<div class="min-h-screen bg-white flex flex-col items-center py-12">
+<div class="min-h-screen bg-white flex flex-col items-center lg:py-12">
   <div class="w-full max-w-4xl bg-white rounded-xl shadow p-8">
-    
     <!-- Header -->
-    <div class="mb-6 flex items-center justify-between">
-      <div>
-      <h1 class="font-bold text-2xl mb-2 text-primary">12-Week Program</h1>
-      <p class="text-gray-500 mb-4"><%= @program.description %></p>
+    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 pb-4">
+      <div class="flex-1 pr-4">
+        <h1 class="font-bold text-3xl mb-2 text-gray-900"><%= @program.name %></h1>
+        <p class="text-gray-600 text-lg leading-relaxed"><%= @program.description %></p>
       </div>
-      <div class="flex gap-2">
-      <%= link_to "Back to Programs", programs_path, class: "bg-blue-500 text-white px-4 py-2 rounded-md" %>
-      <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Print</button>
+      <div class="flex gap-3 lg:flex-shrink-0">
+        <%= link_to "Back", programs_path, 
+        class: "inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors" %>
+        <button onclick="window.print()" 
+            class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
+          Print
+        </button>
       </div>
     </div>
-
-    
     <%= turbo_frame_tag "program_content" do %>
-
-
-
-    <!-- View Mode Controls -->
-    <div class="mb-6">
-      <div class="flex gap-2 border-b border-gray-200">
-        
-        <%= link_to "Description", 
+      <!-- View Mode Controls -->
+      <div class="mb-6">
+        <div class="flex gap-2 border-b border-gray-200">
+          <%= link_to "Description", 
             program_path(@program, view_mode: 'description'), 
             class: "px-4 py-2 text-sm font-medium border-b-2 #{'border-blue-500 text-blue-600' if @view_mode == 'description'} #{'border-transparent text-gray-500 hover:text-gray-700' unless @view_mode == 'description'}",
             data: { turbo_frame: "program_content" } %>
-        
-        <!-- Program Tab (NEW: Turbo way!) -->
-        <%= link_to "Program", 
+          <!-- Program Tab (NEW: Turbo way!) -->
+          <%= link_to "Program", 
             program_path(@program, view_mode: 'program', cycle: @selected_cycle), 
             class: "px-4 py-2 text-sm font-medium border-b-2 #{'border-blue-500 text-blue-600' if @view_mode == 'program'} #{'border-transparent text-gray-500 hover:text-gray-700' unless @view_mode == 'program'}",
             data: { turbo_frame: "program_content" } %>
-        
-        <!-- Schedule Tab (old way) -->
-        <%= link_to "Schedule",
+          <!-- Schedule Tab (old way) -->
+          <%= link_to "Schedule",
             program_path(@program, view_mode: 'schedule'),
             class: "px-4 py-2 text-sm font-medium border-b-2 #{'border-blue-500 text-blue-600' if @view_mode == 'schedule'} #{'border-transparent text-gray-500 hover:text-gray-700' unless @view_mode == 'schedule'}",
             data: { turbo_frame: "program_content" } %>
-
-    </div>
-
-    <!-- TURBO FRAME: Fast updates for Program tab -->
-    
-      
-      <!-- Cycle Selector (only shows in program mode) -->
-      <% if @view_mode == 'program' %>
-        <div class="mb-6">
-          <label class="block text-sm font-medium text-gray-700 mb-2">Select Cycle:</label>
-          
-          <%= form_with url: program_path(@program), 
+        </div>
+        <!-- TURBO FRAME: Fast updates for Program tab -->
+        <!-- Cycle Selector (only shows in program mode) -->
+        <% if @view_mode == 'program' %>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Select Cycle:</label>
+            <%= form_with url: program_path(@program), 
                         method: :get, 
                         local: false,
                         data: { turbo_frame: "program_content" },
                         id: "cycle_form" do |f| %>
-            <%= f.hidden_field :view_mode, value: 'program' %>
-            <%= f.select :cycle, 
+              <%= f.hidden_field :view_mode, value: 'program' %>
+              <%= f.select :cycle, 
                 options_from_collection_for_select(@program.workout_cycles, :name, :name, @selected_cycle),
                 {},
                 { 
                   class: "border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500",
                   onchange: "this.form.requestSubmit();"
                 } %>
-          <% end %>
-        </div>
+            <% end %>
+          </div>
+        <% end %>
+        <!-- Content Area -->
+        <%= render partial: "program_content" %>
       <% end %>
-
-      <!-- Content Area -->
-      <%= render partial: "program_content" %>
-      
-    <% end %>
-
-    <footer class="text-center text-gray-400 text-sm mt-8">
-      Workout Program Generator © 2025 &bull; <a href="#" class="underline">About</a> &bull; <a href="#" class="underline">Movement Reference</a>
-    </footer>
+      <footer class="text-center text-gray-400 text-sm mt-8">
+        Workout Program Generator &copy; 2025 &bull; <a href="#" class="underline">About</a> &bull; <a href="#" class="underline">Movement Reference</a>
+      </footer>
+    </div>
   </div>
-</div>

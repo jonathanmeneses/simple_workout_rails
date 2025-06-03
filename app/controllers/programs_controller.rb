@@ -1,7 +1,8 @@
 class ProgramsController < ApplicationController
   allow_unauthenticated_access
-  
+
   def index
+    @selected_program_type = params[:program_type] || "3-day"
     @program_types = [
       {
         type: "3-day",
@@ -9,7 +10,7 @@ class ProgramsController < ApplicationController
         programs: WorkoutProgram.where(program_type: :full_body_3_day)
       },
       {
-        type: "4-day", 
+        type: "4-day",
         name: "4-Day Upper/Lower",
         programs: WorkoutProgram.where(program_type: :upper_lower_4_day)
       }
