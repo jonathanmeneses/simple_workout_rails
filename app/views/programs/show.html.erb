@@ -6,13 +6,15 @@
         <h1 class="font-bold text-3xl mb-2 text-gray-900"><%= @program.name %></h1>
         <p class="text-gray-600 text-lg leading-relaxed"><%= @program.description %></p>
       </div>
-      <div class="flex gap-3 lg:flex-shrink-0">
-        <%= link_to "Back", programs_path, 
-        class: "inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors" %>
+      <div class="flex gap-3 lg:flex-shrink-0 items-center"> <%# Added items-center for better alignment %>
+        <%= link_to "Edit", edit_program_path(@program), class: "inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors" %>
+        <%= button_to "Delete", program_path(@program), method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "inline-flex items-center px-4 py-2 border border-red-500 rounded-md text-sm font-medium text-red-700 bg-white hover:bg-red-50 transition-colors" %>
         <button onclick="window.print()" 
             class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors">
           Print
         </button>
+        <%= link_to "Back to Programs", programs_path,
+        class: "inline-flex items-center px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors" %>
       </div>
     </div>
     <%= turbo_frame_tag "program_content" do %>

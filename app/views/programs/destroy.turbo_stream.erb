@@ -1,0 +1,7 @@
+<%# Remove the program from the list %>
+<%= turbo_stream.remove @program %> <%# @program must have a DOM ID like dom_id(@program) %>
+
+<%# Update flash messages %>
+<%= turbo_stream.replace "flash_messages" do %>
+  <%= render "shared/flash_messages" %>
+<% end %>

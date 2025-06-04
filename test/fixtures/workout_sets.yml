@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  workout_exercise: one
+  order: 1
+  target_reps: MyString
+  target_weight: MyString
+  notes: MyText
+
+two:
+  workout_exercise: two
+  order: 1
+  target_reps: MyString
+  target_weight: MyString
+  notes: MyText

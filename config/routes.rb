@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :programs, only: [:index, :show]
+  resources :programs
   
   resource :session
   resources :passwords, param: :token

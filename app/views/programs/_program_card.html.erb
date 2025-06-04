@@ -1,0 +1,11 @@
+<div id="<%= dom_id(program) %>" class="program-card">
+  <h2><%= link_to program.name, program_path(program) %></h2>
+  <p><%= truncate(program.description, length: 100) %></p>
+  <p><strong>Type:</strong> <%= program.program_type.humanize %></p>
+  <div>
+    <%= link_to "View", program_path(program) %>
+    <%= link_to "Edit", edit_program_path(program) %>
+    <%= button_to "Delete", program_path(program), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+  </div>
+</div>
+<hr>

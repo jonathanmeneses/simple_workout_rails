@@ -1,0 +1,12 @@
+<%# Prepend the new program to the list (assuming user_programs_list is the ID of the container) %>
+<%= turbo_stream.append "user_programs_list" do %>
+  <%= render partial: "programs/program_card", locals: { program: @program } %>
+<% end %>
+
+<%# If you have a specific "new program" form that needs to be cleared or hidden, you can add that here %>
+<%# Example: turbo_stream.replace "new_program_form", "" %>
+
+<%# Update flash messages %>
+<%= turbo_stream.replace "flash_messages" do %>
+  <%= render "shared/flash_messages" %>
+<% end %>

@@ -1,0 +1,31 @@
+<%= form_with(model: program, local: false) do |form| %>
+  <% if program.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(program.errors.count, "error") %> prohibited this program from being saved:</h2>
+      <ul>
+        <% program.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :program_type %>
+    <%= form.select :program_type, WorkoutProgram.program_types.keys.map { |pt| [pt.humanize, pt] }, prompt: "Select a type" %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

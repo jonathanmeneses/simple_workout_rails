@@ -1,51 +1,27 @@
-<div class="min-h-screen bg-white flex flex-col items-center py-12">
-  <h1 class="font-bold text-2xl mb-2 flex justify-start gap-2 text-primary">
-    Workout Program Generator
-  </h1>
-  <p class="text-gray-500 mb-6 ">Generate a print-friendly workout program in seconds. No login, no tracking, just results.</p>
-  <div class="w-full max-w-xl bg-white rounded-xl shadow p-8">
-    <div class="mb-6">
-      <h2 class="font-semibold text-lg mb-1">Select Your Program</h2>
-      <p class="text-gray-500 text-sm mb-4">Choose a workout program that fits your schedule</p>
-      <!-- TURBO FRAME: Contains both tabs and content -->
-      <%= turbo_frame_tag "program_selector" do %>
-        <!-- Program Type Tabs - NOW INSIDE FRAME -->
-        <div class="flex rounded-lg overflow-hidden border border-gray-200 mb-4">
-          <% @program_types.each_with_index do |program_type, index| %>
-            <%= link_to program_type[:name], 
-                programs_path(program_type: program_type[:type]), 
-                class: "flex-1 py-2 text-center font-medium transition-colors focus:outline-none #{'bg-gray-100' if @selected_program_type == program_type[:type]} #{'bg-white hover:bg-gray-50' unless @selected_program_type == program_type[:type]} text-gray-800 #{'border-r border-gray-200' if index < @program_types.length - 1}",
-                data: { turbo_frame: "program_selector" } %>
-          <% end %>
-        </div>
-        <!-- Program Details - Shows only selected type -->
-        <div id="program-details">
-          <% selected_type = @program_types.find { |pt| pt[:type] == @selected_program_type } %>
-          <% if selected_type %>
-            <% selected_type[:programs].each do |program| %>
-              <div class="border rounded-lg p-4 mb-2">
-                <h3 class="font-semibold text-lg mb-1"><%= program.name %></h3>
-                <p class="text-gray-500 text-sm mb-3"><%= program.description %></p>
-                <ul class="text-gray-700 text-sm mb-4">
-                  <% program.workout_cycles.first&.workout_sessions&.limit(4)&.each do |session| %>
-                    <li class="flex items-center gap-2 mb-1">
-                      <span class="text-lg"> &#187; </span> <%= session.name %>
-                    </li>
-                  <% end %>
-                </ul>
-                <%= link_to "Select #{selected_type[:name]}", 
-                      #break out of turbo frame
-                      program_path(program[:id]), 
-                      data: { turbo_frame: "_top" },
-                      class: "block w-full bg-gray-900 text-white py-2 rounded-lg font-medium hover:bg-gray-800 transition text-center" %>
-              </div>
-            <% end %>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-    <footer class="text-center text-gray-400 text-sm mt-8">
-      Workout Program Generator &copy; 2025 &bull; <a href="#" class="underline">About</a> &bull; <a href="#" class="underline">Movement Reference</a>
-    </footer>
+<div class="container mx-auto px-4 py-8">
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold">My Workout Programs</h1>
+    <%= link_to "New Workout Program", new_program_path, class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
   </div>
+
+  <%# Flash messages will be handled by a shared partial, potentially via Turbo Stream updates %>
+  <%= render "shared/flash_messages" %>
+
+  <%= turbo_frame_tag "user_programs_list" do %>
+    <%# The controller populates @program_types as an array of hashes, each hash has a :programs key %>
+    <% if @program_types.nil? || @program_types.all? { |pt| pt[:programs].empty? } %>
+      <p>You haven't created any workout programs yet. Get started by creating one!</p>
+    <% else %>
+      <% @program_types.each do |program_type_group| %>
+        <% if program_type_group[:programs].any? %>
+          <h2 class="text-xl font-semibold mt-6 mb-3"><%= program_type_group[:name] %></h2>
+          <div class="program-cards-container"> <%# Simple div for now, can add grid later %>
+            <% program_type_group[:programs].each do |program| %>
+              <%= render "program_card", program: program %>
+            <% end %>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
 </div>

@@ -1,4 +1,5 @@
 class WorkoutProgram < ApplicationRecord
+  belongs_to :user, optional: true
   has_many :workout_cycles, dependent: :destroy
   has_many :workout_sessions, through: :workout_cycles
   
