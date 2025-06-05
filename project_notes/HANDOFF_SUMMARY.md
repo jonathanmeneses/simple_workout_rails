@@ -1,32 +1,42 @@
-6/4/2025
-This session is being continued from a previous conversation that ran out of context. The 
-  conversation is summarized below:
-  Analysis:
-  The conversation began with the user asking me to review project status and propose next steps. I 
-  analyzed the current state of a Rails 8 workout tracking application and found that Phase 0 (UI 
-  foundation) and Phase 2 (authentication) were complete, but there was an opportunity to implement 
-  an exercise substitution system as described in a PRD.
+6/4/2025 - UPDATED AFTER JSONB FIX AND UI INTEGRATION SESSION
 
-  The user then explicitly requested that I implement this substitution system, leading to a 
-  comprehensive development session where I:
+This session continued from a previous conversation that implemented the exercise substitution system. The user requested me to fix the critical JSONB query syntax issue and integrate the substitution UI into the program view.
 
-  1. Created a JSONB-optimized database schema for exercise attributes
-  2. Built models for exercise substitution logic
-  3. Implemented a complete UI with Turbo Frames
-  4. Added helper methods and reusable Stimulus controllers
-  5. Populated sample exercise data
-  6. Updated comprehensive documentation
+## Session Accomplishments:
 
-  Key technical decisions included using JSONB arrays with GIN indexes for performance, implementing
-   pure Turbo Frame navigation without custom JavaScript, and creating a smart substitution 
-  algorithm that prioritizes movement patterns while allowing cross-pattern flexibility.
+### ✅ CRITICAL ISSUE RESOLVED: JSONB Query Syntax
+**Fixed broken PostgreSQL operators** in `app/models/exercise.rb`:
+```ruby
+# BEFORE (Broken):
+.where("primary_muscles && ?::jsonb", self.primary_muscles.to_json)
 
-  A critical issue was identified: the JSONB query syntax contains PostgreSQL operator errors that 
-  prevent the substitution system from functioning. The user specifically requested documentation 
-  updates to reflect current status and next steps, which I completed thoroughly.
+# AFTER (Working):  
+.where("primary_muscles ?| array[:muscles]", muscles: self.primary_muscles)
+```
 
-  The conversation concluded with the user requesting a git commit, which was successfully completed
-   with 23 files changed.
+**Verification**: Exercise substitution logic now works correctly with populated data.
+
+### ✅ UI INTEGRATION COMPLETED
+**Integrated substitution dropdowns** into the main program view:
+- Added `_exercise_substitution_dropdown.html.erb` component to `_program_content.html.erb`
+- Enhanced sets/reps display parsing from notes field
+- Fixed missing visual elements: equipment selector and substitution dropdowns now visible
+- Improved exercise layout with proper substitution state indicators
+
+### ✅ DATA ARCHITECTURE ISSUES IDENTIFIED
+**Root cause of substitution problems**: Incorrect movement pattern assignments
+- **Example**: OHP assigned to "squat" movement pattern instead of "vertical_push"
+- **Impact**: Caused wrong substitutions (Goblet Squat appearing as OHP substitute)
+- **Solution**: Created comprehensive exercise attribute schema for user to populate
+
+### ✅ DOCUMENTATION AND PROCESS SETUP
+**Created complete data population workflow**:
+- `exercise_attributes_needed.csv` - All 96 exercises with current attributes
+- `EXERCISE_ATTRIBUTE_SCHEMA.md` - Complete schema for n8n workflow
+- `script/fix_movement_patterns.rb` - Movement pattern correction utilities
+
+## Previous Session Summary:
+The previous conversation implemented a comprehensive exercise substitution system with JSONB optimization, pure Turbo Frame UI, helper methods, and reusable Stimulus controllers. A critical JSONB query syntax error was identified as a blocker.
 
   Summary:
   1. Primary Request and Intent:

@@ -2,7 +2,7 @@ class ExerciseSubstitution < ApplicationRecord
   belongs_to :original_exercise, class_name: 'Exercise'
   belongs_to :alternative_exercise, class_name: 'Exercise'
   
-  validates :compatibility_score, inclusion: { in: 1..10 }
+  validates :compatibility_score, inclusion: { in: 1..10, message: "must be between 1 and 10" }
   validates :original_exercise_id, uniqueness: { scope: :alternative_exercise_id }
   
   validate :exercises_cannot_be_same

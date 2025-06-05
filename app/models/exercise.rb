@@ -78,9 +78,9 @@ class Exercise < ApplicationRecord
     
     # Filter cross-pattern by muscle or training effect overlap
     if self.primary_muscles.any?
-      cross_pattern = cross_pattern.where("primary_muscles && ?::jsonb", self.primary_muscles.to_json)
+      cross_pattern = cross_pattern.where("primary_muscles ?| array[:muscles]", muscles: self.primary_muscles)
     elsif self.training_effects.any?
-      cross_pattern = cross_pattern.where("training_effects && ?::jsonb", self.training_effects.to_json)
+      cross_pattern = cross_pattern.where("training_effects ?| array[:effects]", effects: self.training_effects)
     end
     
     # Combine results: prioritize same movement pattern, include some cross-pattern

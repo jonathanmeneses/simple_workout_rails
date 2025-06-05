@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  original_exercise: one
-  alternative_exercise: one
-  substitution_reason: MyString
-  compatibility_score: 1
+back_squat_to_goblet_squat:
+  original_exercise: back_squat
+  alternative_exercise: deadlift
+  substitution_reason: "Equipment availability"
+  compatibility_score: 8
 
-two:
-  original_exercise: two
-  alternative_exercise: two
-  substitution_reason: MyString
-  compatibility_score: 1
+bench_press_to_overhead_press:
+  original_exercise: bench_press
+  alternative_exercise: overhead_press
+  substitution_reason: "Movement pattern similarity"
+  compatibility_score: 7

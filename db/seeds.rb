@@ -88,7 +88,9 @@ EXERCISES.each do |ex|
     exercise_type: ex[:type],
     movement_pattern: movement_pattern_records[ex[:movement_pattern]],
     description: ex[:description],
-    notes: ex[:notes]
+    notes: ex[:notes],
+    complexity_level: ex[:type] == "main" ? :intermediate : :beginner,
+    effectiveness_score: ex[:type] == "main" ? 8 : 6
   )
 end
 
@@ -146,11 +148,21 @@ demo_data.each do |program_id, program_data|
         end
 
         # Create the workout exercise
+        # Store sets/reps in notes if they're strings, otherwise use the integer columns
+        sets_value = exercise_data[:sets].is_a?(Integer) ? exercise_data[:sets] : nil
+        reps_value = exercise_data[:reps].is_a?(Integer) ? exercise_data[:reps] : nil
+        
+        # Build comprehensive notes that include sets/reps info plus original notes
+        notes_parts = []
+        notes_parts << exercise_data[:sets] if exercise_data[:sets].present?
+        notes_parts << exercise_data[:reps] if exercise_data[:reps].present?
+        notes_parts << exercise_data[:notes] if exercise_data[:notes].present?
+        
         workout_session.workout_exercises.create!(
           exercise: exercise,
-          sets: exercise_data[:sets].is_a?(Integer) ? exercise_data[:sets] : nil,
-          reps: exercise_data[:reps].is_a?(Integer) ? exercise_data[:reps] : nil,
-          notes: [exercise_data[:sets], exercise_data[:reps], exercise_data[:notes]].compact.join(" - "),
+          sets: sets_value,
+          reps: reps_value,
+          notes: notes_parts.join(" - "),
           order_position: index + 1,
           exercise_type: exercise_data[:type] == "main" ? :main : :accessory
         )

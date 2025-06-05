@@ -4,6 +4,8 @@ back_squat:
   exercise_type: main
   description: "Primary squat movement"
   notes: "Focus on depth and control"
+  complexity_level: intermediate
+  effectiveness_score: 9
 
 deadlift:
   name: "Deadlift"
@@ -11,6 +13,8 @@ deadlift:
   exercise_type: main
   description: "Primary deadlift movement"
   notes: "Full range of motion"
+  complexity_level: intermediate
+  effectiveness_score: 9
 
 bench_press:
   name: "Bench Press"
@@ -18,6 +22,8 @@ bench_press:
   exercise_type: main
   description: "Primary horizontal push"
   notes: "Touch chest, full lockout"
+  complexity_level: intermediate
+  effectiveness_score: 8
 
 overhead_press:
   name: "Overhead Press (OHP)"
@@ -25,6 +31,8 @@ overhead_press:
   exercise_type: main
   description: "Primary vertical push"
   notes: "Strict press, no leg drive"
+  complexity_level: intermediate
+  effectiveness_score: 8
 
 chin_ups:
   name: "Chin-ups"
@@ -32,6 +40,8 @@ chin_ups:
   exercise_type: accessory
   description: "Bodyweight vertical pull"
   notes: "Full range of motion"
+  complexity_level: beginner
+  effectiveness_score: 7
 
 chest_supported_row:
   name: "Chest-Supported Row"
@@ -39,3 +49,5 @@ chest_supported_row:
   exercise_type: accessory
   description: "Horizontal pulling movement"
   notes: "Squeeze shoulder blades"
+  complexity_level: beginner
+  effectiveness_score: 6

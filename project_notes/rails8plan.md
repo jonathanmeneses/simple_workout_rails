@@ -160,29 +160,38 @@ This plan combines a step-by-step beginner approach with advanced best practices
 
 ---
 
-## Phase 3: Exercise Substitution System ✅ COMPLETE (Architecture) / 🚧 IN PROGRESS (Data)
+## Phase 3: Exercise Substitution System ✅ COMPLETE (Architecture & Core Functionality)
 
-### ✅ Completed: Smart Substitution Engine (Phase 3A & 3B)
-- **JSONB-optimized Exercise model** with `primary_muscles`, `equipment_required`, `training_effects`
-- **GIN indexes** for fast containment searches
-- **Validation whitelists** with model constants
-- **Pure Turbo Frame UI** with equipment selector and substitution dropdowns
-- **Helper methods** for clean view logic separation
-- **Reusable Stimulus controller** (`form_controller.js`) for auto-submit behavior
+### ✅ Completed: Smart Substitution Engine (Phase 3A, 3B & 3C Core)
+- **✅ JSONB-optimized Exercise model** with `primary_muscles`, `equipment_required`, `training_effects`
+- **✅ GIN indexes** for fast containment searches
+- **✅ Validation whitelists** with model constants
+- **✅ Pure Turbo Frame UI** with equipment selector and substitution dropdowns
+- **✅ Helper methods** for clean view logic separation
+- **✅ Reusable Stimulus controller** (`form_controller.js`) for auto-submit behavior
+- **✅ JSONB Query Syntax Fixed**: PostgreSQL operators now working correctly
+- **✅ UI Integration**: Substitution dropdowns integrated into program view
+- **✅ Sets/Reps Display**: Enhanced parsing from notes field
 
-### 🚧 In Progress: Data Population & Testing (Phase 3C)
-**✅ Sample Data:** 7 exercises populated (Back Squat, Goblet Squat, Bench Press, Deadlift, OHP, Chin-ups, Ring Row)
+### 🚧 Remaining: Complete Data Population (Phase 3D)
+**✅ Working System:** 7 exercises populated and tested (Back Squat, Goblet Squat, Bench Press, Deadlift, OHP, Chin-ups, Ring Row)
 
-**🔧 CRITICAL BLOCKER:** JSONB query syntax error in `Exercise#find_substitutes`:
-```ruby
-# BROKEN PostgreSQL syntax:
-.where("primary_muscles && ?::jsonb", self.primary_muscles.to_json)
-```
+**🔧 DATA QUALITY ISSUE IDENTIFIED:** Incorrect movement pattern assignments
+- Most exercises incorrectly assigned to "squat" movement pattern
+- Causes wrong substitutions (e.g., Goblet Squat as OHP substitute)
+- **Solution Ready**: Complete CSV and schema for user data population
 
-**📋 Next Steps:**
-1. **Fix JSONB query syntax** (high priority)
-2. Populate remaining ~89 exercise attributes
-3. Test substitution system end-to-end
+**📋 Final Steps:**
+1. **✅ COMPLETED**: Fix JSONB query syntax
+2. **🔄 IN PROGRESS**: User populates exercise attributes via n8n workflow  
+3. **PENDING**: Test substitution system with complete dataset
+4. **PENDING**: Validate substitution accuracy
+
+**📊 Data Population Status:**
+- **Files Created**: `exercise_attributes_needed.csv`, `EXERCISE_ATTRIBUTE_SCHEMA.md`
+- **Ready for User**: Complete workflow for populating all 96 exercises
+- **Current**: 7/96 exercises with attributes (functional for testing)
+- **Target**: 96/96 exercises with correct movement patterns and attributes
 
 ---
 

@@ -3,7 +3,8 @@
     "allow": [
       "Bash(curl:*)",
       "Bash(rails server:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(rails runner:*)"
     ],
     "deny": []
   }

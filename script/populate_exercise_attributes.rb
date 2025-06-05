@@ -1,4 +1,5 @@
 # Add attributes to core exercises for testing substitution system
+require_relative '../config/environment'
 
 puts "🔥 Adding exercise attributes for substitution testing..."
 

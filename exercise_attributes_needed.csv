@@ -1,0 +1,97 @@
+Exercise ID,Exercise Name,Movement Pattern,Exercise Type,Has Attributes,Current Primary Muscles,Current Equipment Required,Current Training Effects,Current Complexity Level,Current Effectiveness Score
+1,"Back Squat",squat,main,true,"quads;glutes","barbell;squat_rack","strength",beginner,9
+2,"Cyclist Squat",squat,accessory,false,"","","",beginner,5
+3,"Goblet Squat",squat,accessory,true,"quads;glutes","dumbbells","strength",beginner,9
+4,"Kettlebell Rack Squat",squat,accessory,false,"","","",beginner,5
+5,"Zercher Squat",squat,accessory,false,"","","",beginner,5
+6,"Assisted Knee-Over-Toe Squat",squat,accessory,false,"","","",beginner,5
+7,"Jump Squat",squat,accessory,false,"","","",beginner,5
+8,"Conventional Deadlift",hinge,accessory,false,"","","",beginner,5
+9,"Trap-Bar Deadlift",hinge,accessory,false,"","","",beginner,5
+10,"Romanian Deadlift",hinge,accessory,false,"","","",beginner,5
+11,"Zercher Good Morning",hinge,accessory,false,"","","",beginner,5
+12,"Single-Leg Romanian Deadlift",hinge,accessory,false,"","","",beginner,5
+13,"Hip Thrust",hinge,accessory,false,"","","",beginner,5
+14,"Jefferson Curl",hinge,accessory,false,"","","",beginner,5
+15,"Kettlebell Swing",hinge,accessory,false,"","","",beginner,5
+16,"Bench Press",horizontal_push,main,true,"chest;triceps;front_delts","barbell;bench","strength",beginner,9
+17,"Incline Dumbbell Press",horizontal_push,accessory,false,"","","",beginner,5
+18,"Dip",vertical_push,accessory,false,"","","",beginner,5
+19,"Push-Up",horizontal_push,accessory,false,"","","",beginner,5
+20,"Z Press",vertical_push,accessory,false,"","","",beginner,5
+21,"Bradford Press",vertical_push,accessory,false,"","","",beginner,5
+22,"Single-Arm Landmine Z Press",vertical_push,accessory,false,"","","",beginner,5
+23,"Tall / Half-Kneeling Landmine Press",vertical_push,accessory,false,"","","",beginner,5
+24,"Seated / Half-Kneeling Filly Press",vertical_push,accessory,false,"","","",beginner,5
+25,"Scapular Push-Up",horizontal_push,accessory,false,"","","",beginner,5
+26,"Pull-Up / Chin-Up",vertical_pull,accessory,false,"","","",beginner,5
+27,"Chest-Supported Row",horizontal_pull,accessory,false,"","","",beginner,5
+28,"Bent-Over Row",horizontal_pull,accessory,false,"","","",beginner,5
+29,"Pendlay Row",horizontal_pull,accessory,false,"","","",beginner,5
+30,"TRX / Ring Row",horizontal_pull,accessory,false,"","","",beginner,5
+31,"Muscle-Up Row",horizontal_pull,accessory,false,"","","",beginner,5
+32,"Single-Arm Dumbbell / Meadows Row",horizontal_pull,accessory,false,"","","",beginner,5
+33,"Active Hang / Scap Pull-Up",vertical_pull,accessory,false,"","","",beginner,5
+34,"Chest-to-Bar Pull-Up",vertical_pull,accessory,false,"","","",beginner,5
+35,"Split Squat",lunge,accessory,false,"","","",beginner,5
+36,"Front Foot Elevated Split Squat",lunge,accessory,false,"","","",beginner,5
+37,"Rear Foot Elevated Split Squat (Bulgarian)",lunge,accessory,false,"","","",beginner,5
+38,"Front Rack Rear Foot Elevated Split Squat",lunge,accessory,false,"","","",beginner,5
+39,"Walking Lunge",lunge,accessory,false,"","","",beginner,5
+40,"Cossack Squat",lunge,accessory,false,"","","",beginner,5
+41,"Knee Over Toe Split Squat (Deep Range)",lunge,accessory,false,"","","",beginner,5
+42,"Jump Switch Lunges",lunge,accessory,false,"","","",beginner,5
+43,"Farmer's Carry",carry,accessory,false,"","","",beginner,5
+44,"Suitcase Carry",carry,accessory,false,"","","",beginner,5
+45,"Front Rack (Filly) Carry",carry,accessory,false,"","","",beginner,5
+46,"Overhead Carry",carry,accessory,false,"","","",beginner,5
+47,"Dead Bug / Hollow Hold",core,accessory,false,"","","",beginner,5
+48,"Med Ball Rotational Slam / Toss",core_rotation,accessory,false,"","","",beginner,5
+49,"Strict Toes-to-Bar",core,accessory,false,"","","",beginner,5
+50,"Knee Tucks in Dip Support",core,accessory,false,"","","",beginner,5
+51,"Overhead Press (OHP)",squat,main,true,"front_delts;triceps;core","barbell","strength",beginner,9
+52,"Chin-ups",squat,accessory,true,"lats;biceps","pull_up_bar","strength",beginner,9
+53,"Nordic Curl",squat,accessory,false,"","","",beginner,5
+54,"Pallof Press",squat,accessory,false,"","","",beginner,5
+55,"Power Clean",squat,accessory,false,"","","",beginner,5
+56,"Deadlift",squat,main,true,"hamstrings;glutes;back","barbell","strength",beginner,9
+57,"GHD Sit-up",squat,accessory,false,"","","",beginner,5
+58,"Bench or OHP (alternate weekly)",squat,accessory,false,"","","",beginner,5
+59,"Ring Row",squat,accessory,true,"lats;rhomboids","bodyweight","strength",beginner,9
+60,"Bulgarian Split-Squat",squat,accessory,false,"","","",beginner,5
+61,"Farmer Carry",squat,accessory,false,"","","",beginner,5
+62,"Cyclist Squat (heels elevated)",squat,accessory,false,"","","",beginner,5
+63,"Tall-Kneel Landmine Press",squat,accessory,false,"","","",beginner,5
+64,"Neutral-Grip Pull-up",squat,accessory,false,"","","",beginner,5
+65,"Single-Leg RDL",squat,accessory,false,"","","",beginner,5
+66,"Hang Power Clean",squat,accessory,false,"","","",beginner,5
+67,"Incline DB Press",squat,accessory,false,"","","",beginner,5
+68,"Single-Arm DB Row",squat,accessory,false,"","","",beginner,5
+69,"Weighted Dead-Bug",squat,accessory,false,"","","",beginner,5
+70,"Seated Z-Press",squat,accessory,false,"","","",beginner,5
+71,"Ring Pull-up (Tempo 3-1-X)",squat,accessory,false,"","","",beginner,5
+72,"Front-Rack Reverse Lunge",squat,accessory,false,"","","",beginner,5
+73,"Front-Rack Carry",squat,accessory,false,"","","",beginner,5
+74,"Pause Back Squat",squat,accessory,false,"","","",beginner,5
+75,"Push-Press",squat,accessory,false,"","","",beginner,5
+76,"Chest-to-Bar Pull-up",squat,accessory,false,"","","",beginner,5
+77,"Med-ball Slam",squat,accessory,false,"","","",beginner,5
+78,"Hang-Clean Pulls",squat,accessory,false,"","","",beginner,5
+79,"Deficit Deadlift (lighter)",squat,accessory,false,"","","",beginner,5
+80,"Plyo Push-ups",squat,accessory,false,"","","",beginner,5
+81,"Hip Thrust (band-resist)",squat,accessory,false,"","","",beginner,5
+82,"Speed Front Squat",squat,accessory,false,"","","",beginner,5
+83,"Bradford Press (light)",squat,accessory,false,"","","",beginner,5
+84,"Ring Muscle-up Row",squat,accessory,false,"","","",beginner,5
+85,"Overhead Plate Carry",squat,accessory,false,"","","",beginner,5
+86,"Bent-over Row",squat,accessory,false,"","","",beginner,5
+87,"Face Pull",squat,accessory,false,"","","",beginner,5
+88,"Dips",squat,accessory,false,"","","",beginner,5
+89,"RDL",squat,accessory,false,"","","",beginner,5
+90,"Overhead Press",squat,accessory,false,"","","",beginner,5
+91,"Weighted Pull-up",squat,accessory,false,"","","",beginner,5
+92,"Landmine One-Arm Press",squat,accessory,false,"","","",beginner,5
+93,"Lateral Raise",squat,accessory,false,"","","",beginner,5
+94,"Curls",squat,accessory,false,"","","",beginner,5
+95,"Good Morning",squat,accessory,false,"","","",beginner,5
+96,"Plank",squat,accessory,false,"","","",beginner,5
