@@ -1,0 +1,52 @@
+<!-- Exercise Substitution with Turbo Frame -->
+<% substitutes = exercise.find_substitutes(user_equipment, 5) %>
+<% current_selection = params[:substitutions]&.dig(exercise.id.to_s) || original_name %>
+
+<div class="relative">
+  <% if substitutes.any? %>
+    <!-- Current exercise display with substitution form -->
+    <%= turbo_frame_tag "exercise_#{exercise.id}_substitution" do %>
+      <%= form_with url: program_path(@program), method: :get, local: false,
+                    data: { 
+                      turbo_frame: "program_content",
+                      controller: "form"
+                    },
+                    class: "inline" do |f| %>
+        <%= f.hidden_field :view_mode, value: @view_mode %>
+        <%= f.hidden_field :cycle, value: @selected_cycle %>
+        <% @selected_equipment.each do |eq| %>
+          <%= f.hidden_field :equipment, value: eq, multiple: true %>
+        <% end %>
+        
+        <!-- Hidden fields for other substitutions to maintain state -->
+        <% if params[:substitutions] %>
+          <% params[:substitutions].each do |ex_id, sub_name| %>
+            <% unless ex_id == exercise.id.to_s %>
+              <%= f.hidden_field "substitutions[#{ex_id}]", value: sub_name %>
+            <% end %>
+          <% end %>
+        <% end %>
+        
+        <%= f.select "substitutions[#{exercise.id}]",
+              options_for_select(substitution_options(exercise, substitutes, original_name), current_selection),
+              {},
+              {
+                class: substitution_indicator_class(current_selection, original_name),
+                data: { action: "change->form#autoSubmit" }
+              } %>
+      <% end %>
+    <% end %>
+    
+    <!-- Small indicator for available alternatives -->
+    <div class="text-xs text-gray-400 mt-1">
+      <%= pluralize(substitutes.count, 'alternative') %> available
+    </div>
+    
+  <% else %>
+    <!-- No substitutes available -->
+    <span class="text-gray-900"><%= original_name %></span>
+    <% if user_equipment != Exercise::VALID_EQUIPMENT %>
+      <div class="text-xs text-orange-600 mt-1">No alternatives with selected equipment</div>
+    <% end %>
+  <% end %>
+</div>

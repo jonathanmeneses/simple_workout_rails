@@ -1,10 +1,9 @@
 # Rails 8 Workout Tracker Implementation Plan (Comprehensive)
 
-## Phase 0: UI Foundation — Recreate Workout Program Generator Selection View (No Auth, Hotwire) ✅ COMPLETED
+## Phase 0: UI Foundation — Workout Program Generator ✅ COMPLETE & OPTIMIZED
 
 ### Goal ✅ ACHIEVED
 - ✅ Recreated the main selection view from the Next.js Workout Program Generator
-- ✅ No authentication required
 - ✅ Rails 8 with Hotwire for dynamic, SPA-like user experience
 - ✅ Program selection tabs (3-Day Full Body, 4-Day Upper/Lower)
 - ✅ Program description and session breakdown with view modes
@@ -13,23 +12,21 @@
 
 ### Completed Implementation
 ✅ **ProgramsController** with index and show actions
-✅ **View Mode System**: Description/Program/Schedule modes all working
-✅ **Cycle Selection**: Dropdown for training cycle switching
+✅ **View Mode System**: Description/Program/Schedule modes with Turbo Frames
+✅ **Cycle Selection**: Dropdown with seamless partial updates
 ✅ **Database Models**: Complete workout program hierarchy
 ✅ **Data Migration**: From YAML to hardcoded Ruby data
-✅ **Navigation**: Simple, reliable `window.location.href` approach
+✅ **Navigation**: **Turbo Frames for fast partial updates**
 ✅ **Responsive Design**: Tailwind CSS styling
-✅ **Programs Index**: Updated with turbo for view transitions 
+✅ **Authentication**: User registration/login system complete
 
-### Outstanding Implementation
-
-
-### Technical Decisions Made
-- **Future Optimization Path**: Turbo Frames identified as ideal next step
+### Technical Implementation
+- **✅ Turbo Frames**: Implemented for optimal UX
 - **Data Source**: Hardcoded Ruby data in `db/hardcoded_program_data.rb`
-- **Testing**: All functionality verified working
+- **No JavaScript**: Pure Turbo approach
+- **Testing**: Comprehensive test suite with all functionality verified
 
-**Phase 0 Status: ✅ COMPLETE AND WORKING**
+**Phase 0 Status: ✅ COMPLETE, OPTIMIZED, AND PRODUCTION-READY**
 
 ---
 
@@ -121,28 +118,22 @@ This plan combines a step-by-step beginner approach with advanced best practices
 
 ---
 
-## Phase 2: Authentication & Basic UI (Weeks 3-4)
+## Phase 2: Authentication & Basic UI ✅ COMPLETE
 
-### ✅ Beginner Checklist
-1. **Add authentication**
-   ```bash
-   rails generate authentication User
-   rails db:migrate
-   ```
-   - This gives you user sign up, login, and session management.
-2. **Scaffold simple UI**
-   ```bash
-   rails generate scaffold_controller Equipment
-   rails generate scaffold_controller Exercise
-   # ...repeat for other models as needed
-   ```
-   - Use Hotwire (Turbo/Stimulus) for SPA-like navigation (comes with Rails 8).
-3. **Set up home page and navigation**
-   - In `config/routes.rb`:
-     ```ruby
-     root 'workout_programs#index'
-     ```
-   - Add navigation links for users to view programs, log in, etc.
+### ✅ Completed Implementation
+1. **✅ Authentication System**
+   - User model with `has_secure_password`
+   - SessionsController with login/logout
+   - Rate limiting and security features
+   - User registration and login views
+2. **✅ Modern UI with Hotwire**
+   - Turbo Frames for dynamic navigation
+   - Tailwind CSS styling
+   - Responsive design
+3. **✅ Navigation & Routing**
+   - Root route to programs index
+   - Authentication-aware navigation
+   - Comprehensive test coverage
 
 ---
 
@@ -169,7 +160,39 @@ This plan combines a step-by-step beginner approach with advanced best practices
 
 ---
 
-## Phase 3: User Features & Equipment Management (Weeks 5-6)
+## Phase 3: Exercise Substitution System ✅ COMPLETE (Architecture) / 🚧 IN PROGRESS (Data)
+
+### ✅ Completed: Smart Substitution Engine (Phase 3A & 3B)
+- **JSONB-optimized Exercise model** with `primary_muscles`, `equipment_required`, `training_effects`
+- **GIN indexes** for fast containment searches
+- **Validation whitelists** with model constants
+- **Pure Turbo Frame UI** with equipment selector and substitution dropdowns
+- **Helper methods** for clean view logic separation
+- **Reusable Stimulus controller** (`form_controller.js`) for auto-submit behavior
+
+### 🚧 In Progress: Data Population & Testing (Phase 3C)
+**✅ Sample Data:** 7 exercises populated (Back Squat, Goblet Squat, Bench Press, Deadlift, OHP, Chin-ups, Ring Row)
+
+**🔧 CRITICAL BLOCKER:** JSONB query syntax error in `Exercise#find_substitutes`:
+```ruby
+# BROKEN PostgreSQL syntax:
+.where("primary_muscles && ?::jsonb", self.primary_muscles.to_json)
+```
+
+**📋 Next Steps:**
+1. **Fix JSONB query syntax** (high priority)
+2. Populate remaining ~89 exercise attributes
+3. Test substitution system end-to-end
+
+---
+
+## Phase 4: User Features & Equipment Management (Weeks 5-6) — SUPERSEDED
+
+**Note:** Equipment management was completed in Phase 3 as part of substitution system.
+
+---
+
+## Phase 5: User Equipment Associations (Future)
 
 ### ✅ Beginner Checklist
 1. **Add a join model for user equipment**

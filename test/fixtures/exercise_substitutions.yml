@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  original_exercise: one
+  alternative_exercise: one
+  substitution_reason: MyString
+  compatibility_score: 1
+
+two:
+  original_exercise: two
+  alternative_exercise: two
+  substitution_reason: MyString
+  compatibility_score: 1

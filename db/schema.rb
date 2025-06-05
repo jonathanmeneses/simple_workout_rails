@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
+ActiveRecord::Schema[8.0].define(version: 2025_06_05_032416) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -18,6 +18,30 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "exercise_equipments", force: :cascade do |t|
+    t.bigint "exercise_id", null: false
+    t.bigint "equipment_id", null: false
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["equipment_id"], name: "index_exercise_equipments_on_equipment_id"
+    t.index ["exercise_id", "equipment_id"], name: "index_exercise_equipments_on_exercise_id_and_equipment_id", unique: true
+    t.index ["exercise_id"], name: "index_exercise_equipments_on_exercise_id"
+  end
+
+  create_table "exercise_substitutions", force: :cascade do |t|
+    t.bigint "original_exercise_id", null: false
+    t.bigint "alternative_exercise_id", null: false
+    t.string "substitution_reason"
+    t.integer "compatibility_score", default: 5, comment: "1-10 how good a substitute this is"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["alternative_exercise_id"], name: "index_exercise_substitutions_on_alternative_exercise_id"
+    t.index ["compatibility_score"], name: "index_exercise_substitutions_on_compatibility_score"
+    t.index ["original_exercise_id", "alternative_exercise_id"], name: "index_exercise_subs_on_original_and_alternative"
+    t.index ["original_exercise_id"], name: "index_exercise_substitutions_on_original_exercise_id"
   end
 
   create_table "exercises", force: :cascade do |t|
@@ -28,7 +52,20 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
     t.datetime "updated_at", null: false
     t.text "description"
     t.text "notes"
+    t.text "benefits"
+    t.string "category"
+    t.jsonb "primary_muscles", default: [], comment: "JSON array of primary muscle groups"
+    t.jsonb "equipment_required", default: [], comment: "JSON array of required equipment"
+    t.integer "complexity_level", default: 1, comment: "1=beginner, 2=intermediate, 3=advanced"
+    t.integer "effectiveness_score", default: 5, comment: "1-10 effectiveness rating"
+    t.text "instructions"
+    t.jsonb "training_effects", default: [], comment: "JSON array: strength, power, endurance, mobility, stability, speed, unilateral"
+    t.index ["complexity_level"], name: "index_exercises_on_complexity_level"
+    t.index ["effectiveness_score"], name: "index_exercises_on_effectiveness_score"
+    t.index ["equipment_required"], name: "index_exercises_on_equipment_required", using: :gin
     t.index ["movement_pattern_id"], name: "index_exercises_on_movement_pattern_id"
+    t.index ["primary_muscles"], name: "index_exercises_on_primary_muscles", using: :gin
+    t.index ["training_effects"], name: "index_exercises_on_training_effects", using: :gin
   end
 
   create_table "movement_patterns", force: :cascade do |t|
@@ -84,6 +121,8 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_workout_programs_on_user_id"
   end
 
   create_table "workout_sessions", force: :cascade do |t|
@@ -94,10 +133,27 @@ ActiveRecord::Schema[8.0].define(version: 2025_06_02_073236) do
     t.index ["workout_cycle_id"], name: "index_workout_sessions_on_workout_cycle_id"
   end
 
+  create_table "workout_sets", force: :cascade do |t|
+    t.bigint "workout_exercise_id", null: false
+    t.integer "order", null: false
+    t.string "target_reps", null: false
+    t.string "target_weight"
+    t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["workout_exercise_id"], name: "index_workout_sets_on_workout_exercise_id"
+  end
+
+  add_foreign_key "exercise_equipments", "equipment"
+  add_foreign_key "exercise_equipments", "exercises"
+  add_foreign_key "exercise_substitutions", "exercises", column: "alternative_exercise_id"
+  add_foreign_key "exercise_substitutions", "exercises", column: "original_exercise_id"
   add_foreign_key "exercises", "movement_patterns"
   add_foreign_key "sessions", "users"
   add_foreign_key "workout_cycles", "workout_programs"
   add_foreign_key "workout_exercises", "exercises"
   add_foreign_key "workout_exercises", "workout_sessions"
+  add_foreign_key "workout_programs", "users"
   add_foreign_key "workout_sessions", "workout_cycles"
+  add_foreign_key "workout_sets", "workout_exercises"
 end

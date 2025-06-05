@@ -15,11 +15,21 @@
     </thead>
     <tbody>
       <% day[:exercises].each do |ex| %>
+        <% exercise = Exercise.find_by(name: ex[:name]) %>
         <tr class="border-b last:border-0">
-          <td class="py-1"><%= ex[:name] %></td>
-          <td class="py-1"><%= ex[:sets] %></td>
-          <td class="py-1"><%= ex[:reps] %></td>
-          <td class="py-1"><%= ex[:notes] %></td>
+          <td class="py-3">
+            <% if exercise && @view_mode == 'program' %>
+              <%= render 'programs/components/exercise_substitution_dropdown', 
+                    exercise: exercise, 
+                    original_name: ex[:name],
+                    user_equipment: @available_equipment %>
+            <% else %>
+              <%= ex[:name] %>
+            <% end %>
+          </td>
+          <td class="py-3"><%= ex[:sets] %></td>
+          <td class="py-3"><%= ex[:reps] %></td>
+          <td class="py-3"><%= ex[:notes] %></td>
         </tr>
       <% end %>
     </tbody>
