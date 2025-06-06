@@ -1,0 +1,3589 @@
+[
+  {
+    "exercise_id": 1,
+    "exercise_name": "Back Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 2,
+    "exercise_name": "Cyclist Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 3,
+    "exercise_name": "Goblet Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 4,
+    "exercise_name": "Kettlebell Rack Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 5,
+    "exercise_name": "Zercher Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 6,
+    "exercise_name": "Assisted Knee-Over-Toe Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 7,
+    "exercise_name": "Jump Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 8,
+    "exercise_name": "Conventional Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 10
+  },
+  {
+    "exercise_id": 9,
+    "exercise_name": "Trap-Bar Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "quads"
+    ],
+    "equipment_required": [
+      "trap_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 10,
+    "exercise_name": "Romanian Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 11,
+    "exercise_name": "Zercher Good Morning",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 12,
+    "exercise_name": "Single-Leg Romanian Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 13,
+    "exercise_name": "Hip Thrust",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 14,
+    "exercise_name": "Jefferson Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "back"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 15,
+    "exercise_name": "Kettlebell Swing",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "power",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 16,
+    "exercise_name": "Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 17,
+    "exercise_name": "Incline Dumbbell Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 19,
+    "exercise_name": "Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 20,
+    "exercise_name": "Z Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 21,
+    "exercise_name": "Bradford Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 22,
+    "exercise_name": "Single-Arm Landmine Z Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 23,
+    "exercise_name": "Tall / Half-Kneeling Landmine Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 24,
+    "exercise_name": "Seated / Half-Kneeling Filly Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 25,
+    "exercise_name": "Scapular Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "traps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 26,
+    "exercise_name": "Pull-Up / Chin-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 27,
+    "exercise_name": "Chest-Supported Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 28,
+    "exercise_name": "Bent-Over Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 29,
+    "exercise_name": "Pendlay Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 30,
+    "exercise_name": "TRX / Ring Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 31,
+    "exercise_name": "Muscle-Up Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "biceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 32,
+    "exercise_name": "Single-Arm Dumbbell / Meadows Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 33,
+    "exercise_name": "Active Hang / Scap Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 34,
+    "exercise_name": "Chest-to-Bar Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 35,
+    "exercise_name": "Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 36,
+    "exercise_name": "Front Foot Elevated Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 37,
+    "exercise_name": "Rear Foot Elevated Split Squat (Bulgarian)",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 38,
+    "exercise_name": "Front Rack Rear Foot Elevated Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 39,
+    "exercise_name": "Walking Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 40,
+    "exercise_name": "Cossack Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 41,
+    "exercise_name": "Knee Over Toe Split Squat (Deep Range)",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 42,
+    "exercise_name": "Jump Switch Lunges",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 43,
+    "exercise_name": "Farmer's Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 44,
+    "exercise_name": "Suitcase Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 45,
+    "exercise_name": "Front Rack (Filly) Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 46,
+    "exercise_name": "Overhead Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 47,
+    "exercise_name": "Dead Bug / Hollow Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 48,
+    "exercise_name": "Med Ball Rotational Slam / Toss",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "obliques"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 49,
+    "exercise_name": "Strict Toes-to-Bar",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 50,
+    "exercise_name": "Knee Tucks in Dip Support",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 51,
+    "exercise_name": "Overhead Press (OHP)",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 52,
+    "exercise_name": "Chin-ups",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 53,
+    "exercise_name": "Nordic Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 54,
+    "exercise_name": "Pallof Press",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "obliques"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 55,
+    "exercise_name": "Power Clean",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 56,
+    "exercise_name": "Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 10
+  },
+  {
+    "exercise_id": 57,
+    "exercise_name": "GHD Sit-up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 58,
+    "exercise_name": "Bench or OHP (alternate weekly)",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 59,
+    "exercise_name": "Ring Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 60,
+    "exercise_name": "Bulgarian Split-Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 61,
+    "exercise_name": "Farmer Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 62,
+    "exercise_name": "Cyclist Squat (heels elevated)",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 63,
+    "exercise_name": "Tall-Kneel Landmine Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 64,
+    "exercise_name": "Neutral-Grip Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 65,
+    "exercise_name": "Single-Leg RDL",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 66,
+    "exercise_name": "Hang Power Clean",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 67,
+    "exercise_name": "Incline DB Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 68,
+    "exercise_name": "Single-Arm DB Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 69,
+    "exercise_name": "Weighted Dead-Bug",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 70,
+    "exercise_name": "Seated Z-Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 71,
+    "exercise_name": "Ring Pull-up (Tempo 3-1-X)",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 72,
+    "exercise_name": "Front-Rack Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 73,
+    "exercise_name": "Front-Rack Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 74,
+    "exercise_name": "Pause Back Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 75,
+    "exercise_name": "Push-Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 76,
+    "exercise_name": "Chest-to-Bar Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 77,
+    "exercise_name": "Med-ball Slam",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 78,
+    "exercise_name": "Hang-Clean Pulls",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 79,
+    "exercise_name": "Deficit Deadlift (lighter)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 80,
+    "exercise_name": "Plyo Push-ups",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 81,
+    "exercise_name": "Hip Thrust (band-resist)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "resistance_bands",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 82,
+    "exercise_name": "Speed Front Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 83,
+    "exercise_name": "Bradford Press (light)",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "endurance",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 84,
+    "exercise_name": "Ring Muscle-up Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "biceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 85,
+    "exercise_name": "Overhead Plate Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 86,
+    "exercise_name": "Bent-over Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 87,
+    "exercise_name": "Face Pull",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 88,
+    "exercise_name": "Dips",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps",
+      "chest",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 89,
+    "exercise_name": "RDL",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 90,
+    "exercise_name": "Overhead Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 91,
+    "exercise_name": "Weighted Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar",
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 92,
+    "exercise_name": "Landmine One-Arm Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 93,
+    "exercise_name": "Lateral Raise",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "side_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 94,
+    "exercise_name": "Curls",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "biceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 95,
+    "exercise_name": "Good Morning",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 96,
+    "exercise_name": "Plank",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 97,
+    "exercise_name": "Front Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 98,
+    "exercise_name": "Sumo Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "quads"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 99,
+    "exercise_name": "Overhead Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 100,
+    "exercise_name": "Box Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 101,
+    "exercise_name": "Safety Bar Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "safety_bar",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 102,
+    "exercise_name": "Hack Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 103,
+    "exercise_name": "Leg Press",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 104,
+    "exercise_name": "Pistol Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 105,
+    "exercise_name": "Sissy Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 106,
+    "exercise_name": "Jump Squat (Weighted)",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 107,
+    "exercise_name": "Bodyweight Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 108,
+    "exercise_name": "Wall Sit",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 109,
+    "exercise_name": "Stiff-Leg Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 110,
+    "exercise_name": "Glute Bridge",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 111,
+    "exercise_name": "Single-Arm Kettlebell Swing",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "power",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 112,
+    "exercise_name": "Reverse Hyperextension",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 113,
+    "exercise_name": "Good Morning (Dumbbell)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 114,
+    "exercise_name": "Cable Pull-Through",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 115,
+    "exercise_name": "Snatch-Grip Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 116,
+    "exercise_name": "Wide-Grip Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 117,
+    "exercise_name": "Lat Pulldown",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 118,
+    "exercise_name": "Close-Grip Lat Pulldown",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 119,
+    "exercise_name": "Commando Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 120,
+    "exercise_name": "Assisted Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 121,
+    "exercise_name": "Cable Row (Seated)",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 122,
+    "exercise_name": "T-Bar Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 123,
+    "exercise_name": "Inverted Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 124,
+    "exercise_name": "Landmine Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 125,
+    "exercise_name": "Dumbbell Overhead Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 126,
+    "exercise_name": "Arnold Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 127,
+    "exercise_name": "Single-Arm Dumbbell Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 128,
+    "exercise_name": "Pike Push-Up",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 129,
+    "exercise_name": "Handstand Push-Up",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 130,
+    "exercise_name": "Thruster",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "power",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 131,
+    "exercise_name": "Decline Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 132,
+    "exercise_name": "Dumbbell Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 133,
+    "exercise_name": "Close-Grip Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "triceps",
+      "chest"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 134,
+    "exercise_name": "Diamond Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "triceps",
+      "chest"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 135,
+    "exercise_name": "Wide-Grip Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 136,
+    "exercise_name": "Decline Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 137,
+    "exercise_name": "Incline Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 139,
+    "exercise_name": "Chest Fly",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 140,
+    "exercise_name": "Forward Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 141,
+    "exercise_name": "Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 142,
+    "exercise_name": "Lateral Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 143,
+    "exercise_name": "Curtsy Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "glutes",
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 144,
+    "exercise_name": "Goblet Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 145,
+    "exercise_name": "Weighted Walking Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 146,
+    "exercise_name": "Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 147,
+    "exercise_name": "Weighted Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 148,
+    "exercise_name": "Lateral Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 149,
+    "exercise_name": "High Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 150,
+    "exercise_name": "Deficit Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 151,
+    "exercise_name": "Single-Leg Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 152,
+    "exercise_name": "Weighted Suitcase Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 153,
+    "exercise_name": "Waiter's Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 154,
+    "exercise_name": "Mixed Farmer's Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 155,
+    "exercise_name": "Bottoms-Up Kettlebell Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms",
+      "core",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 156,
+    "exercise_name": "Yoke Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "core",
+      "quads"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 157,
+    "exercise_name": "Zercher Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "biceps",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 158,
+    "exercise_name": "Single-Arm Farmer's Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 159,
+    "exercise_name": "Side Plank",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 160,
+    "exercise_name": "Hollow Body Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 161,
+    "exercise_name": "Dead Bug",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 162,
+    "exercise_name": "Bird Dog",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "back"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 163,
+    "exercise_name": "Plank Up-Down",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 164,
+    "exercise_name": "Glute Bridge Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 165,
+    "exercise_name": "Russian Twist",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 166,
+    "exercise_name": "Cable Wood Chop",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 167,
+    "exercise_name": "Medicine Ball Slam",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 168,
+    "exercise_name": "Bicycle Crunch",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 169,
+    "exercise_name": "Hanging Knee Raise",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 170,
+    "exercise_name": "L-Sit",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 171,
+    "exercise_name": "Turkish Get-Up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "glutes"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "stability",
+      "mobility"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  },
+  {
+    "exercise_id": 172,
+    "exercise_name": "Ab Wheel Rollout",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 173,
+    "exercise_name": "Mountain Climber",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 174,
+    "exercise_name": "Bear Crawl",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 175,
+    "exercise_name": "Burpee",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "chest",
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance",
+      "power"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 176,
+    "exercise_name": "Tuck Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 177,
+    "exercise_name": "Broad Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 178,
+    "exercise_name": "Box Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 179,
+    "exercise_name": "Single-Leg Box Jump",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "unilateral"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 180,
+    "exercise_name": "Depth Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 181,
+    "exercise_name": "Clean and Jerk",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 182,
+    "exercise_name": "Snatch",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9
+  },
+  {
+    "exercise_id": 183,
+    "exercise_name": "Barbell Row (Underhand)",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 184,
+    "exercise_name": "Hammer Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 185,
+    "exercise_name": "Bench Dip",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6
+  },
+  {
+    "exercise_id": 186,
+    "exercise_name": "Overhead Tricep Extension",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 187,
+    "exercise_name": "Shrug",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 188,
+    "exercise_name": "Rear Delt Fly",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 189,
+    "exercise_name": "Upright Row",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "side_delts",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 190,
+    "exercise_name": "Leg Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 191,
+    "exercise_name": "Leg Extension",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 192,
+    "exercise_name": "Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 193,
+    "exercise_name": "Seated Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 194,
+    "exercise_name": "Single-Leg Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5
+  },
+  {
+    "exercise_id": 195,
+    "exercise_name": "Wrist Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3
+  },
+  {
+    "exercise_id": 196,
+    "exercise_name": "Reverse Wrist Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3
+  },
+  {
+    "exercise_id": 197,
+    "exercise_name": "Farmer's Walk (Single-Arm)",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7
+  },
+  {
+    "exercise_id": 198,
+    "exercise_name": "Plate Pinch",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4
+  },
+  {
+    "exercise_id": 199,
+    "exercise_name": "Hand Gripper",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3
+  },
+  {
+    "exercise_id": 200,
+    "exercise_name": "Rope Climb",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8
+  }
+]

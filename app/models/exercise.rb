@@ -25,7 +25,7 @@ class Exercise < ApplicationRecord
   ].freeze
   
   validates :name, :movement_pattern, presence: true
-  validates :complexity_level, inclusion: { in: 1..3 }
+  validates :complexity_level, inclusion: { in: %w[beginner intermediate advanced] }
   validates :effectiveness_score, inclusion: { in: 1..10 }
   
   # JSONB array validations

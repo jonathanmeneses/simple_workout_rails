@@ -4,7 +4,8 @@
       "Bash(curl:*)",
       "Bash(rails server:*)",
       "Bash(ls:*)",
-      "Bash(rails runner:*)"
+      "Bash(rails runner:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }

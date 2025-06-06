@@ -1,0 +1,4734 @@
+[
+  {
+    "exercise_name": "Conventional Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 10,
+    "enhanced_description": "Barbell pull from floor; add deficit, stiff-leg, or snatch-grip for variety.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Heavy single set",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      },
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Heavy single set",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 10,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A deadlift variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Heavy single set",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      },
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Heavy single set",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Back Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Classic barbell squat; core compound strength builder for quads, glutes, and hamstrings.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Main strength movement",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-A: Squat Focus"
+      },
+      {
+        "type": "main",
+        "sets": 2,
+        "reps": "5",
+        "notes": "Match Monday's weight",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      },
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Main leg movement",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 1: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Classic upper-body strength lift targeting chest, shoulders, and triceps.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Horizontal push",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      },
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Main horizontal push",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Chin-ups",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A chin-ups variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "AMRAP",
+        "notes": "Vertical pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-A: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Clean and Jerk",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A clean and jerk variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hip Thrust",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Barbell hip extension isolating glutes with minimal spinal load.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Glute activation",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      },
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Glute focus",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Overhead Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A overhead press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Vertical push",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 2: Vertical Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Overhead Press (OHP)",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A overhead press (ohp) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Upper body strength",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-A: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Power Clean",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A power clean variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 3,
+        "reps": "3 @ 60-70%",
+        "notes": "Explosive power",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      },
+      {
+        "type": "main",
+        "sets": 4,
+        "reps": "2 @ 65-70%",
+        "notes": "Explosive power",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Pull-Up / Chin-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 9,
+    "enhanced_description": "Vertical pull; vary grips or use towels/ropes to build comprehensive back strength.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Snatch",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A snatch variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Weighted Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar",
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A weighted pull-up variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "5-8",
+        "notes": "Vertical pull",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 2: Vertical Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Bench or OHP (alternate weekly)",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A bench or ohp (alternate weekly) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Press variation",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Bent-Over Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hinge and row targeting posterior chain and upper back.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Horizontal pull",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Bent-over Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A bent-over row variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Horizontal pull",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Bulgarian Split-Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A bulgarian split-squat variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8/leg",
+        "notes": "Unilateral leg",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      },
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8/leg",
+        "notes": "Unilateral strength",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 1: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Chest-to-Bar Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Explosive pull-up variant finishing with bar contact at chest to build upper-body power.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 5,
+        "reps": "3",
+        "notes": "Explosive pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Chest-to-Bar Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A chest-to-bar pull-up variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 5,
+        "reps": "3",
+        "notes": "Explosive pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Dead Bug / Hollow Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Ground-based core isometrics that bullet-proof the trunk and teach spinal control.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Dips",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps",
+      "chest",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development building tricep strength. A dips variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Tricep/chest",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Dumbbell Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A dumbbell bench press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Dumbbell Overhead Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A dumbbell overhead press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Farmer Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A farmer carry variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "30m",
+        "notes": "Loaded carry",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Farmer's Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Walk with heavy loads at the sides to build full-body strength and grip endurance.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "30m",
+        "notes": "Loaded carry",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Front Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A front squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Goblet Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Front-loaded squat that helps manage pain and adds a core challenge.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Handstand Push-Up",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A handstand push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hang Power Clean",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A hang power clean variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 4,
+        "reps": "2 @ 70%",
+        "notes": "Explosive from hang",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Hollow Body Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A hollow body hold variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Kettlebell Swing",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "power",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Powerful hip snap for posterior-chain conditioning and speed.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "15",
+        "notes": "Hip snap power",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "L-Sit",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A l-sit variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Neutral-Grip Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A neutral-grip pull-up variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Core-stabilized pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-A: Unilateral & Core Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Nordic Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A nordic curl variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "6-8",
+        "notes": "Hamstring eccentric",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-A: Squat Focus"
+      },
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "6",
+        "notes": "Hamstring eccentric",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 1: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Pause Back Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A pause back squat variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 2,
+        "reps": "5",
+        "notes": "3-sec pause",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Pistol Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A pistol squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "RDL",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A rdl variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Posterior chain",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 1: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Rear Foot Elevated Split Squat (Bulgarian)",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Rear foot on bench to drive quad or glute emphasis while challenging balance and intensity.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Romanian Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-hinge focusing on hamstrings and glutes with minimal lower-back stress.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Posterior chain",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 1: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Rope Climb",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A rope climb variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Safety Bar Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "safety_bar",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A safety bar squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Leg RDL",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A single-leg rdl variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8/leg",
+        "notes": "Unilateral hinge",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-A: Unilateral & Core Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Single-Leg Romanian Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Unilateral hinge to build balance, hip stability, and hamstring strength.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Leg Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A single-leg squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Sumo Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "quads"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A sumo deadlift variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Trap-Bar Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "quads"
+    ],
+    "equipment_required": [
+      "trap_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "User-friendly deadlift shifting some load to quads with neutral grips.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Neutral grip variation",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Turkish Get-Up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "glutes"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "stability",
+      "mobility"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A turkish get-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Wide-Grip Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A wide-grip pull-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Ab Wheel Rollout",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A ab wheel rollout variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Barbell Row (Underhand)",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A barbell row (underhand) variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bodyweight Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A bodyweight squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Box Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A box jump variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Box Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A box squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cable Row (Seated)",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A cable row (seated) variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cable Wood Chop",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rotational core movement for athletic power and stability building functional strength. A cable wood chop variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Chest-Supported Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Prone row eliminating momentum to isolate mid-back muscles.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Horizontal pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Close-Grip Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "triceps",
+      "chest"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building tricep strength. A close-grip bench press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Dead Bug",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A dead bug variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Deficit Deadlift (lighter)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A deficit deadlift (lighter) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 1,
+        "reps": "5",
+        "notes": "Increased ROM",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Depth Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A depth jump variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Farmer's Walk (Single-Arm)",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A farmer's walk (single-arm) variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Forward Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A forward lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Front Rack Rear Foot Elevated Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Barbell front-racked Bulgarian split squat that hammers posture, core, and leg strength together.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Front-Rack Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A front-rack reverse lunge variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8/leg",
+        "notes": "Front-loaded unilateral",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-C: Unilateral Strength"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Glute Bridge",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A glute bridge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Goblet Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A goblet lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hack Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A hack squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hanging Knee Raise",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A hanging knee raise variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hip Thrust (band-resist)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "resistance_bands",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A hip thrust (band-resist) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "15",
+        "notes": "Band tension",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Incline DB Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A incline db press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Unilateral option",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      },
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Upper chest",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Incline Dumbbell Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Press on an incline to emphasize upper chest fibers.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Unilateral option",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      },
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Upper chest",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Inverted Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A inverted row variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Jump Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Explosive squat variation to develop lower-body power and speed.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 5,
+        "reps": "3",
+        "notes": "Bodyweight or light KB",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Jump Squat (Weighted)",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A jump squat (weighted) variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Kettlebell Rack Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Double-KB front-rack squat demanding core and scapular endurance.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Lat Pulldown",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A lat pulldown variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Mixed Farmer's Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "forearms",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A mixed farmer's carry variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Overhead Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Walk with load locked out overhead to tax shoulder stability and midline control.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Overhead Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A overhead squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Pallof Press",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "obliques"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A pallof press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10/side",
+        "notes": "Anti-rotation core",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-A: Squat Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Pendlay Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Pull from dead stop on floor each rep to build power and strict form.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "6",
+        "notes": "Dead stop rows",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Push-Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A push-press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 5,
+        "reps": "3 @ 70%",
+        "notes": "Explosive press",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Scalable body-weight press that also challenges core stability.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A reverse lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Ring Pull-up (Tempo 3-1-X)",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A ring pull-up (tempo 3-1-x) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "5",
+        "notes": "Controlled tempo",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-C: Unilateral Strength"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Ring Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A ring row variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "AMRAP",
+        "notes": "Bodyweight pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-C: Squat & Press Variation"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Seated Z-Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A seated z-press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 3,
+        "reps": "6",
+        "notes": "No back support",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-C: Unilateral Strength"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Side Plank",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health building functional strength. A side plank variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Arm DB Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A single-arm db row variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10/arm",
+        "notes": "Unilateral pull",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Single-Arm Dumbbell / Meadows Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral row variations adding rotation and grip variety for back development.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Arm Dumbbell Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A single-arm dumbbell press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Arm Farmer's Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength strengthening the core. A single-arm farmer's walk variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Arm Kettlebell Swing",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "power",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A single-arm kettlebell swing variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Arm Landmine Z Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral landmine press improving core stability and shoulder control.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Snatch-Grip Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A snatch-grip deadlift variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Speed Front Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell",
+      "squat_rack"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A speed front squat variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 6,
+        "reps": "3 @ 55-60%",
+        "notes": "Speed emphasis",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-C: Speed & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Stationary split-stance squat that builds unilateral leg strength and balance.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A step-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Stiff-Leg Deadlift",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A stiff-leg deadlift variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Strict Toes-to-Bar",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Controlled raise of feet to bar building core strength, mobility, and lat engagement.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Hanging core",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Suitcase Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Single-sided carry forcing anti-rotation core stability and strong grip.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "40m",
+        "notes": "Anti-lateral flexion",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-A: Unilateral & Core Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "T-Bar Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A t-bar row variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "TRX / Ring Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Scalable inverted row that's gentle on shoulders and easy to progress.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Thruster",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "power",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the quadriceps. A thruster variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Walking Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Alternating forward lunges add dynamic movement, coordination, and balance demands.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Weighted Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A weighted step-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Weighted Suitcase Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength strengthening the core. A weighted suitcase carry variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Weighted Walking Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A weighted walking lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Yoke Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "traps",
+      "core",
+      "quads"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A yoke walk variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Z Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Seated floor overhead press that forces strict form and core engagement.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Zercher Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 7,
+    "enhanced_description": "Bar cradled in elbows to light up core, upper back, and legs; great for posture.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 3,
+        "reps": "6",
+        "notes": "Front-loaded squat",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-C: Unilateral Strength"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Arnold Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A arnold press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Assisted Knee-Over-Toe Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Supported deep-knee squat to strengthen quads and bullet-proof knees.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Assisted Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "pull_up_bar",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A assisted pull-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bear Crawl",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A bear crawl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bench Dip",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development building tricep strength. A bench dip variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bird Dog",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "back"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A bird dog variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bottoms-Up Kettlebell Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms",
+      "core",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "kettlebell"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A bottoms-up kettlebell carry variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bradford Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Continuous front-to-back press for prolonged shoulder time-under-tension.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Broad Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A broad jump variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Burpee",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "chest",
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance",
+      "power"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A burpee variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cable Pull-Through",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A cable pull-through variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Close-Grip Lat Pulldown",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A close-grip lat pulldown variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Commando Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps",
+      "core"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing back strength. A commando pull-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cossack Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Side-to-side squat that opens hips and trains lateral single-leg strength.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Curtsy Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "glutes",
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength focusing on glute activation. A curtsy lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cyclist Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Heels-elevated squat to bias quadriceps and allow an upright torso.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Cyclist Squat (heels elevated)",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A cyclist squat (heels elevated) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": "2×5",
+        "reps": "+ AMRAP",
+        "notes": "Knee/quad bias variation",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-A: Unilateral & Core Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Decline Bench Press",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A decline bench press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Decline Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps",
+      "front_delts"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A decline push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Deficit Reverse Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A deficit reverse lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Diamond Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "triceps",
+      "chest"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building tricep strength. A diamond push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Face Pull",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts building functional strength. A face pull variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "15",
+        "notes": "Rear delt/upper back",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 1: Horizontal Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Front Foot Elevated Split Squat",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Elevating the front foot deepens range of motion and stretches hip flexors.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Front Rack (Filly) Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Double-KB front-rack carry challenging core, scapular endurance, and posture.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Front-Rack Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "front_delts",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength strengthening the core. A front-rack carry variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "30m",
+        "notes": "Front-loaded carry",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-C: Unilateral Strength"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "GHD Sit-up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A ghd sit-up variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "12",
+        "notes": "Posterior chain core",
+        "program": "3-Day Full Body Program",
+        "cycle": "Base Strength",
+        "session": "FB-B: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Glute Bridge Hold",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health focusing on glute activation. A glute bridge hold variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Good Morning",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A good morning variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Posterior chain",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Good Morning (Dumbbell)",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A good morning (dumbbell) variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hang-Clean Pulls",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "power",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A hang-clean pulls variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "main",
+        "sets": 5,
+        "reps": "2",
+        "notes": "Speed focus",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "High Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A high step-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Incline Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A incline push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Jump Switch Lunges",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Plyometric split-stance jumps that train explosiveness, balance, and coordination.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10/leg",
+        "notes": "Plyo-focused lunge",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-C: Speed & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Knee Tucks in Dip Support",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Support on dip bars while tucking knees to chest to train hip flexors and deep core.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Landmine One-Arm Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A landmine one-arm press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10/arm",
+        "notes": "Unilateral press",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 2: Vertical Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Landmine Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A landmine row variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Lateral Lunge",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A lateral lunge variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Lateral Step-Up",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A lateral step-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Leg Press",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A leg press variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Med Ball Rotational Slam / Toss",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "obliques"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Explosive rotational throws or slams to develop torso power and athletic expression.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Med-ball Slam",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Rotational core movement for athletic power and stability strengthening the core. A med-ball slam variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Explosive torso",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-A: Power & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Medicine Ball Slam",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "power"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Rotational core movement for athletic power and stability strengthening the core. A medicine ball slam variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Muscle-Up Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "biceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "False-grip rowing drill progressing athletes toward strict muscle-ups.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Overhead Plate Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength targeting the shoulders. A overhead plate carry variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "30m",
+        "notes": "Overhead stability",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-C: Speed & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Pike Push-Up",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A pike push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Plank",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A plank variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "60s",
+        "notes": "Core stability",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Lower 2: Power & Deadlift"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Plank Up-Down",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A plank up-down variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Plyo Push-ups",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A plyo push-ups variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "5",
+        "notes": "Explosive push",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-B: Speed & Power"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Reverse Hyperextension",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain focusing on glute activation. A reverse hyperextension variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Ring Muscle-up Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids",
+      "biceps"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts developing back strength. A ring muscle-up row variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "6",
+        "notes": "Transition prep",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-C: Speed & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Seated / Half-Kneeling Filly Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Combo curl-to-press challenging scapular endurance through full range.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Leg Box Jump",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight",
+      "bench"
+    ],
+    "training_effects": [
+      "power",
+      "unilateral"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Unilateral leg movement that challenges balance and builds single-leg strength targeting the quadriceps. A single-leg box jump variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Tall / Half-Kneeling Landmine Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Kneeling landmine press to build overhead strength through added stability demand.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Tall-Kneel Landmine Press",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "triceps",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A tall-kneel landmine press variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8/arm",
+        "notes": null,
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-A: Unilateral & Core Focus"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Tuck Jump",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "power",
+      "speed"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A tuck jump variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Waiter's Walk",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "front_delts",
+      "core"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength targeting the shoulders. A waiter's walk variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Weighted Dead-Bug",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "stability",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A weighted dead-bug variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "10",
+        "notes": "Core coordination",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Wide-Grip Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A wide-grip push-up variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Zercher Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "biceps",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength strengthening the core. A zercher carry variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Zercher Good Morning",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 6,
+    "enhanced_description": "Front-loaded good morning demanding core, upper-back, and posterior-chain strength.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "8",
+        "notes": "Front-loaded hinge",
+        "program": "3-Day Full Body Program",
+        "cycle": "Unilateral & Core",
+        "session": "FB-B: Unilateral Power & Core"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Active Hang / Scap Pull-Up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "pull_up_bar"
+    ],
+    "training_effects": [
+      "stability",
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Shoulder-health drill building grip endurance and overhead mobility via scapular motion.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bicycle Crunch",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Rotational core movement for athletic power and stability building functional strength. A bicycle crunch variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bradford Press (light)",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "front_delts",
+      "side_delts",
+      "triceps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "endurance",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development targeting the shoulders. A bradford press (light) variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 4,
+        "reps": "8",
+        "notes": "No lockout",
+        "program": "3-Day Full Body Program",
+        "cycle": "Power & Plyometrics",
+        "session": "FB-C: Speed & Plyometrics"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength building functional strength. A calf raise variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Chest Fly",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest"
+    ],
+    "equipment_required": [
+      "dumbbells",
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Pushing movement in the horizontal plane for upper body strength building chest strength. A chest fly variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Jefferson Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings",
+      "back"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5,
+    "enhanced_description": "Slow flexion drill to build hamstring flexibility and spinal resilience.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Knee Over Toe Split Squat (Deep Range)",
+    "movement_pattern": "lunge",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "mobility",
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 5,
+    "enhanced_description": "Deep split squat driving the knee far forward to improve quad strength and hip flexor mobility.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Lateral Raise",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "side_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development building functional strength. A lateral raise variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "12",
+        "notes": "Deltoid isolation",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 2: Vertical Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Leg Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Hip-dominant movement pattern targeting the posterior chain emphasizing hamstring development. A leg curl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Mountain Climber",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "abs"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Core stability exercise for trunk strength and spinal health strengthening the core. A mountain climber variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Overhead Tricep Extension",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Overhead pressing movement for shoulder and tricep development building tricep strength. A overhead tricep extension variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Rear Delt Fly",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Rowing movement to strengthen the back and rear delts building functional strength. A rear delt fly variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Russian Twist",
+    "movement_pattern": "core_rotation",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Rotational core movement for athletic power and stability building functional strength. A russian twist variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Scapular Push-Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "traps",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "stability",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Protraction-retraction push-up for shoulder control and scapular health.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Single-Leg Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "unilateral"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength building functional strength. A single-leg calf raise variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Sissy Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 5,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A sissy squat variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Upright Row",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "side_delts",
+      "traps"
+    ],
+    "equipment_required": [
+      "barbell"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 5,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A upright row variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Wall Sit",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bodyweight"
+    ],
+    "training_effects": [
+      "endurance"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A wall sit variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Curls",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "biceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing bicep strength. A curls variation for comprehensive training.",
+    "workout_contexts": [
+      {
+        "type": "accessory",
+        "sets": 3,
+        "reps": "12",
+        "notes": "Bicep isolation",
+        "program": "4-Day Upper/Lower Split",
+        "cycle": "Base Strength",
+        "session": "Upper 2: Vertical Push/Pull"
+      }
+    ],
+    "is_in_programs": true
+  },
+  {
+    "exercise_name": "Hammer Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "biceps",
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength developing bicep strength. A hammer curl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Leg Extension",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength targeting the quadriceps. A leg extension variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Plate Pinch",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Loaded carry that builds core stability and full-body strength building functional strength. A plate pinch variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Seated Calf Raise",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Fundamental squatting movement that builds lower body strength building functional strength. A seated calf raise variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Shrug",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 4,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A shrug variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hand Gripper",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A hand gripper variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Reverse Wrist Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A reverse wrist curl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Wrist Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "forearms"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 3,
+    "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A wrist curl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  }
+]
