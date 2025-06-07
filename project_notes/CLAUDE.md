@@ -39,10 +39,31 @@ rails test:system
 ```bash
 # Linting (Ruby style guide)
 bundle exec rubocop
+bundle exec rubocop -a  # Auto-fix issues
 
 # Security scanning
 bundle exec brakeman
 ```
+
+### **🚨 REQUIRED: Pre-Commit Quality Checks**
+**ALWAYS run these commands before major commits or code changes:**
+
+```bash
+# 1. Run full test suite
+rails test
+
+# 2. Auto-fix code style issues
+bundle exec rubocop -a
+
+# 3. Security scan
+bundle exec brakeman
+```
+
+**Commit only after ALL three pass successfully.** If any fail:
+- Inform the user, and ask for input if they would like to proceed with commit (overrides additional commands).
+- Fix test failures before proceeding
+- Review and commit rubocop auto-fixes separately if needed
+- Address any security issues found by brakeman
 
 ## Architecture Overview
 
@@ -178,6 +199,18 @@ Corrected PostgreSQL operators in `app/models/exercise.rb`:
 - No heavy JavaScript framework - relies on Hotwire
 
 ## Development Best Practices
+
+### **Pre-Commit Workflow (MANDATORY)**
+**Before any major commit or code change, Claude Code MUST run:**
+
+1. **`rails test`** - Ensure all tests pass
+2. **`bundle exec rubocop -a`** - Auto-fix style issues 
+3. **`bundle exec brakeman`** - Security vulnerability scan
+
+**Only commit after all three commands pass successfully.** This ensures:
+- ✅ Code functionality is verified
+- ✅ Style guide compliance maintained  
+- ✅ Security vulnerabilities caught early
 
 ### Service Objects
 - **Extract complex business logic** to service objects in `app/services/`

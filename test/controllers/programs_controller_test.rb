@@ -70,7 +70,7 @@ class ProgramsControllerTest < ActionDispatch::IntegrationTest
     program = workout_programs(:three_day_full_body)
     get program_url(program, view_mode: "program")
     assert_response :success
-    
+
     # Should show exercises from the first cycle by default
     assert_match "Back Squat", response.body
     assert_match "Overhead Press", response.body
@@ -80,7 +80,7 @@ class ProgramsControllerTest < ActionDispatch::IntegrationTest
     program = workout_programs(:three_day_full_body)
     get program_url(program, view_mode: "schedule")
     assert_response :success
-    
+
     # Should show workout sessions
     assert_match "FB-A: Squat Focus", response.body
     assert_match "FB-B: Power & Deadlift", response.body

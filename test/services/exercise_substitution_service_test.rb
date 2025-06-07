@@ -21,21 +21,21 @@ class ExerciseSubstitutionServiceTest < ActiveSupport::TestCase
     dumbbell_bench = Exercise.create!(
       name: "Dumbbell Bench Press",
       movement_pattern: @bench_press.movement_pattern,
-      primary_muscles: ["chest", "triceps"],
-      equipment_required: ["dumbbells"],
+      primary_muscles: [ "chest", "triceps" ],
+      equipment_required: [ "dumbbells" ],
       effectiveness_score: 8
     )
 
     substitutes = ExerciseSubstitutionService.call(@bench_press, max_results: 5)
-    
+
     # Should include the same-pattern exercise
     assert_includes substitutes, dumbbell_bench
   end
 
   test "should filter by equipment when provided" do
     substitutes = ExerciseSubstitutionService.call(
-      @bench_press, 
-      user_equipment: ["bodyweight"], 
+      @bench_press,
+      user_equipment: [ "bodyweight" ],
       max_results: 5
     )
 
@@ -47,7 +47,7 @@ class ExerciseSubstitutionServiceTest < ActiveSupport::TestCase
 
   test "should respect max_results parameter" do
     substitutes = ExerciseSubstitutionService.call(@bench_press, max_results: 2)
-    
+
     assert_operator substitutes.length, :<=, 2
   end
 
@@ -56,20 +56,20 @@ class ExerciseSubstitutionServiceTest < ActiveSupport::TestCase
     unique_exercise = Exercise.create!(
       name: "Unique Exercise",
       movement_pattern: movement_patterns(:core),
-      primary_muscles: ["core"],
-      equipment_required: ["bodyweight"],
+      primary_muscles: [ "core" ],
+      equipment_required: [ "bodyweight" ],
       effectiveness_score: 5
     )
 
     substitutes = ExerciseSubstitutionService.call(unique_exercise)
-    
+
     # Should still find some substitutes, even if different movement pattern
     assert_not_empty substitutes
   end
 
   test "class method should work" do
     substitutes = ExerciseSubstitutionService.call(@bench_press)
-    
+
     assert_not_empty substitutes
     assert substitutes.is_a?(Array)
   end

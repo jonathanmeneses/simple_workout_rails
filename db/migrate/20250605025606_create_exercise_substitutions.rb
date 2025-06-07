@@ -8,8 +8,8 @@ class CreateExerciseSubstitutions < ActiveRecord::Migration[8.0]
 
       t.timestamps
     end
-    
-    add_index :exercise_substitutions, [:original_exercise_id, :alternative_exercise_id], name: 'index_exercise_subs_on_original_and_alternative'
+
+    add_index :exercise_substitutions, [ :original_exercise_id, :alternative_exercise_id ], name: 'index_exercise_subs_on_original_and_alternative'
     add_index :exercise_substitutions, :compatibility_score
   end
 end

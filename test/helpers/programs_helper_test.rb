@@ -9,14 +9,14 @@ class ProgramsHelperTest < ActionView::TestCase
 
     assert_instance_of Array, options
     assert_not_empty options
-    
+
     # First option should be the original exercise
     assert_equal exercise.name, options.first.first
   end
 
   test "substitution_options should accept user equipment" do
     exercise = exercises(:bench_press)
-    options = substitution_options(exercise, ["bodyweight"])
+    options = substitution_options(exercise, [ "bodyweight" ])
 
     assert_instance_of Array, options
     # Should still include original exercise as first option
@@ -33,11 +33,11 @@ class ProgramsHelperTest < ActionView::TestCase
 
   test "substitution_indicator_class should return appropriate classes" do
     original_name = "Bench Press"
-    
+
     # When selection matches original
     original_class = substitution_indicator_class(original_name, original_name)
     assert_includes original_class, "text-gray-900"
-    
+
     # When selection is different
     substitute_class = substitution_indicator_class("Push-up", original_name)
     assert_includes substitute_class, "text-blue-600"

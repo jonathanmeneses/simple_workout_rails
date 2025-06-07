@@ -82,7 +82,7 @@ def generate_enhanced_description(exercise_name, movement_pattern, primary_muscl
     "core" => "Core stability exercise for trunk strength and spinal health",
     "core_rotation" => "Rotational core movement for athletic power and stability"
   }
-  
+
   primary_muscle_context = case primary_muscles&.first
   when "quads" then "targeting the quadriceps"
   when "glutes" then "focusing on glute activation"
@@ -95,7 +95,7 @@ def generate_enhanced_description(exercise_name, movement_pattern, primary_muscl
   when "biceps" then "developing bicep strength"
   else "building functional strength"
   end
-  
+
   base_description = movement_descriptions[movement_pattern] || "Functional exercise"
   "#{base_description} #{primary_muscle_context}. A #{exercise_name.downcase} variation for comprehensive training."
 end
@@ -103,10 +103,10 @@ end
 # Function to find workout contexts for an exercise across all programs
 def find_workout_contexts(exercise_name, program_data)
   contexts = []
-  
+
   program_data.each do |program_id, program_info|
     next unless program_info.is_a?(Hash) && program_info[:cycles]
-    
+
     program_info[:cycles].each do |cycle|
       cycle[:days]&.each do |day|
         day[:exercises]&.each do |exercise|
@@ -126,7 +126,7 @@ def find_workout_contexts(exercise_name, program_data)
       end
     end
   end
-  
+
   contexts
 end
 
@@ -134,45 +134,45 @@ end
 def exercise_names_match?(name1, name2)
   # Normalize names for comparison
   normalize = ->(name) { name.downcase.gsub(/[^\w\s]/, '').strip }
-  
+
   norm1 = normalize.call(name1)
   norm2 = normalize.call(name2)
-  
+
   # Direct match
   return true if norm1 == norm2
-  
+
   # Handle common variations
   variations = {
-    "deadlift" => ["conventional deadlift", "deadlift"],
-    "conventional deadlift" => ["deadlift", "conventional deadlift"],
-    "chin-ups" => ["pull-up / chin-up", "chin-up", "chin ups"],
-    "pull-up / chin-up" => ["chin-ups", "pull-up", "chin-up"],
-    "overhead press (ohp)" => ["overhead press", "ohp"],
-    "overhead press" => ["overhead press (ohp)", "ohp"],
-    "farmer carry" => ["farmer's carry", "farmers carry"],
-    "farmer's carry" => ["farmer carry", "farmers carry"],
-    "bulgarian split-squat" => ["rear foot elevated split squat (bulgarian)", "bulgarian split squat"],
-    "rear foot elevated split squat (bulgarian)" => ["bulgarian split-squat", "bulgarian split squat"],
-    "incline db press" => ["incline dumbbell press", "incline db press"],
-    "incline dumbbell press" => ["incline db press", "incline dumbbell press"],
-    "single-arm db row" => ["single-arm dumbbell / meadows row", "single arm dumbbell row"],
-    "single-arm dumbbell / meadows row" => ["single-arm db row", "single arm dumbbell row"],
-    "bent-over row" => ["bent over row", "barbell row"],
-    "ring row" => ["trx / ring row", "trx ring row"],
-    "trx / ring row" => ["ring row", "trx ring row"],
-    "rdl" => ["romanian deadlift", "rdl"],
-    "romanian deadlift" => ["rdl", "romanian deadlift"],
-    "single-leg rdl" => ["single-leg romanian deadlift", "single leg rdl"],
-    "single-leg romanian deadlift" => ["single-leg rdl", "single leg rdl"]
+    "deadlift" => [ "conventional deadlift", "deadlift" ],
+    "conventional deadlift" => [ "deadlift", "conventional deadlift" ],
+    "chin-ups" => [ "pull-up / chin-up", "chin-up", "chin ups" ],
+    "pull-up / chin-up" => [ "chin-ups", "pull-up", "chin-up" ],
+    "overhead press (ohp)" => [ "overhead press", "ohp" ],
+    "overhead press" => [ "overhead press (ohp)", "ohp" ],
+    "farmer carry" => [ "farmer's carry", "farmers carry" ],
+    "farmer's carry" => [ "farmer carry", "farmers carry" ],
+    "bulgarian split-squat" => [ "rear foot elevated split squat (bulgarian)", "bulgarian split squat" ],
+    "rear foot elevated split squat (bulgarian)" => [ "bulgarian split-squat", "bulgarian split squat" ],
+    "incline db press" => [ "incline dumbbell press", "incline db press" ],
+    "incline dumbbell press" => [ "incline db press", "incline dumbbell press" ],
+    "single-arm db row" => [ "single-arm dumbbell / meadows row", "single arm dumbbell row" ],
+    "single-arm dumbbell / meadows row" => [ "single-arm db row", "single arm dumbbell row" ],
+    "bent-over row" => [ "bent over row", "barbell row" ],
+    "ring row" => [ "trx / ring row", "trx ring row" ],
+    "trx / ring row" => [ "ring row", "trx ring row" ],
+    "rdl" => [ "romanian deadlift", "rdl" ],
+    "romanian deadlift" => [ "rdl", "romanian deadlift" ],
+    "single-leg rdl" => [ "single-leg romanian deadlift", "single leg rdl" ],
+    "single-leg romanian deadlift" => [ "single-leg rdl", "single leg rdl" ]
   }
-  
+
   # Check if either name has variations that match the other
-  [norm1, norm2].each do |name|
+  [ norm1, norm2 ].each do |name|
     if variations[name]&.include?(norm1 == name ? norm2 : norm1)
       return true
     end
   end
-  
+
   false
 end
 
@@ -180,18 +180,18 @@ end
 unified_exercises = exercises_data.map do |exercise|
   # Remove exercise_id field
   exercise.delete("exercise_id")
-  
+
   # Get enhanced description
-  enhanced_desc = ENHANCED_DESCRIPTIONS[exercise["exercise_name"]] || 
+  enhanced_desc = ENHANCED_DESCRIPTIONS[exercise["exercise_name"]] ||
                   generate_enhanced_description(
-                    exercise["exercise_name"], 
-                    exercise["movement_pattern"], 
+                    exercise["exercise_name"],
+                    exercise["movement_pattern"],
                     exercise["primary_muscles"]
                   )
-  
+
   # Find workout contexts
   workout_contexts = find_workout_contexts(exercise["exercise_name"], program_data)
-  
+
   # Build unified exercise entry
   {
     "exercise_name" => exercise["exercise_name"],
@@ -208,7 +208,7 @@ unified_exercises = exercises_data.map do |exercise|
 end
 
 # Sort by effectiveness score (descending) then by name
-unified_exercises.sort_by! { |ex| [-ex["effectiveness_score"], ex["exercise_name"]] }
+unified_exercises.sort_by! { |ex| [ -ex["effectiveness_score"], ex["exercise_name"] ] }
 
 # Output statistics
 total_exercises = unified_exercises.length

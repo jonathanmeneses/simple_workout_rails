@@ -5,7 +5,7 @@ module ProgramsHelper
 
     # Build options array
     display_name = original_name || original_exercise.name
-    options = [[ display_name, display_name ]]
+    options = [ [ display_name, display_name ] ]
 
     substitutes.each do |substitute|
       label = substitute.name
@@ -20,7 +20,7 @@ module ProgramsHelper
 
     options
   end
-  
+
   def substitution_indicator_class(current_selection, original_name)
     if current_selection != original_name
       "text-sm border-0 bg-transparent text-blue-600 font-semibold hover:text-blue-800 focus:ring-0 cursor-pointer"
