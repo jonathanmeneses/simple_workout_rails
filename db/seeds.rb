@@ -49,9 +49,9 @@ puts "Demo data loaded from hardcoded source"
 
 demo_data.each do |program_id, program_data|
   next unless program_data.is_a?(Hash) && program_data[:name]
-  
+
   puts "Creating program: #{program_data[:name]}"
-  
+
   # Create the workout program
   workout_program = WorkoutProgram.create!(
     name: program_data[:name],
@@ -62,7 +62,7 @@ demo_data.each do |program_id, program_data|
   # Create cycles for this program
   program_data[:cycles]&.each do |cycle_data|
     puts "  Creating cycle: #{cycle_data[:name]}"
-    
+
     workout_cycle = workout_program.workout_cycles.create!(
       name: cycle_data[:name],
       description: cycle_data[:description]
@@ -71,7 +71,7 @@ demo_data.each do |program_id, program_data|
     # Create sessions for this cycle
     cycle_data[:days]&.each do |day_data|
       puts "    Creating session: #{day_data[:title]}"
-      
+
       workout_session = workout_cycle.workout_sessions.create!(
         name: day_data[:title]
       )
@@ -89,13 +89,13 @@ demo_data.each do |program_id, program_data|
         # Store sets/reps in notes if they're strings, otherwise use the integer columns
         sets_value = exercise_data[:sets].is_a?(Integer) ? exercise_data[:sets] : nil
         reps_value = exercise_data[:reps].is_a?(Integer) ? exercise_data[:reps] : nil
-        
+
         # Build comprehensive notes that include sets/reps info plus original notes
         notes_parts = []
         notes_parts << exercise_data[:sets] if exercise_data[:sets].present?
         notes_parts << exercise_data[:reps] if exercise_data[:reps].present?
         notes_parts << exercise_data[:notes] if exercise_data[:notes].present?
-        
+
         workout_session.workout_exercises.create!(
           exercise: exercise,
           sets: sets_value,
@@ -106,6 +106,14 @@ demo_data.each do |program_id, program_data|
         )
       end
     end
+  end
+end
+
+if Rails.env.development?
+  # Create a development user
+  User.find_or_create_by!(email_address: "user@example.com") do |user|
+    user.password = "password"
+    user.password_confirmation = "password"
   end
 end
 

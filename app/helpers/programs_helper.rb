@@ -1,18 +1,23 @@
 module ProgramsHelper
-  def substitution_options(original_exercise, substitutes, original_name)
-    options = [[original_name, original_name]]
-    
+  def substitution_options(original_exercise, user_equipment = nil, original_name = nil)
+    # Use service to get substitutes
+    substitutes = ExerciseSubstitutionService.call(original_exercise, user_equipment: user_equipment)
+
+    # Build options array
+    display_name = original_name || original_exercise.name
+    options = [[ display_name, display_name ]]
+
     substitutes.each do |substitute|
       label = substitute.name
-      
+
       # Add movement pattern indicator if different
       if substitute.movement_pattern.name != original_exercise.movement_pattern.name
         label += " (#{substitute.movement_pattern.name.humanize})"
       end
-      
-      options << [label, substitute.name]
+
+      options << [ label, substitute.name ]
     end
-    
+
     options
   end
   

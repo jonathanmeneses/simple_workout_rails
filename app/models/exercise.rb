@@ -1,6 +1,6 @@
 class Exercise < ApplicationRecord
   belongs_to :movement_pattern
-  
+
   # Self-referential substitution relationships
   has_many :exercise_substitutions, foreign_key: 'original_exercise_id', dependent: :destroy
   has_many :alternatives, through: :exercise_substitutions, source: :alternative_exercise
@@ -60,47 +60,9 @@ class Exercise < ApplicationRecord
     training_effects || []
   end
   
-  # Smart substitution finder
-  # Priority: movement_pattern > muscles > training_effects, with cross-pattern flexibility
+  # Delegate substitution logic to service object
   def find_substitutes(user_equipment = nil, max_results = 5)
-    base_query = Exercise.where.not(id: self.id)
-    
-    # Apply equipment filter to all candidates if provided
-    if user_equipment&.any?
-      base_query = base_query.where("equipment_required ?| array[:equipment]", equipment: user_equipment)
-    end
-    
-    # Same movement pattern candidates (highest priority)
-    same_movement = base_query.where(movement_pattern: self.movement_pattern)
-    
-    # Cross-pattern candidates with muscle/training effect overlap
-    cross_pattern = base_query.where.not(movement_pattern: self.movement_pattern)
-    
-    # Filter cross-pattern by muscle or training effect overlap
-    if self.primary_muscles.any?
-      cross_pattern = cross_pattern.where("primary_muscles ?| array[:muscles]", muscles: self.primary_muscles)
-    elsif self.training_effects.any?
-      cross_pattern = cross_pattern.where("training_effects ?| array[:effects]", effects: self.training_effects)
-    end
-    
-    # Combine results: prioritize same movement pattern, include some cross-pattern
-    results = []
-    
-    if same_movement.exists?
-      # Show most same-movement-pattern options, plus 1-2 cross-pattern
-      same_movement_limit = [max_results - 2, 3].max
-      results += same_movement.order(:complexity_level, effectiveness_score: :desc).limit(same_movement_limit)
-      
-      remaining_slots = max_results - results.length
-      if remaining_slots > 0 && cross_pattern.exists?
-        results += cross_pattern.order(effectiveness_score: :desc).limit(remaining_slots)
-      end
-    else
-      # No same movement pattern - show more cross-pattern alternatives
-      results = cross_pattern.order(effectiveness_score: :desc).limit(max_results)
-    end
-    
-    results
+    ExerciseSubstitutionService.call(self, user_equipment: user_equipment, max_results: max_results)
   end
   
   private
