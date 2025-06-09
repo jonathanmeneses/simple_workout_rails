@@ -1,11 +1,6 @@
 module ProgramsHelper
-  def substitution_options(original_exercise, user_equipment = nil, original_name = nil)
-    # Use service to get substitutes
-    substitutes = ExerciseSubstitutionService.call(original_exercise, user_equipment: user_equipment)
-
-    # Build options array
-    display_name = original_name || original_exercise.name
-    options = [ [ display_name, display_name ] ]
+  def substitution_options(original_exercise, substitutes, original_name)
+    options = [ [ original_name, original_name ] ]
 
     substitutes.each do |substitute|
       label = substitute.name

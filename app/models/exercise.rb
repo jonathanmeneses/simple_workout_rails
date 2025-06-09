@@ -15,7 +15,7 @@ class Exercise < ApplicationRecord
   ].freeze
 
   VALID_EQUIPMENT = %w[
-    barbell dumbbells kettlebell bodyweight bench squat_rack pull_up_bar
+    barbell dumbbells kettlebell bench squat_rack pull_up_bar
     resistance_bands medicine_ball cable_machine trap_bar safety_bar
   ].freeze
 
@@ -33,6 +33,7 @@ class Exercise < ApplicationRecord
   validate :validate_training_effects_whitelist
 
   enum :complexity_level, { beginner: 1, intermediate: 2, advanced: 3 }
+  enum :exercise_type, { main: 0, accessory: 1 }
 
   # JSONB containment scopes (uses GIN indexes)
   scope :by_equipment, ->(equipment_list) {
@@ -59,12 +60,86 @@ class Exercise < ApplicationRecord
     training_effects || []
   end
 
-  # Delegate substitution logic to service object
-  def find_substitutes(user_equipment = nil, max_results = 5)
-    ExerciseSubstitutionService.call(self, user_equipment: user_equipment, max_results: max_results)
+  # Smart substitution finder with main-lift prioritization
+  # For main exercises: prioritize other main exercises first (main-worthy substitutes)
+  # For accessory exercises: use standard movement pattern + muscle group logic
+  def find_substitutes(user_equipment = nil, max_results = 10)
+    base_query = Exercise.where.not(id: self.id)
+
+    # Apply equipment filter to all candidates if provided
+    if user_equipment&.any?
+      base_query = base_query.where("equipment_required ?| array[:equipment]", equipment: user_equipment)
+    end
+
+    if main?
+      find_main_exercise_substitutes(base_query, max_results)
+    else
+      find_standard_substitutes(base_query, max_results)
+    end
   end
 
   private
+
+  def find_main_exercise_substitutes(base_query, max_results)
+    results = []
+
+    # 1. PRIORITY: Other main exercises in same movement pattern (e.g., front squat for back squat)
+    main_same_movement = base_query.where(movement_pattern: self.movement_pattern, exercise_type: :main)
+    if main_same_movement.exists?
+      results += main_same_movement.order(effectiveness_score: :desc, complexity_level: :asc).limit(3)
+    end
+
+    remaining_slots = max_results - results.length
+    return results if remaining_slots <= 0
+
+    # 2. Main exercises from related patterns with muscle overlap (e.g., deadlifts for squats)
+    if self.primary_muscles.any?
+      main_cross_pattern = base_query.where.not(movement_pattern: self.movement_pattern)
+                                   .where(exercise_type: :main)
+                                   .where("primary_muscles ?| array[:muscles]", muscles: self.primary_muscles)
+      if main_cross_pattern.exists?
+        results += main_cross_pattern.order(effectiveness_score: :desc).limit([ remaining_slots, 2 ].min)
+      end
+    end
+
+    remaining_slots = max_results - results.length
+    return results if remaining_slots <= 0
+
+    # 3. Fall back to standard logic for remaining slots
+    standard_results = find_standard_substitutes(base_query.where.not(id: results.map(&:id)), remaining_slots)
+    results + standard_results
+  end
+
+  def find_standard_substitutes(base_query, max_results)
+    # Standard logic: same movement pattern > muscle/training effect overlap
+    same_movement = base_query.where(movement_pattern: self.movement_pattern)
+    cross_pattern = base_query.where.not(movement_pattern: self.movement_pattern)
+
+    # Filter cross-pattern by muscle or training effect overlap
+    if self.primary_muscles.any?
+      cross_pattern = cross_pattern.where("primary_muscles ?| array[:muscles]", muscles: self.primary_muscles)
+    elsif self.training_effects.any?
+      cross_pattern = cross_pattern.where("training_effects ?| array[:effects]", effects: self.training_effects)
+    end
+
+    results = []
+
+    if same_movement.exists?
+      # Show most same-movement-pattern options, plus some cross-pattern
+      same_movement_limit = [ max_results - 2, 3 ].max
+      results += same_movement.order(:complexity_level, effectiveness_score: :desc).limit(same_movement_limit)
+
+      remaining_slots = max_results - results.length
+      if remaining_slots > 0 && cross_pattern.exists?
+        results += cross_pattern.order(effectiveness_score: :desc).limit(remaining_slots)
+      end
+    else
+      # No same movement pattern - show cross-pattern alternatives
+      results = cross_pattern.order(effectiveness_score: :desc).limit(max_results)
+    end
+
+    results
+  end
 
   def validate_muscle_whitelist
     return unless primary_muscles

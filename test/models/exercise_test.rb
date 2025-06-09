@@ -79,13 +79,13 @@ class ExerciseTest < ActiveSupport::TestCase
       name: "Push-up",
       movement_pattern: push_pattern,
       primary_muscles: [ "chest" ],
-      equipment_required: [ "bodyweight" ],
+      equipment_required: [],
       training_effects: [ "strength" ],
       complexity_level: :beginner,
       effectiveness_score: 6
     )
 
-    substitutes = original.find_substitutes([ "barbell", "bodyweight" ], 5)
+    substitutes = original.find_substitutes([ "barbell" ], 5)
 
     # Same movement pattern should be prioritized
     assert_includes substitutes, same_pattern

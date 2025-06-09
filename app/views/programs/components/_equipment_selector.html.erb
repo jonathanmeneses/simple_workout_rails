@@ -1,5 +1,6 @@
 <!-- Equipment Selection Component -->
-<div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6">
+<div class="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6" 
+     data-controller="equipment">
   <h3 class="text-lg font-medium text-gray-900 mb-3">Available Equipment</h3>
   <p class="text-sm text-gray-600 mb-4">Select your available equipment to filter exercise alternatives</p>
   
@@ -8,7 +9,7 @@
                   turbo_frame: "program_content",
                   controller: "form"
                 }, 
-                class: "space-y-3" do |f| %>
+                class: "space-y-4" do |f| %>
     <%= f.hidden_field :view_mode, value: @view_mode %>
     <%= f.hidden_field :cycle, value: @selected_cycle %>
     
@@ -17,32 +18,66 @@
       <%= f.hidden_field "substitutions[#{exercise_id}]", value: substitute_name %>
     <% end %>
     
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-      <% Exercise::VALID_EQUIPMENT.each do |equipment| %>
-        <label class="flex items-center">
-          <%= f.check_box :equipment, 
-                { multiple: true, checked: @selected_equipment&.include?(equipment) }, 
-                equipment, "" %>
-          <span class="ml-2 text-sm text-gray-700 capitalize"><%= equipment.humanize %></span>
-        </label>
-      <% end %>
+    <!-- No Equipment Option -->
+    <div class="border-b border-gray-200 pb-3">
+      <label class="flex items-center">
+        <%= f.check_box :no_equipment, { 
+              checked: @no_equipment, 
+              data: { 
+                equipment_target: "noEquipment", 
+                action: "change->equipment#toggleNoEquipment" 
+              }
+            }, "1", "" %>
+        <span class="ml-2 text-sm font-medium text-gray-900">No equipment available (bodyweight exercises only)</span>
+      </label>
+    </div>
+    
+    <!-- Equipment Grid -->
+    <div class="equipment-grid transition-opacity duration-200 <%= 'opacity-50 pointer-events-none' if @no_equipment %>" 
+         data-equipment-target="equipmentGrid">
+      <p class="text-sm text-gray-600 mb-3">Available equipment:</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <% Exercise::VALID_EQUIPMENT.each do |equipment| %>
+          <label class="flex items-center">
+            <%= f.check_box :equipment, 
+                  { 
+                    multiple: true, 
+                    checked: @selected_equipment&.include?(equipment) || (!@selected_equipment.any? && !@no_equipment),
+                    data: { 
+                      equipment_target: "equipmentBox",
+                      action: "change->equipment#updateEquipmentSelection"
+                    }
+                  }, 
+                  equipment, "" %>
+            <span class="ml-2 text-sm text-gray-700 capitalize"><%= equipment.humanize %></span>
+          </label>
+        <% end %>
+      </div>
     </div>
     
     <div class="flex gap-2 pt-2">
-      <%= f.submit "Update Equipment", 
+      <%= f.submit "Update Exercises", 
             class: "px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition-colors" %>
-      <%= link_to "Clear All", 
-            program_path(@program, view_mode: @view_mode, cycle: @selected_cycle), 
-            class: "px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors",
-            data: { turbo_frame: "program_content" } %>
+      <button type="button"
+              data-action="click->equipment#selectAllEquipment"
+              class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors">
+        All Equipment
+      </button>
     </div>
   <% end %>
   
-  <% if @selected_equipment&.any? %>
-    <div class="mt-3 pt-3 border-t border-gray-200">
-      <p class="text-sm text-gray-600">Selected: 
-        <span class="font-medium"><%= @selected_equipment.map(&:humanize).join(", ") %></span>
-      </p>
-    </div>
-  <% end %>
+  <!-- Status Display -->
+  <div class="mt-3 pt-3 border-t border-gray-200">
+    <p class="text-sm text-gray-600">
+      <span data-equipment-target="statusText">
+        <% if @no_equipment %>
+          Bodyweight exercises only
+        <% elsif @selected_equipment.any? %>
+          Selected: <%= @selected_equipment.map(&:humanize).join(", ") %>
+        <% else %>
+          All equipment available
+        <% end %>
+      </span>
+    </p>
+  </div>
 </div>

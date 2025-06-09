@@ -50,4 +50,7 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions.
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Disable parallel testing when debugging with Ruby LSP
+  config.active_support.test_parallelization_threshold = Float::INFINITY if ENV["RUBY_LSP_DEBUG"]
 end

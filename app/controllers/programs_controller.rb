@@ -21,17 +21,30 @@ class ProgramsController < ApplicationController
     @program = WorkoutProgram.find(params[:id])
     valid_modes = %w[description program schedule]
     @view_mode = valid_modes.include?(params[:view_mode]) ? params[:view_mode] : "description"
-    @selected_cycle = params[:cycle] || @program.workout_cycles.first&.name
+    @selected_cycle = params[:cycle] || @program.workout_cycles.order(:cycle_type).first&.name
 
-    # Handle equipment selection - default to all equipment if none selected
+    # Handle equipment selection
     @selected_equipment = params[:equipment]&.reject(&:blank?) || []
+    @no_equipment = params[:no_equipment] == "1"
 
-    # Store equipment in session for persistence across navigation
-    session[:selected_equipment] = @selected_equipment if @selected_equipment.any?
-    @selected_equipment = session[:selected_equipment] || [] if @selected_equipment.empty?
+    # Store equipment selection in session for persistence
+    if params.key?(:equipment) || params.key?(:no_equipment)
+      session[:selected_equipment] = @selected_equipment
+      session[:no_equipment] = @no_equipment
+    else
+      @selected_equipment = session[:selected_equipment] || []
+      @no_equipment = session[:no_equipment] || false
+    end
 
-    # If no equipment selected, assume all equipment is available
-    @available_equipment = @selected_equipment.any? ? @selected_equipment : Exercise::VALID_EQUIPMENT
+    # Determine available equipment for exercise filtering
+    if @no_equipment
+      @available_equipment = [ "bodyweight" ]
+    elsif @selected_equipment.any?
+      @available_equipment = @selected_equipment
+    else
+      # Default: all equipment available (including bodyweight)
+      @available_equipment = Exercise::VALID_EQUIPMENT + [ "bodyweight" ]
+    end
 
     # Handle exercise substitutions
     @substitutions = params[:substitutions] || {}

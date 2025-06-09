@@ -123,7 +123,7 @@ class ProgramsTest < ActionDispatch::IntegrationTest
       assert_response :success
 
       # Verify the correct tab is active
-      assert_select "[data-view-mode='#{mode}']" do |elements|
+      assert_select "a[href='/programs/#{program.id}?view_mode=#{mode}']" do |elements|
         assert elements.any? { |el| el["class"].include?("border-blue-500") }
       end
     end

@@ -141,10 +141,14 @@ Corrected PostgreSQL operators in `app/models/exercise.rb`:
 - Sets/reps display enhanced with parsing from notes field
 - State persistence across Turbo Frame navigation
 
-**✅ Complete Data Functional:**
-- **198/198 exercises (100%)** with working substitution logic and complete attributes
-- Unified exercise database with comprehensive workout contexts
-- All movement patterns correctly assigned and tested
+**✅ Sample Data Functional:**
+- **7 core exercises** with working substitution logic: Back Squat, Goblet Squat, Bench Press, Deadlift, Overhead Press (OHP), Chin-ups, Ring Row
+- Substitution system verified working with populated data
+
+**✅ Equipment Selection Enhancement:**
+- Added `equipment_controller.js` for immediate visual feedback
+- Enhanced equipment selector with "No equipment" and "All Equipment" options
+- Improved substitution workflow with main-lift prioritization
 
 ### Phase 3D: Complete Data Population ✅ COMPLETE
 **✅ DATA QUALITY ISSUES RESOLVED:**

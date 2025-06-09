@@ -1,5 +1,5 @@
 class WorkoutProgram < ApplicationRecord
-  has_many :workout_cycles, dependent: :destroy
+  has_many :workout_cycles, -> { order(:cycle_type) }, dependent: :destroy
   has_many :workout_sessions, through: :workout_cycles
 
   validates :name, presence: true

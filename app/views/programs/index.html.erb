@@ -15,7 +15,7 @@
             <%= link_to program_type[:name], 
                 programs_path(program_type: program_type[:type]), 
                 class: "flex-1 py-2 text-center font-medium transition-colors focus:outline-none #{'bg-gray-100' if @selected_program_type == program_type[:type]} #{'bg-white hover:bg-gray-50' unless @selected_program_type == program_type[:type]} text-gray-800 #{'border-r border-gray-200' if index < @program_types.length - 1}",
-                data: { turbo_frame: "program_selector" } %>
+                data: { turbo_frame: "program_selector", tab: program_type[:type] } %>
           <% end %>
         </div>
         <!-- Program Details - Shows only selected type -->
