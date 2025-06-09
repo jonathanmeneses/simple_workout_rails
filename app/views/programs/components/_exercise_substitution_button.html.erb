@@ -1,0 +1,76 @@
+<!-- Button-based Exercise Substitution with Visual Feedback -->
+<% substitutes = exercise.find_substitutes(user_equipment, 5) %>
+<% current_name = current_exercise_name(exercise.id, substitutes, original_name) %>
+<% is_substituted = exercise_is_substituted?(exercise.id, original_name) %>
+
+<%= turbo_frame_tag "exercise_#{exercise.id}_substitution" do %>
+  <div class="flex items-center justify-between w-full">
+    <div class="flex-1">
+      <!-- Current exercise display with visual feedback -->
+      <div class="exercise-display">
+        <h4 class="<%= is_substituted ? 'text-lg font-medium text-blue-700 italic' : 'text-lg font-medium text-gray-900' %>">
+          <%= current_name %>
+        </h4>
+        
+        <!-- Original exercise info (shown when substituted) -->
+        <% if is_substituted %>
+          <div class="original-exercise-info mt-1">
+            <span class="text-xs text-gray-500">Originally: </span>
+            <span class="text-xs font-medium text-gray-700"><%= original_name %></span>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Substitute button (only visible if substitutes available) -->
+    <% if substitutes.any? %>
+      <div class="flex items-center gap-2 ml-3">
+        <%= form_with url: program_path(@program), method: :get, local: false,
+                      data: { turbo_frame: "program_content" },
+                      class: "inline" do |f| %>
+          <%= f.hidden_field :view_mode, value: @view_mode %>
+          <%= f.hidden_field :cycle, value: @selected_cycle %>
+          <% @selected_equipment.each do |eq| %>
+            <%= f.hidden_field :equipment, value: eq, multiple: true %>
+          <% end %>
+          
+          <!-- Hidden fields for other substitutions to maintain state -->
+          <% if params[:substitutions] %>
+            <% params[:substitutions].each do |ex_id, sub_name| %>
+              <% unless ex_id == exercise.id.to_s %>
+                <%= f.hidden_field "substitutions[#{ex_id}]", value: sub_name %>
+              <% end %>
+            <% end %>
+          <% end %>
+
+          <!-- Calculate next substitute -->
+          <% current_index = current_substitution_index(exercise.id, substitutes, original_name) %>
+          <% next_index = (current_index + 1) % (substitutes.length + 1) %>
+          <% next_exercise = next_index == 0 ? original_name : substitutes[next_index - 1].name %>
+          
+          <%= f.hidden_field "substitutions[#{exercise.id}]", value: next_exercise %>
+          
+          <button type="submit" 
+                  class="flex items-center gap-1 px-3 py-1 text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded transition-colors">
+            <!-- Swap icon -->
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+            </svg>
+            <span><%= is_substituted ? 'Next' : 'Substitute' %></span>
+          </button>
+        <% end %>
+        
+        <!-- Subtle indicator for available alternatives -->
+        <div class="text-xs text-gray-400">
+          <%= pluralize(substitutes.count, 'option') %>
+        </div>
+      </div>
+      
+    <% else %>
+      <!-- No substitutes available indicator -->
+      <% if user_equipment != Exercise::VALID_EQUIPMENT %>
+        <div class="text-xs text-orange-600 ml-3">No alternatives</div>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>

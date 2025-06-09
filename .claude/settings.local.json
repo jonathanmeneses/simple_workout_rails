@@ -6,7 +6,8 @@
       "Bash(ls:*)",
       "Bash(rails runner:*)",
       "Bash(python3:*)",
-      "Bash(rails test:*)"
+      "Bash(rails test:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": []
   }
