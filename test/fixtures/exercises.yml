@@ -4,8 +4,32 @@ back_squat:
   exercise_type: main
   description: "Primary squat movement"
   notes: "Focus on depth and control"
+  equipment_required: ["barbell", "squat_rack"]
+  primary_muscles: ["quads", "glutes"]
   complexity_level: intermediate
   effectiveness_score: 9
+
+front_squat:
+  name: "Front Squat"
+  movement_pattern: squat
+  exercise_type: main
+  description: "Front-loaded squat variation"
+  notes: "Emphasizes quads and core stability"
+  equipment_required: ["barbell", "squat_rack"]
+  primary_muscles: ["quads", "glutes"]
+  complexity_level: advanced
+  effectiveness_score: 8
+
+overhead_squat:
+  name: "Overhead Squat"
+  movement_pattern: squat
+  exercise_type: main
+  description: "Squat with overhead barbell"
+  notes: "Full-body mobility and stability"
+  equipment_required: ["barbell", "squat_rack"]
+  primary_muscles: ["quads", "glutes"]
+  complexity_level: advanced
+  effectiveness_score: 7
 
 deadlift:
   name: "Deadlift"
@@ -16,6 +40,24 @@ deadlift:
   complexity_level: intermediate
   effectiveness_score: 9
 
+sumo_deadlift:
+  name: "Sumo Deadlift"
+  movement_pattern: deadlift
+  exercise_type: main
+  description: "Wide-stance deadlift variation"
+  notes: "Different hip and leg emphasis"
+  complexity_level: intermediate
+  effectiveness_score: 8
+
+romanian_deadlift:
+  name: "Romanian Deadlift"
+  movement_pattern: deadlift
+  exercise_type: main
+  description: "Hip-hinge focused deadlift"
+  notes: "Emphasizes hamstrings and glutes"
+  complexity_level: intermediate
+  effectiveness_score: 8
+
 bench_press:
   name: "Bench Press"
   movement_pattern: horizontal_push
@@ -25,6 +67,24 @@ bench_press:
   complexity_level: intermediate
   effectiveness_score: 8
 
+incline_bench_press:
+  name: "Incline Bench Press"
+  movement_pattern: horizontal_push
+  exercise_type: main
+  description: "Angled bench press variation"
+  notes: "Upper chest emphasis"
+  complexity_level: intermediate
+  effectiveness_score: 7
+
+dumbbell_bench_press:
+  name: "Dumbbell Bench Press"
+  movement_pattern: horizontal_push
+  exercise_type: main
+  description: "Dumbbell horizontal press"
+  notes: "Greater range of motion"
+  complexity_level: intermediate
+  effectiveness_score: 7
+
 overhead_press:
   name: "Overhead Press (OHP)"
   movement_pattern: vertical_push
@@ -33,6 +93,24 @@ overhead_press:
   notes: "Strict press, no leg drive"
   complexity_level: intermediate
   effectiveness_score: 8
+
+push_press:
+  name: "Push Press"
+  movement_pattern: vertical_push
+  exercise_type: main
+  description: "Explosive overhead press with leg drive"
+  notes: "Power development focus"
+  complexity_level: advanced
+  effectiveness_score: 7
+
+dumbbell_shoulder_press:
+  name: "Dumbbell Shoulder Press"
+  movement_pattern: vertical_push
+  exercise_type: main
+  description: "Dumbbell overhead press"
+  notes: "Unilateral stability challenge"
+  complexity_level: intermediate
+  effectiveness_score: 7
 
 chin_ups:
   name: "Chin-ups"
@@ -51,3 +129,25 @@ chest_supported_row:
   notes: "Squeeze shoulder blades"
   complexity_level: beginner
   effectiveness_score: 6
+
+goblet_squat:
+  name: "Goblet Squat"
+  movement_pattern: squat
+  exercise_type: accessory
+  description: "Dumbbell front-loaded squat"
+  notes: "Great for learning squat mechanics"
+  equipment_required: ["dumbbells"]
+  primary_muscles: ["quads", "glutes"]
+  complexity_level: beginner
+  effectiveness_score: 6
+
+bodyweight_squat:
+  name: "Bodyweight Squat"
+  movement_pattern: squat
+  exercise_type: accessory
+  description: "Basic bodyweight squat"
+  notes: "No equipment needed"
+  equipment_required: []
+  primary_muscles: ["quads", "glutes"]
+  complexity_level: beginner
+  effectiveness_score: 5

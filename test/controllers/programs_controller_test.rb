@@ -114,4 +114,23 @@ class ProgramsControllerTest < ActionDispatch::IntegrationTest
     assert_match "FB-B: Power", response.body
     assert_match "Deadlift", response.body
   end
+
+  test "equipment selection with no equipment option" do
+    program = workout_programs(:three_day_full_body)
+
+    # Test with no equipment selected (default: all equipment)
+    get program_url(program, view_mode: "program")
+    assert_response :success
+    assert_match "All equipment available", response.body
+
+    # Test with no_equipment=1 (bodyweight only)
+    get program_url(program, view_mode: "program", no_equipment: "1")
+    assert_response :success
+    assert_match "Bodyweight exercises only", response.body
+
+    # Test with specific equipment selected
+    get program_url(program, view_mode: "program", equipment: [ "barbell", "dumbbells" ])
+    assert_response :success
+    assert_match "Selected: Barbell, Dumbbells", response.body
+  end
 end
