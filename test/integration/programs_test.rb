@@ -11,13 +11,11 @@ class ProgramsTest < ActionDispatch::IntegrationTest
     assert_response :success
 
     # Check for 3-day program
-    three_day = workout_programs(:three_day_full_body)
-    # Note - Hardcording in the controller, need to move to using the actual program name
+    # Note - Hardcoding in the controller, need to move to using the actual program name
     assert_match "3-Day Full Body", response.body
 
     # Check for 4-day program
-    four_day = workout_programs(:four_day_upper_lower)
-    # Note - Hardcording in the controller, need to move to using the actual program name
+    # Note - Hardcoding in the controller, need to move to using the actual program name
     assert_match "4-Day Upper/Lower", response.body
   end
 
@@ -40,7 +38,7 @@ class ProgramsTest < ActionDispatch::IntegrationTest
     get "/programs/#{program.id}?view_mode=program"
     assert_response :success
     assert_match "Select Cycle:", response.body
-    assert_select "select[data-programs-target='cycleSelector']"
+    assert_select "select[data-action='change->form#autoSubmit']"
 
     # Switch to schedule mode
     get "/programs/#{program.id}?view_mode=schedule"
@@ -81,9 +79,9 @@ class ProgramsTest < ActionDispatch::IntegrationTest
     get "/programs/#{program.id}?view_mode=schedule"
     assert_response :success
 
-    # Should show workout sessions
+    # Should show workout sessions (account for HTML encoding)
     assert_match "FB-A: Squat Focus", response.body
-    assert_match "FB-B: Power & Deadlift", response.body
+    assert_match(/FB-B: Power &(amp;|&) Deadlift/, response.body)
     assert_match "exercises", response.body
   end
 
@@ -104,13 +102,16 @@ class ProgramsTest < ActionDispatch::IntegrationTest
     get "/programs/#{program.id}?view_mode=program&cycle=#{CGI.escape(cycle.name)}"
     assert_response :success
 
-    # Check that the view mode and cycle are reflected in the UI
-    assert_select "[data-view-mode='program']" do |elements|
+    # Check that the program view mode tab is active (has border-blue-500 class)
+    assert_select "a[href*='view_mode=program']" do |elements|
       assert elements.any? { |el| el["class"].include?("border-blue-500") }
     end
 
-    assert_select "option[selected]" do |elements|
-      assert elements.any? { |el| el["value"] == cycle.name }
+    # Check that the cycle selector exists and has the correct selected value
+    assert_select "select[name='cycle']" do |elements|
+      assert elements.any? { |select|
+        select.css("option[selected]").any? { |opt| opt["value"] == cycle.name }
+      }
     end
   end
 
@@ -122,8 +123,8 @@ class ProgramsTest < ActionDispatch::IntegrationTest
       get "/programs/#{program.id}?view_mode=#{mode}"
       assert_response :success
 
-      # Verify the correct tab is active
-      assert_select "a[href='/programs/#{program.id}?view_mode=#{mode}']" do |elements|
+      # Verify the correct tab is active (check for partial href match since program mode includes cycle)
+      assert_select "a[href*='view_mode=#{mode}']" do |elements|
         assert elements.any? { |el| el["class"].include?("border-blue-500") }
       end
     end

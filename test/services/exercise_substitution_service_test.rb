@@ -52,19 +52,21 @@ class ExerciseSubstitutionServiceTest < ActiveSupport::TestCase
   end
 
   test "should return cross-pattern substitutes when no same-pattern exists" do
-    # Create an exercise with unique movement pattern
+    # Create an exercise with unique movement pattern but similar muscles to existing exercises
     unique_exercise = Exercise.create!(
       name: "Unique Exercise",
       movement_pattern: movement_patterns(:core),
-      primary_muscles: [ "core" ],
-      equipment_required: [ "bodyweight" ],
+      primary_muscles: [ "quads", "glutes" ],  # Same muscles as squats
+      equipment_required: [ "medicine_ball" ],
       effectiveness_score: 5
     )
 
     substitutes = ExerciseSubstitutionService.call(unique_exercise)
 
-    # Should still find some substitutes, even if different movement pattern
+    # Should find substitutes based on muscle overlap, even with different movement pattern
     assert_not_empty substitutes
+    # Should contain exercises with similar muscle groups (like squats)
+    assert substitutes.any? { |ex| ex.primary_muscles.include?("quads") }
   end
 
   test "class method should work" do
