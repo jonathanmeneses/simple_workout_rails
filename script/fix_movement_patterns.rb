@@ -8,11 +8,11 @@ horizontal_pull = MovementPattern.find_by(name: 'horizontal_pull')
 core_pattern = MovementPattern.find_by(name: 'core')
 
 fixes = [
-  ['Overhead Press (OHP)', vertical_push],
-  ['Push-Press', vertical_push],
-  ['Ring Row', horizontal_pull],
-  ['GHD Sit-up', core_pattern],
-  ['Pallof Press', core_pattern]
+  [ 'Overhead Press (OHP)', vertical_push ],
+  [ 'Push-Press', vertical_push ],
+  [ 'Ring Row', horizontal_pull ],
+  [ 'GHD Sit-up', core_pattern ],
+  [ 'Pallof Press', core_pattern ]
 ]
 
 puts "Fixing movement pattern assignments..."
@@ -31,7 +31,7 @@ end
 puts "\nTesting OHP substitutes after fix:"
 ohp = Exercise.find_by(name: 'Overhead Press (OHP)')
 if ohp
-  subs = ohp.find_substitutes(['dumbbells'], 5)
+  subs = ohp.find_substitutes([ 'dumbbells' ], 5)
   if subs.any?
     subs.each { |sub| puts "  - #{sub.name} (#{sub.movement_pattern.name})" }
   else

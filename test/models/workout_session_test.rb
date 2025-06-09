@@ -35,7 +35,7 @@ class WorkoutSessionTest < ActiveSupport::TestCase
     session = workout_sessions(:fb_a_squat_focus)
     exercise_count = session.workout_exercises.count
     assert exercise_count > 0
-    
+
     assert_difference "WorkoutExercise.count", -exercise_count do
       session.destroy
     end

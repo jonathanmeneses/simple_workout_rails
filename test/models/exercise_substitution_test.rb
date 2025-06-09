@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class ExerciseSubstitutionTest < ActiveSupport::TestCase
   test "exercise substitution is valid with valid attributes" do
@@ -14,15 +14,15 @@ class ExerciseSubstitutionTest < ActiveSupport::TestCase
 
   test "exercise substitution validates compatibility score range" do
     substitution = exercise_substitutions(:back_squat_to_goblet_squat)
-    
+
     substitution.compatibility_score = 11
     assert_not substitution.valid?
     assert_includes substitution.errors[:compatibility_score], "must be between 1 and 10"
-    
+
     substitution.compatibility_score = 0
     assert_not substitution.valid?
     assert_includes substitution.errors[:compatibility_score], "must be between 1 and 10"
-    
+
     substitution.compatibility_score = 5
     assert substitution.valid?
   end
@@ -34,7 +34,7 @@ class ExerciseSubstitutionTest < ActiveSupport::TestCase
       alternative_exercise: exercise,
       compatibility_score: 5
     )
-    
+
     assert_not substitution.valid?
     assert_includes substitution.errors[:alternative_exercise], "cannot be the same as original exercise"
   end

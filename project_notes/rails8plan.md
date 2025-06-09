@@ -172,6 +172,8 @@ This plan combines a step-by-step beginner approach with advanced best practices
 - **✅ JSONB Query Syntax Fixed**: PostgreSQL operators now working correctly
 - **✅ UI Integration**: Substitution dropdowns integrated into program view
 - **✅ Sets/Reps Display**: Enhanced parsing from notes field
+- **✅ Equipment Enhancement**: Added `equipment_controller.js` with immediate visual feedback
+- **✅ Workflow Optimization**: Fixed cycle ordering and enhanced main-lift prioritization
 
 ### 🚧 Remaining: Complete Data Population (Phase 3D)
 **✅ Working System:** 7 exercises populated and tested (Back Squat, Goblet Squat, Bench Press, Deadlift, OHP, Chin-ups, Ring Row)

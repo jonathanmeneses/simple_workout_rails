@@ -15,8 +15,8 @@ h_pull_pattern = MovementPattern.find_by(name: 'horizontal_pull')
 back_squat = Exercise.find_by(name: 'Back Squat')
 if back_squat
   back_squat.update!(
-    primary_muscles: ['quads', 'glutes', 'core'],
-    equipment_required: ['barbell', 'squat_rack'],
+    primary_muscles: [ 'quads', 'glutes', 'core' ],
+    equipment_required: [ 'barbell', 'squat_rack' ],
     complexity_level: 2, # intermediate
     effectiveness_score: 9,
     instructions: 'Set up in squat rack, bar on upper traps. Descend by sitting back, knees track over toes. Drive through heels to stand.'
@@ -28,8 +28,8 @@ end
 deadlift = Exercise.find_by(name: 'Deadlift')
 if deadlift
   deadlift.update!(
-    primary_muscles: ['hamstrings', 'glutes', 'lats', 'traps'],
-    equipment_required: ['barbell'],
+    primary_muscles: [ 'hamstrings', 'glutes', 'lats', 'traps' ],
+    equipment_required: [ 'barbell' ],
     complexity_level: 3, # advanced
     effectiveness_score: 10,
     instructions: 'Hip hinge movement. Grip bar, chest up, drive hips forward to stand tall.'
@@ -41,8 +41,8 @@ end
 bench_press = Exercise.find_by(name: 'Bench Press')
 if bench_press
   bench_press.update!(
-    primary_muscles: ['chest', 'triceps', 'front_delts'],
-    equipment_required: ['barbell', 'bench'],
+    primary_muscles: [ 'chest', 'triceps', 'front_delts' ],
+    equipment_required: [ 'barbell', 'bench' ],
     complexity_level: 2,
     effectiveness_score: 9,
     instructions: 'Lie on bench, grip bar slightly wider than shoulders. Lower to chest, press back up.'
@@ -58,8 +58,8 @@ goblet_squat = Exercise.find_or_create_by(
   name: 'Goblet Squat',
   movement_pattern: squat_pattern
 ) do |e|
-  e.primary_muscles = ['quads', 'glutes']
-  e.equipment_required = ['dumbbell']
+  e.primary_muscles = [ 'quads', 'glutes' ]
+  e.equipment_required = [ 'dumbbell' ]
   e.complexity_level = 1 # beginner
   e.effectiveness_score = 7
   e.description = 'Beginner-friendly squat variation using dumbbell'
@@ -78,13 +78,13 @@ if back_squat && goblet_squat
   puts "✅ Created Back Squat → Goblet Squat substitution"
 end
 
-# Create Dumbbell Bench Press as Bench Press alternative  
+# Create Dumbbell Bench Press as Bench Press alternative
 db_bench = Exercise.find_or_create_by(
   name: 'Dumbbell Bench Press',
   movement_pattern: h_push_pattern
 ) do |e|
-  e.primary_muscles = ['chest', 'triceps', 'front_delts']
-  e.equipment_required = ['dumbbells', 'bench']
+  e.primary_muscles = [ 'chest', 'triceps', 'front_delts' ]
+  e.equipment_required = [ 'dumbbells', 'bench' ]
   e.complexity_level = 2
   e.effectiveness_score = 8
   e.description = 'Dumbbell variation of bench press'
@@ -107,8 +107,8 @@ pushup = Exercise.find_or_create_by(
   name: 'Push-up',
   movement_pattern: h_push_pattern
 ) do |e|
-  e.primary_muscles = ['chest', 'triceps', 'core']
-  e.equipment_required = ['bodyweight']
+  e.primary_muscles = [ 'chest', 'triceps', 'core' ]
+  e.equipment_required = [ 'bodyweight' ]
   e.complexity_level = 1
   e.effectiveness_score = 7
   e.description = 'Bodyweight horizontal push exercise'
@@ -131,8 +131,8 @@ trap_bar_dl = Exercise.find_or_create_by(
   name: 'Trap Bar Deadlift',
   movement_pattern: hinge_pattern
 ) do |e|
-  e.primary_muscles = ['quads', 'glutes', 'hamstrings']
-  e.equipment_required = ['trap_bar']
+  e.primary_muscles = [ 'quads', 'glutes', 'hamstrings' ]
+  e.equipment_required = [ 'trap_bar' ]
   e.complexity_level = 2
   e.effectiveness_score = 9
   e.description = 'Easier deadlift variation with neutral grip'
@@ -155,8 +155,8 @@ rdl = Exercise.find_or_create_by(
   name: 'Romanian Deadlift (RDL)',
   movement_pattern: hinge_pattern
 ) do |e|
-  e.primary_muscles = ['hamstrings', 'glutes']
-  e.equipment_required = ['barbell']
+  e.primary_muscles = [ 'hamstrings', 'glutes' ]
+  e.equipment_required = [ 'barbell' ]
   e.complexity_level = 2
   e.effectiveness_score = 8
   e.description = 'Hip hinge focused on hamstring flexibility'

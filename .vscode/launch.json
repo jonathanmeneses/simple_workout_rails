@@ -14,7 +14,12 @@
             "type": "ruby_lsp",
             "name": "Debug test",
             "request": "launch",
-            "program": "ruby -Itest ${relativeFile}"
+            "program": "bin/rails test ${relativeFile}",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RAILS_ENV": "test",
+                "RUBY_LSP_DEBUG": "true"
+            }
         },
         {
             "type": "ruby_lsp",

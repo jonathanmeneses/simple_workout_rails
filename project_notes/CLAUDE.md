@@ -124,6 +124,11 @@ Corrected PostgreSQL operators in `app/models/exercise.rb`:
 - **7 core exercises** with working substitution logic: Back Squat, Goblet Squat, Bench Press, Deadlift, Overhead Press (OHP), Chin-ups, Ring Row
 - Substitution system verified working with populated data
 
+**✅ Equipment Selection Enhancement:**
+- Added `equipment_controller.js` for immediate visual feedback
+- Enhanced equipment selector with "No equipment" and "All Equipment" options
+- Improved substitution workflow with main-lift prioritization
+
 ### Phase 3D: Complete Data Population 🔄 IN PROGRESS  
 **🔧 DATA QUALITY ISSUE IDENTIFIED:**
 Root cause of substitution problems: incorrect movement pattern assignments

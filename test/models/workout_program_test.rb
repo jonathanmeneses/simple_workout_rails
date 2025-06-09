@@ -34,8 +34,8 @@ class WorkoutProgramTest < ActiveSupport::TestCase
     program = workout_programs(:three_day_full_body)
     cycle_count = program.workout_cycles.count
     assert cycle_count > 0
-    
-    assert_difference 'WorkoutCycle.count', -cycle_count do
+
+    assert_difference "WorkoutCycle.count", -cycle_count do
       program.destroy
     end
   end
