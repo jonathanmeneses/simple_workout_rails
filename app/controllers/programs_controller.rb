@@ -21,18 +21,18 @@ class ProgramsController < ApplicationController
     @program = WorkoutProgram.find(params[:id])
     valid_modes = %w[description program schedule]
     @view_mode = valid_modes.include?(params[:view_mode]) ? params[:view_mode] : "description"
-    @selected_cycle = params[:cycle] || @program.workout_cycles.first&.name
-    
+    @selected_cycle = params[:cycle] || @program.workout_cycles.order(:cycle_type).first&.name
+
     # Handle equipment selection - default to all equipment if none selected
     @selected_equipment = params[:equipment]&.reject(&:blank?) || []
-    
+
     # Store equipment in session for persistence across navigation
     session[:selected_equipment] = @selected_equipment if @selected_equipment.any?
     @selected_equipment = session[:selected_equipment] || [] if @selected_equipment.empty?
-    
+
     # If no equipment selected, assume all equipment is available
     @available_equipment = @selected_equipment.any? ? @selected_equipment : Exercise::VALID_EQUIPMENT
-    
+
     # Handle exercise substitutions
     @substitutions = params[:substitutions] || {}
   end
