@@ -9,6 +9,11 @@
 - Sophisticated UI with Turbo/Stimulus, responsive design, and equipment-based filtering.
 - Task list updated to reflect actual implementation status.
 
+## ⚠️ URGENT: Equipment Selection Data Quality Issues
+**Issue**: Equipment selection UI has duplicates and inconsistent data affecting core substitution functionality.
+**Priority**: HIGH - Must be addressed before continuing with new features.
+**See Task 4.5** for detailed cleanup action items.
+
 ## Next Steps - Evolution to Next-Level Training System
 1. **Training Intent System**
    - Add training purpose/methodology to exercise selection logic.
@@ -110,6 +115,13 @@
   - [x] 4.2 Build UI for viewing and selecting workout programs
   - [x] 4.3 Implement logic for personalizing workouts based on user equipment
   - [x] 4.4 Add WorkoutSession show page with personalized exercises
+- [ ] 4.5 **HIGH PRIORITY: Fix Equipment Selection Data Quality Issues**
+  - [ ] 4.5.1 Audit equipment selection component for duplicate entries
+  - [ ] 4.5.2 Review and clean up Equipment table seed data
+  - [ ] 4.5.3 Fix equipment validation logic and remove inconsistencies
+  - [ ] 4.5.4 Update equipment selection UI to prevent duplicates
+  - [ ] 4.5.5 Test equipment-based exercise filtering after cleanup
+  - [ ] 4.5.6 Verify auto-substitution works correctly with cleaned equipment data
 - [ ] 5.0 Training Intelligence & Advanced Set Architecture
   - [ ] 5.1 Add training intent attributes to Exercise model (purpose, rep_range_category, intensity_zone)
   - [ ] 5.2 Implement advanced set type system (AMRAP, burnout, cluster, tempo sets)

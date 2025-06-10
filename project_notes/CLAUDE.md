@@ -174,6 +174,17 @@ Corrected PostgreSQL operators in `app/models/exercise.rb`:
 - Contains 2 programs, 6 cycles, 21 sessions, 106 exercises
 - Run `rails db:seed` to populate database
 
+### ⚠️ KNOWN ISSUE: Equipment Selection Data Quality
+**Problem**: Equipment selection UI showing duplicates and inconsistent data
+**Status**: Needs investigation and manual cleanup
+**Priority**: HIGH - affects core substitution functionality
+**Action Items**:
+- [ ] Audit equipment selection component for duplicate entries
+- [ ] Review seed data for equipment inconsistencies  
+- [ ] Clean up Equipment table and validation logic
+- [ ] Update equipment selection UI to prevent duplicates
+- [ ] Test equipment-based exercise filtering after cleanup
+
 ### Exercise Attribute Population
 - **Primary Script**: `db/import_unified_exercise_database.rb`
 - **Status**: 198/198 exercises have complete substitution attributes
