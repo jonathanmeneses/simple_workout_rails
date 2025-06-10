@@ -199,9 +199,133 @@ This plan combines a step-by-step beginner approach with advanced best practices
 
 ---
 
-## Phase 4: User Features & Workout Logging (Ready for Development)
+## Phase 4: Next-Level Architecture - Dynamic Program Generation & Training Intelligence (Ready for Development)
 
-**Note:** Basic equipment management was completed in Phase 3. Phase 4 focuses on user-specific features and workout tracking.
+### 🎯 **Vision: From Fixed Programs to Intelligent Training System**
+
+**Current State**: 2 hardcoded programs with smart exercise substitution  
+**Next Level**: Dynamic program generation with training intent-driven logic
+
+### 4A: Training Intent & Purpose System
+**Goal**: Move beyond movement patterns to include training methodology in exercise selection
+
+**Training Intent Attributes:**
+- **Primary Purpose**: Strength, Hypertrophy, Power, Endurance, Mobility
+- **Rep Range Categories**: Heavy (1-5), Moderate (6-12), Light (13-20), Endurance (21+)
+- **Training Effects**: Neural adaptation, muscle building, power development, work capacity
+- **Intensity Zones**: Max effort, sub-max, moderate, light, recovery
+
+**Implementation:**
+```ruby
+# Enhanced Exercise model
+class Exercise < ApplicationRecord
+  # Existing JSONB attributes +
+  # training_intent: ["strength", "hypertrophy"] 
+  # rep_range_category: "moderate" # heavy, moderate, light, endurance
+  # intensity_zone: "sub_max" # max_effort, sub_max, moderate, light, recovery
+  # training_methodology: ["progressive_overload", "time_under_tension"]
+end
+```
+
+### 4B: Advanced Set Type System
+**Goal**: Support complex set structures beyond simple "3x8"
+
+**Set Types to Support:**
+- **Standard Sets**: 3x8 @ RPE 7
+- **AMRAP Sets**: 2x8+ (As Many Reps As Possible on last set)
+- **Burnout Sets**: 3x8 + 1x AMRAP @ 50%
+- **Drop Sets**: 3x8, then immediate drop to lighter weight for max reps
+- **Cluster Sets**: 3x(3+3+3) with 15s rest between mini-sets
+- **Rest-Pause**: 1x8, rest 15s, max reps, rest 15s, max reps
+- **Tempo Sets**: 3x8 @ 3-1-2-1 tempo
+
+**Data Model Enhancement:**
+```ruby
+class WorkoutExercise < ApplicationRecord
+  # Replace simple sets/reps with structured set_prescription JSON
+  # set_prescription: {
+  #   type: "amrap", # standard, amrap, burnout, drop, cluster, rest_pause, tempo
+  #   base_sets: 3,
+  #   base_reps: 8,
+  #   rpe_target: 7,
+  #   special_instructions: "AMRAP on final set",
+  #   tempo: "3-1-2-1" # eccentric-pause-concentric-pause
+  # }
+end
+```
+
+### 4C: Dynamic Program Generation Engine
+**Goal**: Program templates that generate variations based on methodology
+
+**Program Blueprint Architecture:**
+```ruby
+class ProgramBlueprint < ApplicationRecord
+  # methodology: "linear_progression", "conjugate", "block_periodization"
+  # training_focus: ["strength", "hypertrophy", "power"]
+  # experience_level: "beginner", "intermediate", "advanced"
+  # training_frequency: 3 # days per week
+  # cycle_length: 4 # weeks
+  
+  has_many :blueprint_phases # replaces fixed cycles
+end
+
+class BlueprintPhase < ApplicationRecord
+  # phase_type: "accumulation", "intensification", "realization", "deload"
+  # duration_weeks: 3
+  # primary_intent: "hypertrophy", "strength", "power"
+  # volume_progression: "linear", "undulating", "block"
+  
+  has_many :session_templates
+end
+
+class SessionTemplate < ApplicationRecord
+  # session_type: "upper", "lower", "push", "pull", "full_body"
+  # primary_movements: ["squat_pattern", "hinge_pattern", "push_pattern"]
+  # target_training_effects: ["strength", "hypertrophy"]
+  # volume_parameters: { main_lifts: 3-5, accessories: 8-12 }
+  
+  has_many :exercise_slots # replaces fixed exercises
+end
+
+class ExerciseSlot < ApplicationRecord
+  # slot_type: "main_lift", "accessory", "corrective"
+  # movement_pattern: "squat", "hinge", "push", "pull"
+  # training_intent: ["strength", "hypertrophy"]
+  # rep_range_target: "heavy" # drives set prescription
+  # selection_criteria: JSONB with equipment, intent, experience filters
+end
+```
+
+### 4D: Intelligent Exercise Selection Engine
+**Goal**: Smart exercise selection based on training intent + equipment + user profile
+
+**Enhanced Substitution Service:**
+```ruby
+class IntelligentExerciseSelectionService
+  def self.call(exercise_slot:, user_equipment:, training_phase:, user_profile:)
+    # 1. Filter by movement pattern (existing)
+    # 2. Filter by equipment availability (existing)
+    # 3. NEW: Filter by training intent compatibility
+    # 4. NEW: Consider rep range appropriateness
+    # 5. NEW: Factor in user experience level
+    # 6. NEW: Account for fatigue/recovery state
+    # 7. Rank by effectiveness for specific intent
+  end
+end
+```
+
+### 4E: Program Generation UI
+**Goal**: User-friendly program creation without admin complexity
+
+**Program Generator Flow:**
+1. **Training Goals**: Strength focus? Hypertrophy? Power?
+2. **Experience Level**: Beginner, Intermediate, Advanced
+3. **Schedule**: 3-day, 4-day, 5-day per week
+4. **Methodology**: Linear progression, DUP, Block periodization
+5. **Equipment**: Available equipment selection
+6. **Generate**: Create personalized program based on selections
+
+**Result**: Custom program with intelligent exercise selection and appropriate set prescriptions
 
 ---
 

@@ -1,26 +1,27 @@
-# Project Checkpoint (Last Updated: 2024-06-02)
+# Project Checkpoint (Last Updated: 2025-01-06)
 
 ## Summary
 - Rails 8 project is fully set up with PostgreSQL, Tailwind, Hotwire, and all core models.
 - User authentication (registration, login, logout) is complete and fully tested.
-- All tests are now RSpec (no Minitest remains).
-- Model, request, and feature/system specs are in place and passing.
-- SimpleCov is enabled for code coverage (see /coverage/index.html).
-- Task list is up to date and checked off for all completed work.
+- All tests are now Minitest (79 tests, 257 assertions, all passing).
+- Model, controller, and system tests are in place and passing.
+- Comprehensive workout program generator with exercise substitution system is complete.
+- Sophisticated UI with Turbo/Stimulus, responsive design, and equipment-based filtering.
+- Task list updated to reflect actual implementation status.
 
-## Next Steps
-1. **User Associations**
-   - Implement and test: UserEquipment, UserWorkoutSession, ExerciseLog models and associations.
-2. **User Profile Page**
-   - Add a profile page for users to view/edit their info and see their workout history.
-3. **Equipment & Exercise Management**
-   - Build UI for managing equipment and exercises (CRUD, selection, alternatives).
-4. **Workout Program & Session Logic**
-   - Implement logic for workout programs, cycles, sessions, and personalized recommendations.
-5. **Continue Test-Driven Development**
-   - Write RSpec tests for each new feature as you go.
-6. **Review Code Coverage**
-   - Open /coverage/index.html after running tests to see what needs more coverage.
+## Next Steps - Evolution to Next-Level Training System
+1. **Training Intent System**
+   - Add training purpose/methodology to exercise selection logic.
+2. **Advanced Set Type Architecture**
+   - Support AMRAP, burnout, cluster, and tempo sets beyond simple "3x8".
+3. **Dynamic Program Generation**
+   - Replace fixed programs with intelligent blueprint-based generation.
+4. **Enhanced Exercise Selection**
+   - Intent + equipment + user profile driven exercise recommendations.
+5. **Smart Logging Interface**
+   - Easy logging for complex set types with progression intelligence.
+6. **Mobile Card UI Improvements**
+   - Card-based layouts optimized for the new training intelligence features.
 
 ---
 
@@ -80,13 +81,13 @@
 
 ## Tasks
 
-- [ ] 0.0 UI Foundation: Recreate Workout Program Generator Selection View (No Auth, Hotwire)
-  - [ ] 0.1 Scaffold ProgramsController and index view
-  - [ ] 0.2 Implement tabbed selection for program types (3-Day Full Body, 4-Day Upper/Lower)
-  - [ ] 0.3 Display program details dynamically with Hotwire/Turbo Frames
-  - [ ] 0.4 Style the UI to match the reference app (Tailwind CSS)
-  - [ ] 0.5 Add "Select Program" button and ensure dynamic updates
-  - [ ] 0.6 Deploy and verify UI/UX
+- [x] 0.0 UI Foundation: Recreate Workout Program Generator Selection View (No Auth, Hotwire)
+  - [x] 0.1 Scaffold ProgramsController and index view
+  - [x] 0.2 Implement tabbed selection for program types (3-Day Full Body, 4-Day Upper/Lower)
+  - [x] 0.3 Display program details dynamically with Hotwire/Turbo Frames
+  - [x] 0.4 Style the UI to match the reference app (Tailwind CSS)
+  - [x] 0.5 Add "Select Program" button and ensure dynamic updates
+  - [x] 0.6 Deploy and verify UI/UX
 - [x] 1.0 Project Setup & Core Models
   - [x] 1.1 Create new Rails 8 project with PostgreSQL
   - [x] 1.2 Add and install required gems (tailwindcss-rails, view_component, hotwire-rails, prawn, etc.)
@@ -97,37 +98,135 @@
 - [x] 2.0 Authentication & User Management
   - [x] 2.1 Generate User model with authentication (Rails 8 built-in or Devise)
   - [x] 2.2 Implement user registration, login, and session management
-  - [ ] 2.3 Add associations: UserEquipment, UserWorkoutSession, ExerciseLog
+  - [x] 2.3 Add associations: UserEquipment (via session), WorkoutSession access
   - [ ] 2.4 Add user profile page
-- [ ] 3.0 Equipment & Exercise Management
-  - [ ] 3.1 Implement Equipment management UI (select/deselect equipment)
-  - [ ] 3.2 Add join model UserEquipment and associations
-  - [ ] 3.3 Implement Exercise management UI (CRUD for admin, view for users)
-  - [ ] 3.4 Add logic for equipment-based exercise alternatives
-- [ ] 4.0 Workout Program & Session Logic
-  - [ ] 4.1 Implement WorkoutProgram, WorkoutCycle, WorkoutSession models and associations
-  - [ ] 4.2 Build UI for viewing and selecting workout programs
-  - [ ] 4.3 Implement logic for personalizing workouts based on user equipment
-  - [ ] 4.4 Add WorkoutSession show page with personalized exercises
-- [ ] 5.0 Workout Logging & Progress Tracking
-  - [ ] 5.1 Implement UserWorkoutSession and ExerciseLog models
-  - [ ] 5.2 Build UI for logging sets, reps, weights, and notes
-  - [ ] 5.3 Implement ProgressionService for AMRAP-based progression
-  - [ ] 5.4 Add user progress tracking dashboard
-- [ ] 6.0 UI/UX: Hotwire, ViewComponents, and Tailwind
-  - [ ] 6.1 Use ViewComponent for reusable UI (equipment selector, workout card, etc.)
-  - [ ] 6.2 Implement Hotwire (Turbo/Stimulus) for interactivity (logging, program selection, etc.)
-  - [ ] 6.3 Style all pages with Tailwind CSS
-  - [ ] 6.4 Ensure accessibility and responsive design
-- [ ] 7.0 PDF Export & Mobile Optimization
-  - [ ] 7.1 Implement WorkoutPdfService for PDF generation
-  - [ ] 7.2 Add download PDF button to workout session pages
-  - [ ] 7.3 Optimize UI for mobile devices using Tailwind responsive utilities
-- [x] 8.0 Testing, Error Handling, and Deployment
-  - [x] 8.1 Add model, controller (request), and system tests (now all Minitest)
-  - [x] 8.2 Set up SimpleCov for coverage reporting
-  - [ ] 8.3 Add error handling and flash messages
-  - [ ] 8.4 Add authorization (Pundit or CanCanCan)
-  - [ ] 8.5 Configure environment variables and secrets
-  - [ ] 8.6 Run migrations and seed data on server
-  - [ ] 8.7 Set up monitoring and backups 
+- [x] 3.0 Equipment & Exercise Management
+  - [x] 3.1 Implement Equipment management UI (select/deselect equipment)
+  - [x] 3.2 Add session-based equipment selection (no permanent user associations needed)
+  - [x] 3.3 Implement Exercise viewing with advanced filtering
+  - [x] 3.4 Add logic for equipment-based exercise alternatives
+- [x] 4.0 Workout Program & Session Logic
+  - [x] 4.1 Implement WorkoutProgram, WorkoutCycle, WorkoutSession models and associations
+  - [x] 4.2 Build UI for viewing and selecting workout programs
+  - [x] 4.3 Implement logic for personalizing workouts based on user equipment
+  - [x] 4.4 Add WorkoutSession show page with personalized exercises
+- [ ] 5.0 Training Intelligence & Advanced Set Architecture
+  - [ ] 5.1 Add training intent attributes to Exercise model (purpose, rep_range_category, intensity_zone)
+  - [ ] 5.2 Implement advanced set type system (AMRAP, burnout, cluster, tempo sets)
+  - [ ] 5.3 Create set_prescription JSONB structure to replace simple sets/reps
+  - [ ] 5.4 Build IntelligentExerciseSelectionService with intent-based matching
+  - [ ] 5.5 Update substitution logic to consider training intent compatibility
+- [ ] 6.0 Dynamic Program Generation Engine
+  - [ ] 6.1 Create ProgramBlueprint, BlueprintPhase, SessionTemplate, ExerciseSlot models
+  - [ ] 6.2 Build program generation UI (goals, experience, schedule, methodology)
+  - [ ] 6.3 Implement blueprint-based program creation service
+  - [ ] 6.4 Add methodology-aware exercise slotting logic
+  - [ ] 6.5 Create program variation generator (beginner/intermediate/advanced)
+- [ ] 7.0 Smart Logging & Progress Intelligence
+  - [ ] 7.1 Build logging interface for complex set types (AMRAP, cluster, etc.)
+  - [ ] 7.2 Implement intelligent progression engine based on performance
+  - [ ] 7.3 Add RPE integration for auto-progression logic
+  - [ ] 7.4 Create training analytics (volume distribution, movement balance)
+  - [ ] 7.5 Build stall detection and deload recommendation system
+- [x] 6.0 UI/UX: Hotwire, ViewComponents, and Tailwind
+  - [x] 6.1 Use ViewComponent for reusable UI (equipment selector, exercise substitution, etc.)
+  - [x] 6.2 Implement Hotwire (Turbo/Stimulus) for interactivity (program selection, substitutions, etc.)
+  - [x] 6.3 Style all pages with Tailwind CSS
+  - [x] 6.4 Ensure accessibility and responsive design
+- [ ] 8.0 Mobile Optimization & Polish
+  - [ ] 8.1 Design mobile card layout for training intelligence features
+  - [ ] 8.2 Create responsive card components for complex set types
+  - [ ] 8.3 Implement touch-friendly interactions for program generation
+  - [ ] 8.4 Add subtle animations for set type transitions
+  - [ ] 8.5 Optimize card layout breakpoints for different mobile screen sizes
+- [ ] 9.0 PDF Export & Production Features
+  - [ ] 9.1 Implement WorkoutPdfService for PDF generation with advanced set types
+  - [ ] 9.2 Add download PDF button with training intent annotations
+  - [ ] 9.3 Build user profile page with training preferences
+  - [ ] 9.4 Add error handling and flash messages
+  - [ ] 9.5 Add authorization (Pundit or CanCanCan)
+- [ ] 10.0 Testing, Deployment & Monitoring
+  - [ ] 10.1 Add comprehensive tests for training intelligence features
+  - [ ] 10.2 Test complex set type logging and progression logic
+  - [ ] 10.3 Configure environment variables and secrets
+  - [ ] 10.4 Run migrations and seed data on server
+  - [ ] 10.5 Set up monitoring and backups
+
+## 🚀 Next-Level Architecture Vision
+
+### The Evolution: From Program Browser to Intelligent Training System
+
+**Current State (Excellent Foundation):**
+- 2 hardcoded programs with sophisticated exercise substitution
+- Movement pattern + equipment + training effects filtering
+- Clean architecture with service objects and JSONB optimization
+- Modern UI with Turbo/Stimulus and responsive design
+
+**Next Level Vision (Training Intelligence):**
+
+#### 1. Training Intent-Driven Logic
+**Problem**: Current substitution only considers movement pattern and equipment
+**Solution**: Add training purpose/methodology to drive intelligent recommendations
+
+**Example**: A "strength-focused" squat variation should prioritize exercises suitable for heavy (1-5 rep) loads, while a "hypertrophy-focused" slot should favor moderate (6-12 rep) options.
+
+#### 2. Advanced Set Architecture
+**Problem**: Simple "3x8" representation limits training complexity
+**Solution**: Rich set prescription system supporting modern training methods
+
+**Examples**: 
+- AMRAP sets: "2x8+" (build work capacity)
+- Cluster sets: "3x(3+3+3)" (power development)
+- Tempo sets: "3x8 @ 3-1-2-1" (time under tension)
+
+#### 3. Dynamic Program Generation
+**Problem**: Fixed programs limit adaptability to user goals/equipment
+**Solution**: Blueprint-based generation with methodology intelligence
+
+**Flow**: User selects goals (strength/hypertrophy/power) + experience + equipment → System generates appropriate program with intelligent exercise slotting
+
+#### 4. Progression Intelligence
+**Problem**: No smart progression based on training intent
+**Solution**: Performance-driven advancement with goal-specific logic
+
+**Examples**:
+- Strength focus: RPE-based load progression
+- Hypertrophy focus: Volume progression when reps exceed range
+- Power focus: Speed/explosiveness maintenance
+
+### Implementation Strategy
+1. **Phase 5**: Training intent attributes + advanced set types
+2. **Phase 6**: Dynamic program generation engine
+3. **Phase 7**: Smart logging + progression intelligence
+4. **Phase 8**: Mobile optimization for new features
+
+This evolution transforms the app from an excellent program browser into a truly intelligent training system that adapts to user goals, methodology preferences, and performance patterns.
+
+---
+
+## Additional Features Completed (Not in Original Plan)
+
+- [x] **Advanced Exercise Substitution System**
+  - [x] Dropdown-based exercise substitution with visual feedback
+  - [x] Button-based cycling through exercise alternatives
+  - [x] Smart filtering based on available equipment
+  - [x] Exercise compatibility checking and validation
+
+- [x] **Sophisticated Data Model**
+  - [x] JSONB attributes for flexible exercise data (muscles, force, level, etc.)
+  - [x] Exercise scoping and filtering capabilities
+  - [x] Movement pattern categorization
+  - [x] Equipment-based exercise associations
+
+- [x] **Enhanced User Experience**
+  - [x] Multi-view mode switching (Description/Program/Schedule)
+  - [x] Dynamic cycle selection with URL state management
+  - [x] Equipment selection with "No Equipment" fallback
+  - [x] Responsive design with mobile optimization
+  - [x] Turbo Frames for seamless navigation
+
+- [x] **Comprehensive Test Coverage**
+  - [x] 79 tests covering models, controllers, and system behavior
+  - [x] 257 assertions with full passing status
+  - [x] System tests for user navigation flows
+  - [x] Service object testing for exercise substitution logic

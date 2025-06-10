@@ -40,7 +40,7 @@ class ProgramsController < ApplicationController
     if @no_equipment
       @available_equipment = [ "bodyweight" ]
     elsif @selected_equipment.any?
-      @available_equipment = @selected_equipment
+      @available_equipment = @selected_equipment + [ "bodyweight" ]
     else
       # Default: all equipment available (including bodyweight)
       @available_equipment = Exercise::VALID_EQUIPMENT + [ "bodyweight" ]

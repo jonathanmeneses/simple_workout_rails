@@ -286,12 +286,30 @@ exercise.find_substitutes(equipment)
 - **✅ Helper Methods**: UI formatting separated from business logic
 - **✅ Comprehensive Tests**: Service and helper test coverage
 
-### **🎯 NEXT PHASE: User Features & Enhancement**
-**Ready for Phase 4 development:**
-1. **User Equipment Profiles**: Persistent equipment selection
-2. **Workout Logging**: Track completed workouts and progress
-3. **Program Personalization**: User-specific program modifications
-4. **Performance Monitoring**: Analytics and usage tracking
+### **🎯 NEXT PHASE: Training Intelligence Architecture**
+**Ready for Phase 5 development:**
+
+#### **5A: Training Intent System**
+- Add `training_intent`, `rep_range_category`, `intensity_zone` to Exercise model
+- Update ExerciseSubstitutionService to consider training purpose compatibility
+- Enable strength vs hypertrophy vs power focused exercise selection
+
+#### **5B: Advanced Set Architecture**
+- Replace simple sets/reps with structured `set_prescription` JSONB
+- Support AMRAP, burnout, cluster, tempo, and rest-pause set types
+- Build easy logging interface for complex set structures
+
+#### **5C: Dynamic Program Generation**
+- Create ProgramBlueprint, BlueprintPhase, SessionTemplate, ExerciseSlot models
+- Build program generator UI (goals + experience + methodology selection)
+- Implement intelligent exercise slotting based on training intent
+
+#### **5D: Progression Intelligence**
+- RPE-based load progression for strength focus
+- Volume progression for hypertrophy focus
+- Performance tracking with stall detection and deload recommendations
+
+**Vision**: Transform from "sophisticated program browser" to "intelligent training system that adapts to user goals and methodology preferences."
 
 ### **📊 Current Status: Phase 3 Complete**
 - **Architecture**: ✅ Production-ready service pattern
