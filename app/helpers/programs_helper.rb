@@ -70,6 +70,25 @@ module ProgramsHelper
     workout_exercise.exercise.name
   end
 
+  # Get the effective exercise object (original or substitute)
+  def get_effective_exercise(workout_exercise, available_equipment)
+    # Check if manual substitution is active
+    manual_substitute_name = params[:substitutions]&.dig(workout_exercise.exercise.id.to_s)
+    if manual_substitute_name.present?
+      substitute = Exercise.find_by(name: manual_substitute_name)
+      return substitute if substitute
+    end
+
+    # Check if auto-substitution is needed
+    if workout_exercise.needs_auto_substitution?(available_equipment)
+      auto_substitute = workout_exercise.get_auto_substitute(available_equipment)
+      return auto_substitute if auto_substitute
+    end
+
+    # Return original exercise
+    workout_exercise.exercise
+  end
+
   def exercise_substitution_status(workout_exercise, available_equipment)
     manual_substitute = params[:substitutions]&.dig(workout_exercise.exercise.id.to_s)
 
