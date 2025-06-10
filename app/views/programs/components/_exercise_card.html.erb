@@ -2,7 +2,7 @@
 <div class="exercise-card border rounded-lg <%= workout_exercise.main? ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200' %> 
      transition-all duration-200 hover:shadow-sm" 
      data-controller="exercise-details"
-     data-exercise-id="<%= workout_exercise.exercise.id %>">
+     data-exercise-details-exercise-id-value="<%= workout_exercise.exercise.id %>">
   
   <!-- Main exercise row -->
   <div class="flex items-center justify-between p-4">

@@ -29,19 +29,74 @@ class WorkoutExercise < ApplicationRecord
   def display_sets_reps
     return "—" if sets.blank? && reps.blank?
 
-    base = "#{sets}×#{reps}" if sets.present? && reps.present?
+    # Handle sets and reps - could be strings from hardcoded data
+    sets_val = sets.to_s.strip
+    reps_val = reps.to_s.strip
 
     case set_type
-    when "standard"
-      base
     when "amrap"
-      base ? "#{base}+" : "AMRAP"
+      if sets_val.present? && reps_val.present? && !reps_val.empty? && reps_val != "0"
+        # Both sets and reps are meaningful values
+        if reps_val.include?("+") || reps_val.include?("AMRAP")
+          # Pattern like sets: "2×5", reps: "+ AMRAP" -> "2×5 + AMRAP"
+          "#{sets_val} #{reps_val}".strip
+        elsif sets_val.include?("×")
+          # Sets already formatted like "2×5" -> "2×5 + AMRAP"
+          "#{sets_val} + AMRAP"
+        else
+          # Both are numbers -> assume it's sets×reps + AMRAP pattern
+          "#{sets_val}×#{reps_val} + AMRAP"
+        end
+      elsif sets_val.present? && !sets_val.empty? && sets_val != "0"
+        # Only sets provided - this is the common case from our seeding
+        if main?
+          # For main lifts, assume 5-4-3-2-1 rep scheme with AMRAP final set
+          # Default to 5 reps for main compound movements + AMRAP
+          "#{sets_val}×5 + AMRAP"
+        else
+          # For accessories, straight AMRAP sets
+          "#{sets_val}×AMRAP"
+        end
+      else
+        "AMRAP"
+      end
+    when "standard"
+      if sets_val.present? && reps_val.present?
+        if sets_val.include?("×") || reps_val.include?("×")
+          # Already formatted
+          "#{sets_val}#{reps_val.present? ? ' ' + reps_val : ''}".strip
+        else
+          # Simple numbers
+          "#{sets_val}×#{reps_val}"
+        end
+      elsif sets_val.present? || reps_val.present?
+        sets_val.present? ? sets_val : reps_val
+      else
+        "—"
+      end
     when "cluster"
+      base = if sets_val.present? && reps_val.present?
+               sets_val.include?("×") ? "#{sets_val} #{reps_val}".strip : "#{sets_val}×#{reps_val}"
+             else
+               sets_val.present? ? sets_val : reps_val
+             end
       base ? "#{base} cluster" : "Cluster"
     when "drop_set"
+      base = if sets_val.present? && reps_val.present?
+               sets_val.include?("×") ? "#{sets_val} #{reps_val}".strip : "#{sets_val}×#{reps_val}"
+             else
+               sets_val.present? ? sets_val : reps_val
+             end
       base ? "#{base}→drop" : "Drop set"
     else
-      base || notes&.truncate(20) || "—"
+      # Fallback for unknown set types
+      if sets_val.present? && reps_val.present?
+        sets_val.include?("×") ? "#{sets_val} #{reps_val}".strip : "#{sets_val}×#{reps_val}"
+      elsif sets_val.present? || reps_val.present?
+        sets_val.present? ? sets_val : reps_val
+      else
+        notes&.truncate(20) || "—"
+      end
     end
   end
 
