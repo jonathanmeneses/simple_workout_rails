@@ -85,22 +85,22 @@ demo_data.each do |program_id, program_data|
           ex.description = exercise_data[:notes]
         end
 
-        # Create the workout exercise
-        # Store sets/reps in notes if they're strings, otherwise use the integer columns
-        sets_value = exercise_data[:sets].is_a?(Integer) ? exercise_data[:sets] : nil
-        reps_value = exercise_data[:reps].is_a?(Integer) ? exercise_data[:reps] : nil
+        sets_val = exercise_data[:sets]
+        reps_val = exercise_data[:reps]
 
-        # Build comprehensive notes that include sets/reps info plus original notes
-        notes_parts = []
-        notes_parts << exercise_data[:sets] if exercise_data[:sets].present?
-        notes_parts << exercise_data[:reps] if exercise_data[:reps].present?
-        notes_parts << exercise_data[:notes] if exercise_data[:notes].present?
+        # Parse integer if possible, else nil
+        sets_int = sets_val.to_s[/\d+/]&.to_i
+        reps_int = reps_val.to_s[/\d+/]&.to_i
+
+        # Use the helper from your WorkoutExercise model
+        set_type_val = WorkoutExercise.guess_set_type!(sets_val, reps_val, exercise_data[:notes])
 
         workout_session.workout_exercises.create!(
           exercise: exercise,
-          sets: sets_value,
-          reps: reps_value,
-          notes: notes_parts.join(" - "),
+          sets: sets_int.presence, # nil if not an integer
+          reps: reps_int.presence, # nil if not an integer
+          set_type: set_type_val,
+          notes: exercise_data[:notes],
           order_position: index + 1,
           exercise_type: exercise_data[:type] == "main" ? :main : :accessory
         )
