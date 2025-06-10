@@ -1,11 +1,8 @@
-<!-- Clean Exercise Card with Expandable Details -->
-<div class="exercise-card border rounded-lg <%= workout_exercise.main? ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200' %> 
-     transition-all duration-200 hover:shadow-sm" 
-     data-controller="exercise-details"
-     data-exercise-details-exercise-id-value="<%= workout_exercise.exercise.id %>">
+<!-- Clean Exercise Card with Expandable Details (CSS-only) -->
+<details class="exercise-card border rounded-lg <%= workout_exercise.main? ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200' %> 
+              transition-all duration-200 hover:shadow-sm group">
   
-  <!-- Main exercise row -->
-  <div class="flex items-center justify-between p-4">
+  <summary class="flex items-center justify-between p-4 cursor-pointer list-none">
     <div class="flex-1 min-w-0">
       <!-- Enhanced exercise display with auto-substitution -->
       <%= render 'programs/components/enhanced_exercise_display', 
@@ -31,27 +28,22 @@
         <% end %>
       </div>
       
-      <!-- Details toggle button -->
-      <button type="button" 
-              data-action="click->exercise-details#toggle"
-              class="p-2 text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-white"
-              title="Show exercise details">
-        <svg class="w-4 h-4 transform transition-transform duration-200" 
-             data-exercise-details-target="toggleIcon"
+      <!-- Details toggle indicator (CSS-only) -->
+      <div class="p-2 text-gray-400 group-hover:text-gray-600 transition-colors rounded-full group-hover:bg-white">
+        <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180" 
              fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
         </svg>
-      </button>
+      </div>
     </div>
-  </div>
+  </summary>
   
   <!-- Expandable exercise details -->
-  <div class="exercise-details-panel border-t border-gray-200 hidden" 
-       data-exercise-details-target="panel">
+  <div class="exercise-details-panel border-t border-gray-200 animate-slide-down">
     <div class="p-4 bg-white rounded-b-lg">
       <%= render 'programs/components/exercise_details', 
             workout_exercise: workout_exercise,
             available_equipment: available_equipment %>
     </div>
   </div>
-</div>
+</details>
