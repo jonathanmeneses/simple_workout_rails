@@ -42,44 +42,9 @@
               
               <div class="space-y-3">
                 <% session.workout_exercises.order(:order_position).includes(:exercise).each do |workout_exercise| %>
-                  <div class="flex items-center justify-between py-3 px-4 <%= workout_exercise.main? ? 'bg-blue-50 border-l-4 border-blue-400' : 'bg-gray-50' %> rounded-lg">
-                    <div class="flex-1">
-                      <!-- Exercise name with substitution button -->
-                      <div class="font-medium mb-1">
-                        <%= render 'programs/components/exercise_substitution_button', 
-                              exercise: workout_exercise.exercise, 
-                              original_name: workout_exercise.exercise.name,
-                              user_equipment: @selected_equipment || Exercise::VALID_EQUIPMENT %>
-                      </div>
-                      
-                      <% if workout_exercise.notes.present? %>
-                        <div class="text-gray-500 text-sm">
-                          <% if workout_exercise.notes.include?("×") || workout_exercise.notes.include?("x") %>
-                            <!-- Notes contain sets/reps info -->
-                            <%= workout_exercise.notes %>
-                          <% else %>
-                            <!-- Regular notes -->
-                            <%= workout_exercise.notes %>
-                          <% end %>
-                        </div>
-                      <% end %>
-                    </div>
-                    <div class="text-right">
-                      <div class="font-medium text-lg">
-                        <%= workout_exercise.display_sets_reps %>
-                      </div>
-                      <% if workout_exercise.notes.present? && !workout_exercise.notes.match(/^\d+/) %>
-                        <div class="text-xs text-gray-500 mt-1">
-                          <%= workout_exercise.notes.truncate(30) %>
-                        </div>
-                      <% end %>
-                      <% if workout_exercise.main? %>
-                        <span class="text-xs text-blue-600 uppercase font-semibold">Main</span>
-                      <% else %>
-                        <span class="text-xs text-gray-500 uppercase">Accessory</span>
-                      <% end %>
-                    </div>
-                  </div>
+                  <%= render 'programs/components/exercise_card', 
+                        workout_exercise: workout_exercise,
+                        available_equipment: @available_equipment %>
                 <% end %>
               </div>
             </div>

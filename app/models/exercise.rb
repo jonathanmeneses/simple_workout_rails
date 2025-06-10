@@ -15,8 +15,8 @@ class Exercise < ApplicationRecord
   ].freeze
 
   VALID_EQUIPMENT = %w[
-    barbell dumbbells kettlebell bench squat_rack pull_up_bar
-    resistance_bands medicine_ball cable_machine trap_bar safety_bar
+    barbell rack kettlebell dumbbell heel_wedge TRX_or_rail trap_bar 
+    bench adjustable_bench pull_up_bar dip_bars rings landmine plate rings_or_TRX medicine_ball
   ].freeze
 
   VALID_TRAINING_EFFECTS = %w[
@@ -67,8 +67,14 @@ class Exercise < ApplicationRecord
     base_query = Exercise.where.not(id: self.id)
 
     # Apply equipment filter to all candidates if provided
-    if user_equipment&.any?
-      base_query = base_query.where("equipment_required ?| array[:equipment]", equipment: user_equipment)
+    if user_equipment.is_a?(Array)
+      if user_equipment.empty?
+        # No equipment available - only bodyweight exercises (empty equipment_required)
+        base_query = base_query.where("equipment_required = '[]'::jsonb OR equipment_required IS NULL")
+      else
+        # Specific equipment available
+        base_query = base_query.where("equipment_required ?| array[:equipment] OR equipment_required = '[]'::jsonb", equipment: user_equipment)
+      end
     end
 
     if main?

@@ -53,4 +53,49 @@ module ProgramsHelper
       substitute ? substitute.name : original_name
     end
   end
+
+  # Auto-substitution helpers
+  def get_display_exercise_name(workout_exercise, available_equipment)
+    # Check if manual substitution is active
+    manual_substitute = params[:substitutions]&.dig(workout_exercise.exercise.id.to_s)
+    return manual_substitute if manual_substitute.present?
+
+    # Check if auto-substitution is needed
+    if workout_exercise.needs_auto_substitution?(available_equipment)
+      auto_substitute = workout_exercise.get_auto_substitute(available_equipment)
+      return auto_substitute.name if auto_substitute
+    end
+
+    # Return original exercise name
+    workout_exercise.exercise.name
+  end
+
+  def exercise_substitution_status(workout_exercise, available_equipment)
+    manual_substitute = params[:substitutions]&.dig(workout_exercise.exercise.id.to_s)
+
+    if manual_substitute.present?
+      return { type: :manual, original: workout_exercise.exercise.name, current: manual_substitute }
+    end
+
+    if workout_exercise.needs_auto_substitution?(available_equipment)
+      auto_substitute = workout_exercise.get_auto_substitute(available_equipment)
+      if auto_substitute
+        return {
+          type: :auto,
+          original: workout_exercise.exercise.name,
+          current: auto_substitute.name,
+          reason: "Equipment unavailable"
+        }
+      else
+        return {
+          type: :unavailable,
+          original: workout_exercise.exercise.name,
+          current: workout_exercise.exercise.name,
+          reason: "No suitable alternative found"
+        }
+      end
+    end
+
+    { type: :none, original: workout_exercise.exercise.name, current: workout_exercise.exercise.name }
+  end
 end

@@ -38,12 +38,12 @@ class ProgramsController < ApplicationController
 
     # Determine available equipment for exercise filtering
     if @no_equipment
-      @available_equipment = [ "bodyweight" ]
+      @available_equipment = [] # No equipment means only exercises with empty equipment_required
     elsif @selected_equipment.any?
-      @available_equipment = @selected_equipment + [ "bodyweight" ]
+      @available_equipment = @selected_equipment
     else
-      # Default: all equipment available (including bodyweight)
-      @available_equipment = Exercise::VALID_EQUIPMENT + [ "bodyweight" ]
+      # Default: all equipment available
+      @available_equipment = Exercise::VALID_EQUIPMENT
     end
 
     # Handle exercise substitutions
