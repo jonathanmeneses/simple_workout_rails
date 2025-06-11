@@ -1,113 +1,15 @@
 # This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+# development, test). The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 
-# Seed Equipment
-EQUIPMENT_LIST = [
-  "barbell", "rack", "kettlebell", "dumbbell", "heel_wedge", "bodyweight", "TRX_or_rail", "trap_bar", "bench", "adjustable_bench", "pull_up_bar", "dip_bars", "rings", "landmine", "plate", "rings_or_TRX", "medicine_ball"
-]
+puts "🌱 Starting database seeding..."
 
-equipment_records = {}
-EQUIPMENT_LIST.each do |name|
-  equipment_records[name] = Equipment.find_or_create_by!(name: name)
-end
-
-# Seed Movement Patterns
-MOVEMENT_PATTERNS = [
-  "squat", "hinge", "horizontal_push", "vertical_push", "vertical_pull", "horizontal_pull", "lunge", "carry", "core", "core_rotation"
-]
-
-movement_pattern_records = {}
-MOVEMENT_PATTERNS.each do |name|
-  movement_pattern_records[name] = MovementPattern.find_or_create_by!(name: name)
-end
-
-# Load unified exercise database with comprehensive attributes
-puts "Loading unified exercise database..."
-require_relative 'scripts/import_unified_exercise_database'
+# Import all exercises, equipment, and movement patterns
+ExerciseImporter.import_all
 
 puts "Seeded #{Equipment.count} equipment items, #{MovementPattern.count} movement patterns, #{Exercise.count} exercises..."
 
-# Clear existing workout program data only (keep exercises, equipment, movement patterns)
-WorkoutExercise.destroy_all
-WorkoutSession.destroy_all
-WorkoutCycle.destroy_all
-WorkoutProgram.destroy_all
-
-puts "Cleared existing workout program data..."
-
-# Load demo programs from hardcoded data (no more YAML dependency)
-require_relative 'scripts/hardcoded_program_data'
-demo_data = HARDCODED_PROGRAM_DATA
-puts "Demo data loaded from hardcoded source"
-
-demo_data.each do |program_id, program_data|
-  next unless program_data.is_a?(Hash) && program_data[:name]
-
-  puts "Creating program: #{program_data[:name]}"
-
-  # Create the workout program
-  workout_program = WorkoutProgram.create!(
-    name: program_data[:name],
-    description: program_data[:description],
-    program_type: program_data[:name].include?("3-Day") ? :full_body_3_day : :upper_lower_4_day
-  )
-
-  # Create cycles for this program
-  program_data[:cycles]&.each do |cycle_data|
-    puts "  Creating cycle: #{cycle_data[:name]}"
-
-    workout_cycle = workout_program.workout_cycles.create!(
-      name: cycle_data[:name],
-      description: cycle_data[:description]
-    )
-
-    # Create sessions for this cycle
-    cycle_data[:days]&.each do |day_data|
-      puts "    Creating session: #{day_data[:title]}"
-
-      workout_session = workout_cycle.workout_sessions.create!(
-        name: day_data[:title]
-      )
-
-      # Create exercises for this session
-      day_data[:exercises]&.each_with_index do |exercise_data, index|
-        # Find or create the exercise
-        exercise = Exercise.find_or_create_by!(name: exercise_data[:name]) do |ex|
-          # Use a default movement pattern if not found in existing data
-          ex.movement_pattern = MovementPattern.first
-          ex.description = exercise_data[:notes]
-        end
-
-        sets_val = exercise_data[:sets]
-        reps_val = exercise_data[:reps]
-
-        # Parse integer if possible, else nil
-        sets_int = sets_val.to_s[/\d+/]&.to_i
-        reps_int = reps_val.to_s[/\d+/]&.to_i
-
-        # Use the helper from your WorkoutExercise model
-        set_type_val = WorkoutExercise.guess_set_type!(sets_val, reps_val, exercise_data[:notes])
-
-        workout_session.workout_exercises.create!(
-          exercise: exercise,
-          sets: sets_int.presence, # nil if not an integer
-          reps: reps_int.presence, # nil if not an integer
-          set_type: set_type_val,
-          notes: exercise_data[:notes],
-          order_position: index + 1,
-          exercise_type: exercise_data[:type] == "main" ? :main : :accessory
-        )
-      end
-    end
-  end
-end
+# Seed demo workout programs
+ProgramSeeder.seed_demo_programs
 
 if Rails.env.development?
   # Create a development user
@@ -115,9 +17,8 @@ if Rails.env.development?
     user.password = "password"
     user.password_confirmation = "password"
   end
+  puts "Created development user: user@example.com / password"
 end
 
-puts "Seeded #{WorkoutProgram.count} workout programs"
-puts "Seeded #{WorkoutCycle.count} workout cycles"
-puts "Seeded #{WorkoutSession.count} workout sessions"
-puts "Seeded #{WorkoutExercise.count} workout exercises"
+puts "✅ Database seeding complete!"
+puts "📊 Final counts: #{Exercise.count} exercises, #{WorkoutProgram.count} programs, #{WorkoutSession.count} sessions"

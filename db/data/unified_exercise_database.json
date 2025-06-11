@@ -525,7 +525,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -626,9 +625,7 @@
       "core",
       "abs"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -646,9 +643,7 @@
       "chest",
       "front_delts"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -817,9 +812,7 @@
       "front_delts",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "stability"
@@ -868,9 +861,7 @@
       "abs",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -919,9 +910,7 @@
       "core",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "stability"
@@ -967,9 +956,7 @@
     "primary_muscles": [
       "hamstrings"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "stability"
@@ -1037,9 +1024,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral",
@@ -1088,7 +1073,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -1138,9 +1122,7 @@
       "biceps",
       "forearms"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "endurance"
@@ -1159,7 +1141,7 @@
       "glutes"
     ],
     "equipment_required": [
-      "safety_bar",
+      "barbell",
       "squat_rack"
     ],
     "training_effects": [
@@ -1230,9 +1212,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral",
@@ -1341,9 +1321,7 @@
       "abs",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -1380,9 +1358,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "endurance",
       "mobility"
@@ -1401,7 +1377,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -1532,9 +1507,7 @@
       "core",
       "abs"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -1583,7 +1556,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -1624,9 +1596,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral"
@@ -1697,9 +1667,7 @@
       "glutes",
       "hamstrings"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -1906,9 +1874,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "power",
       "speed"
@@ -2152,9 +2118,7 @@
       "triceps",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "endurance"
@@ -2172,9 +2136,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral"
@@ -2194,7 +2156,6 @@
       "rhomboids"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -2225,7 +2186,6 @@
       "rhomboids"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -2285,9 +2245,7 @@
       "obliques",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -2494,9 +2452,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral"
@@ -2515,7 +2471,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -2637,7 +2592,6 @@
       "rear_delts"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -2678,9 +2632,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "endurance"
@@ -2853,7 +2805,6 @@
       "quads"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -2893,9 +2844,7 @@
       "core",
       "front_delts"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability",
       "endurance"
@@ -2913,7 +2862,6 @@
       "triceps"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -2932,9 +2880,7 @@
       "core",
       "back"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -2992,9 +2938,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "power",
       "speed"
@@ -3013,9 +2957,7 @@
       "chest",
       "quads"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "endurance",
       "power"
@@ -3092,9 +3034,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "mobility",
       "strength"
@@ -3112,9 +3052,7 @@
       "glutes",
       "quads"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral"
@@ -3204,7 +3142,6 @@
       "front_delts"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3224,7 +3161,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3244,9 +3180,7 @@
       "triceps",
       "chest"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -3294,7 +3228,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3366,9 +3299,7 @@
       "abs",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -3395,9 +3326,7 @@
       "glutes",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -3495,7 +3424,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3516,7 +3444,6 @@
       "triceps"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3535,9 +3462,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "power",
       "speed"
@@ -3566,9 +3491,7 @@
       "core",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "stability"
@@ -3637,9 +3560,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "mobility"
@@ -3658,7 +3579,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -3767,7 +3687,6 @@
       "biceps"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -3818,9 +3737,7 @@
       "front_delts",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -3837,9 +3754,7 @@
       "core",
       "abs"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability"
     ],
@@ -3867,9 +3782,7 @@
       "abs",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability",
       "strength"
@@ -3887,9 +3800,7 @@
       "chest",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "power",
       "speed"
@@ -3938,7 +3849,6 @@
       "biceps"
     ],
     "equipment_required": [
-      "bodyweight",
       "resistance_bands"
     ],
     "training_effects": [
@@ -3990,7 +3900,6 @@
       "glutes"
     ],
     "equipment_required": [
-      "bodyweight",
       "bench"
     ],
     "training_effects": [
@@ -4062,9 +3971,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "power",
       "speed"
@@ -4132,9 +4039,7 @@
       "chest",
       "triceps"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -4223,9 +4128,7 @@
       "obliques",
       "abs"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -4272,9 +4175,7 @@
     "primary_muscles": [
       "calves"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -4329,9 +4230,7 @@
     "primary_muscles": [
       "quads"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "mobility",
       "strength"
@@ -4395,9 +4294,7 @@
       "core",
       "abs"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "endurance"
     ],
@@ -4450,9 +4347,7 @@
       "obliques",
       "core"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength"
     ],
@@ -4469,9 +4364,7 @@
       "traps",
       "rhomboids"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "stability",
       "mobility"
@@ -4488,9 +4381,7 @@
     "primary_muscles": [
       "calves"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "unilateral"
@@ -4507,9 +4398,7 @@
     "primary_muscles": [
       "quads"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "strength",
       "mobility"
@@ -4546,9 +4435,7 @@
       "quads",
       "glutes"
     ],
-    "equipment_required": [
-      "bodyweight"
-    ],
+    "equipment_required": [],
     "training_effects": [
       "endurance"
     ],
@@ -4728,6 +4615,554 @@
     "complexity_level": "beginner",
     "effectiveness_score": 3,
     "enhanced_description": "Pulling movement to develop lat and bicep strength building functional strength. A wrist curl variation for comprehensive training.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bent Over Fly",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A rear deltoid isolation exercise that improves shoulder stability and posture.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Body Weight Wall Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "A beginner-friendly squat variation using wall support for balance and depth.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Calf Raise",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "calves"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "An isolation exercise that targets the calf muscles for lower leg strength.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "L-Sit",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "An advanced core exercise that builds tremendous strength and stability.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Loaded Carry",
+    "movement_pattern": "carry",
+    "primary_muscles": [
+      "core",
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "A functional exercise that builds total-body strength and stability under load.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Prone Shoulder Y",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts",
+      "traps"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A shoulder stability exercise that targets the lower traps and rear delts.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Ring Pull-up",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "lats",
+      "biceps"
+    ],
+    "equipment_required": [
+      "rings_or_trx"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "A challenging upper-body exercise using gymnastic rings for instability.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Side Plank",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "A core stability exercise that targets the obliques and lateral chain.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Tricep Dip",
+    "movement_pattern": "vertical_push",
+    "primary_muscles": [
+      "triceps",
+      "chest"
+    ],
+    "equipment_required": [
+      "dip_bars"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "An upper-body exercise that targets the triceps and chest muscles.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "45° Back Extension",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "back",
+      "hamstrings",
+      "glutes"
+    ],
+    "equipment_required": [
+      "back_extension_bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "An effective movement for strengthening the hamstrings, glutes and low back at the same time.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "90° Back Extension",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "back",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "back_extension_bench"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Similar to the 45° Back Extension, except this one will focus on the low back a bit more. Also great for stretching out the entire back and hamstrings.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bicep Curl",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "biceps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 5,
+    "enhanced_description": "A bicep curl is an isolation exercise that targets the biceps by lifting a weight through a controlled arc, bending the elbow to bring the weight toward the shoulder.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Bulgarian Split Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads",
+      "glutes"
+    ],
+    "equipment_required": [
+      "bench"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "A unilateral squat exercise focused on strengthening the quads and glutes, making it an effective tool for addressing side-to-side muscle imbalances.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "External Rotator",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts"
+    ],
+    "equipment_required": [
+      "resistance_bands"
+    ],
+    "training_effects": [
+      "stability"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A shoulder-strengthening exercise that engages the rotator cuff and stabilizing muscles through controlled external rotation, promoting joint stability and enhancing shoulder mobility over time.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Facepull",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "rear_delts",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "A targeted strength movement for the upper back and shoulders.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "GHD Sit-Up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [
+      "ghd"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "A core-strengthening exercise that engages the abs and hip flexors through a full range of motion, promoting strength and enhancing spinal mobility over time.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Glute Ham Raise",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "glute_ham_raise"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 9,
+    "enhanced_description": "A powerful posterior chain exercise targeting the glutes, hamstrings, and lower back, building strength and improving hip extension.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Hamstring Curl",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "hamstrings"
+    ],
+    "equipment_required": [
+      "commercial_gym_machines"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A lower-body exercise that targets the hamstrings by bending the knees against resistance, helping to build strength and improve stability in the back of the legs.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Incline Pigeon",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "mobility"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A dynamic stretch that targets the glutes, hips, and lower back, helping to improve flexibility and relieve tension in the hip area.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "KOT Squat",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "A knee-strengthening exercise that emphasizes full knee flexion and control, building resilience and improving lower body mobility.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Leg Raise",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "An effective core exercise that strengthens the lower abs and hip flexors while improving control and stability through the hips and lower back.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Pullover",
+    "movement_pattern": "vertical_pull",
+    "primary_muscles": [
+      "chest",
+      "lats"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "A versatile upper-body exercise that targets the chest, lats, and core, enhancing shoulder mobility and improving strength through a controlled overhead motion.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Push Up",
+    "movement_pattern": "horizontal_push",
+    "primary_muscles": [
+      "chest",
+      "triceps"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 8,
+    "enhanced_description": "A classic upper-body exercise that builds strength in the chest, shoulders, triceps, and core while improving overall upper-body stability.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "QL Raise",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "core",
+      "back"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength",
+      "stability"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 6,
+    "enhanced_description": "A side-body exercise that targets the quadratus lumborum, improving core strength, lateral stability, and lower back resilience.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Reverse Hyper",
+    "movement_pattern": "hinge",
+    "primary_muscles": [
+      "glutes",
+      "back"
+    ],
+    "equipment_required": [
+      "reverse_hyper"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 8,
+    "enhanced_description": "A low-back and glute-focused exercise that enhances posterior chain strength while promoting recovery through increased blood flow.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Reverse Nordic",
+    "movement_pattern": "squat",
+    "primary_muscles": [
+      "quads"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength",
+      "mobility"
+    ],
+    "complexity_level": "advanced",
+    "effectiveness_score": 8,
+    "enhanced_description": "A quad and hip-flexor stretch-strength exercise that builds resilience and flexibility in the knee and lower body.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Sit-Up",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "abs",
+      "core"
+    ],
+    "equipment_required": [],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "A foundational core movement that strengthens the abdominal muscles and improves spinal flexion control.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Standing Row",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "lats",
+      "rhomboids"
+    ],
+    "equipment_required": [
+      "cable_machine"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 7,
+    "enhanced_description": "Great for strengthening the upper back and improving posture, the Standing Row targets the lats, traps, and rhomboids while engaging the core for stability.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Trap 3 Raise",
+    "movement_pattern": "horizontal_pull",
+    "primary_muscles": [
+      "traps"
+    ],
+    "equipment_required": [
+      "dumbbells"
+    ],
+    "training_effects": [
+      "strength"
+    ],
+    "complexity_level": "beginner",
+    "effectiveness_score": 6,
+    "enhanced_description": "An upper-back exercise that targets the mid traps, improving posture, shoulder health, and overall back strength.",
+    "workout_contexts": [],
+    "is_in_programs": false
+  },
+  {
+    "exercise_name": "Woodchop",
+    "movement_pattern": "core",
+    "primary_muscles": [
+      "obliques",
+      "core"
+    ],
+    "equipment_required": [
+      "medicine_ball"
+    ],
+    "training_effects": [
+      "strength",
+      "power"
+    ],
+    "complexity_level": "intermediate",
+    "effectiveness_score": 7,
+    "enhanced_description": "A dynamic rotational exercise that strengthens the core, obliques, and shoulders while mimicking functional twisting movements.",
     "workout_contexts": [],
     "is_in_programs": false
   }
