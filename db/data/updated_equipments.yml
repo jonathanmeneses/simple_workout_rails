@@ -1,0 +1,120 @@
+# FINAL EQUIPMENT LIST
+equipment:
+  - name: "barbell"
+    title: "Olympic Barbell"
+    description: "45lb Olympic barbell for heavy compound movements like squats, deadlifts, and presses"
+
+  - name: "squat_rack"
+    title: "Squat Rack"
+    description: "Power rack or squat stand with safety bars for barbell movements"
+
+  - name: "dumbbells"
+    title: "Dumbbells"
+    description: "Adjustable or fixed weight dumbbells for unilateral and isolation exercises"
+
+  - name: "kettlebell"
+    title: "Kettlebell"
+    description: "Cast iron or steel ball with handle for explosive and functional movements"
+
+  - name: "bench"
+    title: "Flat Bench"
+    description: "Flat bench for bench press and other horizontal pressing movements"
+
+  - name: "adjustable_bench"
+    title: "Adjustable Bench"
+    description: "Incline/decline bench with adjustable angle settings for varied exercises"
+
+  - name: "cable_machine"
+    title: "Cable Machine"
+    description: "Adjustable cable station for various pulling and pressing movements"
+
+  - name: "commercial_gym_machines"
+    title: "Commercial Gym Machines"
+    description: "Various gym machines including leg press, smith machine, chest fly, leg curl/extension, etc."
+
+  - name: "pull_up_bar"
+    title: "Pull-up Bar"
+    description: "Overhead bar for pull-ups, chin-ups, and hanging exercises"
+
+  - name: "dip_bars"
+    title: "Dip Bars"
+    description: "Parallel bars for tricep dips and chest dips"
+
+  - name: "trap_bar"
+    title: "Trap Bar (Hex Bar)"
+    description: "Hexagonal barbell for trap bar deadlifts and carries"
+
+  - name: "medicine_ball"
+    title: "Medicine Ball"
+    description: "Weighted ball for explosive throws, slams, and core work"
+
+  - name: "resistance_bands"
+    title: "Resistance Bands"
+    description: "Elastic bands for accommodating resistance and mobility work"
+
+  - name: "rings_or_trx"
+    title: "Rings or TRX Bands"
+    description: "Gymnastic rings or TRX suspension trainer for bodyweight movements"
+
+  - name: "landmine"
+    title: "Landmine Attachment"
+    description: "Barbell pivot attachment for angled pressing and rowing movements"
+
+  - name: "plate"
+    title: "Weight Plate"
+    description: "Individual weight plates for plate-loaded exercises and carries"
+
+  - name: "heel_wedge"
+    title: "Heel Wedge"
+    description: "Angled platform for heel elevation during squats and mobility work"
+
+  - name: "ghd"
+    title: "GHD (Glute Ham Developer)"
+    description: "Specialized bench for glute-ham raises, back extensions, and hip extensions"
+
+  - name: "nordic_bench"
+    title: "Nordic Bench"
+    description: "Dedicated bench for Nordic curls and eccentric hamstring training"
+
+  - name: "glute_ham_raise"
+    title: "Glute Ham Raise Machine"
+    description: "Machine specifically designed for glute ham raises and posterior chain development"
+
+  - name: "reverse_hyper"
+    title: "Reverse Hyper Machine"
+    description: "Pendulum-style machine for reverse hyperextensions and spinal decompression"
+
+  - name: "back_extension_bench"
+    title: "Back Extension Bench"
+    description: "Angled bench for back extensions, available in various angles (45°, 90°, etc.)"
+
+# EQUIPMENT TO REMOVE
+removed:
+  - name: "bodyweight"
+    reason: "Not actual equipment - exercises using no equipment should have empty equipment array"
+
+  - name: "TRX_or_rail"
+    reason: "Consolidated into 'rings_or_trx'"
+
+  - name: "rings"
+    reason: "Consolidated into 'rings_or_trx'"
+
+  - name: "rack"
+    reason: "Too generic - replaced with specific 'squat_rack'"
+
+  - name: "safety_bar"
+    reason: "Specialty bars removed to keep equipment list focused on common items"
+
+# NAMING STANDARDIZATION
+renamed:
+  - old: "dumbbell"
+    new: "dumbbells"
+    reason: "Match JSONB usage pattern and common plural form"
+
+  - old: "rack"
+    new: "squat_rack"
+    reason: "More specific and matches JSONB usage"
+
+  - old: "rings_or_TRX"
+    new: "rings_or_trx"
+    reason: "Lowercase for consistency with naming convention"

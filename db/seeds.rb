@@ -30,7 +30,7 @@ end
 
 # Load unified exercise database with comprehensive attributes
 puts "Loading unified exercise database..."
-require_relative 'import_unified_exercise_database'
+require_relative 'scripts/import_unified_exercise_database'
 
 puts "Seeded #{Equipment.count} equipment items, #{MovementPattern.count} movement patterns, #{Exercise.count} exercises..."
 
@@ -43,7 +43,7 @@ WorkoutProgram.destroy_all
 puts "Cleared existing workout program data..."
 
 # Load demo programs from hardcoded data (no more YAML dependency)
-require_relative 'hardcoded_program_data'
+require_relative 'scripts/hardcoded_program_data'
 demo_data = HARDCODED_PROGRAM_DATA
 puts "Demo data loaded from hardcoded source"
 

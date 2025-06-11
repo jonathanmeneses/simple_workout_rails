@@ -15,8 +15,10 @@ class Exercise < ApplicationRecord
   ].freeze
 
   VALID_EQUIPMENT = %w[
-    barbell rack kettlebell dumbbell heel_wedge TRX_or_rail trap_bar 
-    bench adjustable_bench pull_up_bar dip_bars rings landmine plate rings_or_TRX medicine_ball
+    barbell squat_rack kettlebell dumbbells heel_wedge rings_or_trx trap_bar
+    bench adjustable_bench pull_up_bar dip_bars landmine plate medicine_ball
+    cable_machine commercial_gym_machines resistance_bands ghd glute_ham_raise
+    nordic_bench reverse_hyper back_extension_bench
   ].freeze
 
   VALID_TRAINING_EFFECTS = %w[

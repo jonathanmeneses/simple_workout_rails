@@ -6,7 +6,7 @@ require 'json'
 puts "🚀 Importing unified exercise database..."
 
 # Load the unified JSON data
-json_file = File.read(Rails.root.join('db', 'unified_exercise_database.json'))
+json_file = File.read(Rails.root.join('db', 'data', 'unified_exercise_database.json'))
 exercises_data = JSON.parse(json_file)
 
 puts "📊 Found #{exercises_data.length} exercises in unified database"
